@@ -288,6 +288,39 @@ h1, h2, h3, h4, .logo span {
     letter-spacing: 1px;
 }
 
+/* Trust Banner */
+.trust-banner {
+    padding: 20px 20px 60px;
+}
+.trust-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    background: #FFFFFF;
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+}
+.trust-item {
+    text-align: center;
+    padding: 15px;
+}
+.trust-item i {
+    font-size: 40px;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+.trust-item h4 {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin-bottom: 8px;
+}
+.trust-item p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
 /* Features Section */
 .features {
     padding: 80px 20px;
