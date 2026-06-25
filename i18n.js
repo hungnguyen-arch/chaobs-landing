@@ -1,13 +1,13 @@
 const dictionary = {
     en: {
-        title: "Hello Doctor - Operating System for Mental Healthcare",
+        title: "Hello Doctor - Mental Healthcare Ecosystem",
         nav_features: "Features",
         nav_ai: "AI Assistant",
         nav_about: "About Startup",
         nav_contact: "Contact Us",
         hero_badge: "Next-Gen HealthTech Startup",
-        hero_h1: "The Operating System <br> for Mental Healthcare",
-        hero_p: "Connecting patients, employers, doctors, and psychologists through an AI-powered coordinated care network. We are an ecosystem, not just software.",
+        hero_h1: "The Complete Ecosystem <br> for Mental Healthcare",
+        hero_p: "Connecting patients, employers, doctors, and psychologists through an AI-powered coordinated care network.",
         hero_btn1: "Request a Demo",
         hero_btn2: "Explore Mental Health AI",
         mockup_title: "AI Patient Triage",
@@ -82,13 +82,13 @@ const dictionary = {
         chat_placeholder: "Type your symptoms here..."
     },
     vi: {
-        title: "Hello Doctor - Hệ Điều Hành Sức Khoẻ Tinh Thần",
+        title: "Hello Doctor - Hệ Sinh Thái Sức Khoẻ Tinh Thần",
         nav_features: "Tính năng",
         nav_ai: "Trợ lý AI",
         nav_about: "Về chúng tôi",
         nav_contact: "Liên hệ",
         hero_badge: "Startup Y Tế Số Thế Hệ Mới",
-        hero_h1: "Hệ Điều Hành Toàn Diện <br> Cho Sức Khoẻ Tinh Thần",
+        hero_h1: "Hệ Sinh Thái Toàn Diện <br> Cho Sức Khoẻ Tinh Thần",
         hero_p: "Kết nối bệnh nhân, doanh nghiệp, bác sĩ và chuyên gia tâm lý thông qua mạng lưới chăm sóc phối hợp (Coordinated Care Network) được vận hành bởi AI.",
         hero_btn1: "Đăng ký Demo",
         hero_btn2: "Khám phá AI Tâm lý",
