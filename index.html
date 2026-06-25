@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello Doctor - AI-Powered Clinic Management Platform</title>
+    <title data-i18n="title">Hello Doctor - AI-Powered Clinic Management Platform</title>
     <meta name="description" content="Hello Doctor is a cutting-edge EMR and CRM platform for clinics in Vietnam, featuring an AI Clinical Assistant and deep Zalo integration.">
     <link rel="stylesheet" href="style.css">
     <!-- Google Fonts: Outfit for headings, Inter for body -->
@@ -24,11 +24,14 @@
                 <span>Hello Doctor</span>
             </div>
             <div class="nav-links">
-                <a href="#features">Features</a>
-                <a href="#ai">AI Assistant</a>
-                <a href="#about">About Startup</a>
+                <a href="#features" data-i18n="nav_features">Features</a>
+                <a href="#ai" data-i18n="nav_ai">AI Assistant</a>
+                <a href="#about" data-i18n="nav_about">About Startup</a>
             </div>
-            <a href="mailto:founder@chaobs.com" class="btn btn-outline">Contact Us</a>
+            <div style="display: flex; gap: 15px; align-items: center;">
+                <button id="lang-toggle" class="btn-lang">EN | VI</button>
+                <a href="mailto:founder@chaobs.com" class="btn btn-outline" data-i18n="nav_contact">Contact Us</a>
+            </div>
         </div>
     </nav>
 
@@ -37,32 +40,31 @@
         <section class="hero container">
             <div class="hero-content">
                 <div class="badge">
-                    <span class="badge-dot"></span> Next-Gen HealthTech Startup
+                    <span class="badge-dot"></span> <span data-i18n="hero_badge">Next-Gen HealthTech Startup</span>
                 </div>
-                <h1>The AI-Powered EMR <br> for Modern Clinics</h1>
-                <p>Automate patient onboarding, leverage AI for initial clinical diagnosis, and manage everything effortlessly with seamless Zalo integration.</p>
+                <h1 data-i18n="hero_h1">The AI-Powered EMR <br> for Modern Clinics</h1>
+                <p data-i18n="hero_p">Automate patient onboarding, leverage AI for initial clinical diagnosis, and manage everything effortlessly with seamless Zalo integration.</p>
                 <div class="hero-cta">
-                    <a href="mailto:founder@chaobs.com" class="btn btn-primary">Request a Demo</a>
-                    <a href="#features" class="btn btn-secondary">Explore Features <i class="ph ph-arrow-right"></i></a>
+                    <a href="mailto:founder@chaobs.com" class="btn btn-primary" data-i18n="hero_btn1">Request a Demo</a>
+                    <a href="#features" class="btn btn-secondary"><span data-i18n="hero_btn2">Explore Features</span> <i class="ph ph-arrow-right"></i></a>
                 </div>
             </div>
             <div class="hero-visual">
                 <div class="glass-card mockup-card">
                     <div class="mockup-header">
                         <div class="mockup-dots"><span></span><span></span><span></span></div>
-                        <div class="mockup-title">AI Patient Triage</div>
+                        <div class="mockup-title" data-i18n="mockup_title">AI Patient Triage</div>
                     </div>
                     <div class="mockup-body">
-                        <div class="chat-bubble bot">Hello! I'm your Hello Doctor AI Assistant. Could you please describe your symptoms today?</div>
-                        <div class="chat-bubble user">I've been having a severe headache and slight fever since yesterday.</div>
+                        <div class="chat-bubble bot" data-i18n="mockup_bot1">Hello! I'm your Hello Doctor AI Assistant. Could you please describe your symptoms today?</div>
+                        <div class="chat-bubble user" data-i18n="mockup_user1">I've been having a severe headache and slight fever since yesterday.</div>
                         <div class="chat-bubble bot ai-generating">
-                            <i class="ph ph-sparkle"></i> Analyzing symptoms...
+                            <i class="ph ph-sparkle"></i> <span data-i18n="mockup_bot2">Analyzing symptoms...</span>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="hero-image">
-                <!-- Vercel-like decorative gradient element -->
                 <div class="gradient-blob"></div>
             </div>
         </section>
@@ -70,56 +72,54 @@
         <!-- Startup Growth & Traction Section -->
         <section class="stats container">
             <div style="text-align: center; margin-bottom: 25px;">
-                <h2 style="font-size: 1.2rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 2px;">Startup Growth & Clinical Reach</h2>
-                <p style="color: #10B981; font-weight: bold; margin-top: 10px; font-size: 1.1rem;"><i class="ph-bold ph-trend-up"></i> Growing 25% Month-over-Month</p>
+                <h2 style="font-size: 1.2rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 2px;" data-i18n="stat_title">Startup Growth & Clinical Reach</h2>
+                <p style="color: #10B981; font-weight: bold; margin-top: 10px; font-size: 1.1rem;"><i class="ph-bold ph-trend-up"></i> <span data-i18n="stat_subtitle">Growing 25% Month-over-Month</span></p>
             </div>
             <div class="stats-grid" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px;">
                 <div class="stat-item">
                     <h3 class="stat-number">$15K</h3>
-                    <p class="stat-label">MRR (Revenue)</p>
+                    <p class="stat-label" data-i18n="stat_1">MRR (Revenue)</p>
                 </div>
                 <div class="stat-item">
                     <h3 class="stat-number">4</h3>
-                    <p class="stat-label">Paying Clinics</p>
+                    <p class="stat-label" data-i18n="stat_2">Paying Clinics</p>
                 </div>
                 <div class="stat-item">
                     <h3 class="stat-number">20+</h3>
-                    <p class="stat-label">Specialist Doctors</p>
+                    <p class="stat-label" data-i18n="stat_3">Specialist Doctors</p>
                 </div>
                 <div class="stat-item">
                     <h3 class="stat-number">5,000+</h3>
-                    <p class="stat-label">Monthly Consults</p>
+                    <p class="stat-label" data-i18n="stat_4">Monthly Consults</p>
                 </div>
                 <div class="stat-item">
                     <h3 class="stat-number">12</h3>
-                    <p class="stat-label">Provinces Covered</p>
+                    <p class="stat-label" data-i18n="stat_5">Provinces Covered</p>
                 </div>
             </div>
         </section>
 
-
-
         <!-- Features Section -->
         <section id="features" class="features container">
             <div class="section-header">
-                <h2>Strategic Moats & Capabilities</h2>
-                <p>A comprehensive Digital Health Ecosystem specializing in Mental Health, designed to eliminate operational pain points and maximize clinical outcomes.</p>
+                <h2 data-i18n="feat_h2">Strategic Moats & Capabilities</h2>
+                <p data-i18n="feat_p">A comprehensive Digital Health Ecosystem specializing in Mental Health, designed to eliminate operational pain points and maximize clinical outcomes.</p>
             </div>
             <div class="features-grid">
                 <div class="glass-card feature-card">
                     <div class="feature-icon"><i class="ph-fill ph-brain"></i></div>
-                    <h3>AI Mental Health Tele-Triage</h3>
-                    <p>Proprietary AI Assistant powered by advanced Generative AI. Automates clinical tests (PHQ-9, GAD-7) via Zalo, detects high-risk patterns, and provides CBT-based conversational support.</p>
+                    <h3 data-i18n="feat1_h3">AI Mental Health Tele-Triage</h3>
+                    <p data-i18n="feat1_p">Proprietary AI Assistant powered by advanced Generative AI. Automates clinical tests (PHQ-9, GAD-7) via Zalo, detects high-risk patterns, and provides CBT-based conversational support.</p>
                 </div>
                 <div class="glass-card feature-card">
                     <div class="feature-icon"><i class="ph-fill ph-database"></i></div>
-                    <h3>"Audit-Ready" EMR & Inventory</h3>
-                    <p>A scalable, multi-clinic EMR with GPP/GDP compliant inventory tracking. Automates bank reconciliations, tax compliance for returns, and eliminates pharmaceutical dead-stock.</p>
+                    <h3 data-i18n="feat2_h3">"Audit-Ready" EMR & Inventory</h3>
+                    <p data-i18n="feat2_p">A scalable, multi-clinic EMR with GPP/GDP compliant inventory tracking. Automates bank reconciliations, tax compliance for returns, and eliminates pharmaceutical dead-stock.</p>
                 </div>
                 <div class="glass-card feature-card">
                     <div class="feature-icon"><i class="ph-fill ph-shield-check"></i></div>
-                    <h3>Proprietary Clinical RAG Moat</h3>
-                    <p>Not just a SaaS. Backed by 10 years of proprietary clinical data, voice biomarkers, and a vast RAG knowledge base ensuring safe, guideline-compliant medical decisions.</p>
+                    <h3 data-i18n="feat3_h3">Proprietary Clinical RAG Moat</h3>
+                    <p data-i18n="feat3_p">Not just a SaaS. Backed by 10 years of proprietary clinical data, voice biomarkers, and a vast RAG knowledge base ensuring safe, guideline-compliant medical decisions.</p>
                 </div>
             </div>
         </section>
@@ -127,31 +127,31 @@
         <!-- Architecture Section -->
         <section id="architecture" class="architecture container">
             <div class="section-header">
-                <h2>AI Agentic Flow Engine</h2>
-                <p>We don't just wrap LLMs. Hello Doctor is powered by a sophisticated Multi-Agent architecture working in orchestration.</p>
+                <h2 data-i18n="arch_h2">AI Agentic Flow Engine</h2>
+                <p data-i18n="arch_p">We don't just wrap LLMs. Hello Doctor is powered by a sophisticated Multi-Agent architecture working in orchestration.</p>
             </div>
             <div class="arch-container glass-card">
                 <div class="arch-step">
                     <div class="arch-icon"><i class="ph-fill ph-user-circle"></i></div>
-                    <h4>Patient Input</h4>
-                    <p>Zalo Mini App / Voice Call</p>
+                    <h4 data-i18n="arch1_h4">Patient Input</h4>
+                    <p data-i18n="arch1_p">Zalo Mini App / Voice Call</p>
                 </div>
                 <div class="arch-arrow"><i class="ph ph-arrow-right"></i></div>
                 <div class="arch-step highlight">
                     <div class="arch-icon"><i class="ph-fill ph-cpu"></i></div>
-                    <h4>Orchestrator Agent</h4>
-                    <p>Routes intent & manages context</p>
+                    <h4 data-i18n="arch2_h4">Orchestrator Agent</h4>
+                    <p data-i18n="arch2_p">Routes intent & manages context</p>
                 </div>
                 <div class="arch-arrow"><i class="ph ph-arrow-right"></i></div>
                 <div class="arch-stack">
                     <div class="arch-step small">
-                        <i class="ph-fill ph-book-open-text"></i> Clinical RAG Agent
+                        <i class="ph-fill ph-book-open-text"></i> <span data-i18n="arch3_lbl">Clinical RAG Agent</span>
                     </div>
                     <div class="arch-step small">
-                        <i class="ph-fill ph-heartbeat"></i> DTx/CBT Agent
+                        <i class="ph-fill ph-heartbeat"></i> <span data-i18n="arch4_lbl">DTx/CBT Agent</span>
                     </div>
                     <div class="arch-step small">
-                        <i class="ph-fill ph-database"></i> EMR Sync Agent
+                        <i class="ph-fill ph-database"></i> <span data-i18n="arch5_lbl">EMR Sync Agent</span>
                     </div>
                 </div>
             </div>
@@ -160,32 +160,32 @@
         <!-- Roadmap Section -->
         <section id="roadmap" class="roadmap container">
             <div class="section-header">
-                <h2>Strategic Roadmap</h2>
-                <p>Our path to becoming the #1 AI-Driven Mental Healthcare Platform.</p>
+                <h2 data-i18n="road_h2">Strategic Roadmap</h2>
+                <p data-i18n="road_p">Our path to becoming the #1 AI-Driven Mental Healthcare Platform.</p>
             </div>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-dot active"></div>
                     <div class="timeline-content glass-card">
-                        <h3>Phase 1: Scale & Commercialize</h3>
-                        <p class="timeline-date">Current - 6 Months</p>
-                        <p>Launch AI Premium Chat monetization and expand nationwide pharmaceutical O2O delivery via ViettelPost.</p>
+                        <h3 data-i18n="road1_h3">Phase 1: Scale & Commercialize</h3>
+                        <p class="timeline-date" data-i18n="road1_date">Current - 6 Months</p>
+                        <p data-i18n="road1_p">Launch AI Premium Chat monetization and expand nationwide pharmaceutical O2O delivery via ViettelPost.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content glass-card">
-                        <h3>Phase 2: Clinical AI & DTx</h3>
-                        <p class="timeline-date">6 - 18 Months</p>
-                        <p>Implement Voice Biomarkers for stress analysis and automate Cognitive Behavioral Therapy (CBT) through Zalo.</p>
+                        <h3 data-i18n="road2_h3">Phase 2: Clinical AI & DTx</h3>
+                        <p class="timeline-date" data-i18n="road2_date">6 - 18 Months</p>
+                        <p data-i18n="road2_p">Implement Voice Biomarkers for stress analysis and automate Cognitive Behavioral Therapy (CBT) through Zalo.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content glass-card">
-                        <h3>Phase 3: O2O Franchise Model</h3>
-                        <p class="timeline-date">Year 2 - Year 3</p>
-                        <p>Package the EMR, AI Core, and Supply Chain into a turnkey franchise solution for mental health clinics nationwide.</p>
+                        <h3 data-i18n="road3_h3">Phase 3: O2O Franchise Model</h3>
+                        <p class="timeline-date" data-i18n="road3_date">Year 2 - Year 3</p>
+                        <p data-i18n="road3_p">Package the EMR, AI Core, and Supply Chain into a turnkey franchise solution for mental health clinics nationwide.</p>
                     </div>
                 </div>
             </div>
@@ -194,8 +194,8 @@
         <!-- Team Section -->
         <section id="team" class="team container">
             <div class="section-header">
-                <h2>Leadership Team</h2>
-                <p>A unique synergy of Medical Experts and AI Engineers.</p>
+                <h2 data-i18n="team_h2">Leadership Team</h2>
+                <p data-i18n="team_p">A unique synergy of Medical Experts and AI Engineers.</p>
             </div>
             <div class="team-grid">
                 <div class="team-card glass-card">
@@ -203,14 +203,14 @@
                         <i class="ph-fill ph-user"></i>
                     </div>
                     <h3>Hung Nguyen</h3>
-                    <p class="team-role">Founder & CEO</p>
+                    <p class="team-role" data-i18n="team1_role">Founder & CEO</p>
                 </div>
                 <div class="team-card glass-card">
                     <div class="team-avatar">
                         <i class="ph-fill ph-code"></i>
                     </div>
-                    <h3>Technical Lead</h3>
-                    <p class="team-role">Head of AI Engineering</p>
+                    <h3 data-i18n="team2_name">Technical Lead</h3>
+                    <p class="team-role" data-i18n="team2_role">Head of AI Engineering</p>
                 </div>
             </div>
         </section>
@@ -219,22 +219,22 @@
         <section id="about" class="about container">
             <div class="glass-card about-card">
                 <div class="about-content">
-                    <h2>Built for Scale, Powered by AI</h2>
-                    <p><strong>Hello Doctor</strong> is a HealthTech platform developed and operated by <strong>SKTT COMPANY LIMITED</strong>. We are a strong, multidisciplinary team of Medical Experts and AI Engineers dedicated to democratizing access to quality mental healthcare.</p>
+                    <h2 data-i18n="about_h2">Built for Scale, Powered by AI</h2>
+                    <p data-i18n="about_p"><strong>Hello Doctor</strong> is a HealthTech platform developed and operated by <strong>SKTT COMPANY LIMITED</strong>. We are a strong, multidisciplinary team of Medical Experts and AI Engineers dedicated to democratizing access to quality mental healthcare.</p>
                     <ul class="tech-list">
-                        <li><i class="ph-fill ph-users-three"></i> Multidisciplinary Medical & Engineering Team</li>
-                        <li><i class="ph-fill ph-chart-line-up"></i> Sustainable B2B SaaS Growth & Positive Cashflow</li>
-                        <li><i class="ph-fill ph-check-circle"></i> HIPAA Compliant Cloud Infrastructure</li>
+                        <li><i class="ph-fill ph-users-three"></i> <span data-i18n="about_li1">Multidisciplinary Medical & Engineering Team</span></li>
+                        <li><i class="ph-fill ph-chart-line-up"></i> <span data-i18n="about_li2">Sustainable B2B SaaS Growth & Positive Cashflow</span></li>
+                        <li><i class="ph-fill ph-check-circle"></i> <span data-i18n="about_li3">HIPAA Compliant Cloud Infrastructure</span></li>
                     </ul>
                 </div>
                 <div class="about-stats">
                     <div class="stat-item">
-                        <h4>Vision</h4>
-                        <p>Digitize 10,000+ clinics</p>
+                        <h4 data-i18n="about_s1_h4">Vision</h4>
+                        <p data-i18n="about_s1_p">Digitize 10,000+ clinics</p>
                     </div>
                     <div class="stat-item">
-                        <h4>ARR Potential</h4>
-                        <p>$1M+ in next 18 months</p>
+                        <h4 data-i18n="about_s2_h4">ARR Potential</h4>
+                        <p data-i18n="about_s2_p">$1M+ in next 18 months</p>
                     </div>
                 </div>
             </div>
@@ -248,23 +248,23 @@
                     <i class="ph-fill ph-heartbeat"></i>
                     <span>Hello Doctor</span>
                 </div>
-                <p>Empowering clinics with Artificial Intelligence.</p>
+                <p data-i18n="footer_p">Empowering clinics with Artificial Intelligence.</p>
                 <div style="margin-top: 16px; color: var(--text-muted); font-size: 13px; line-height: 1.8;">
                     <strong style="color: #FFF;">SKTT COMPANY LIMITED</strong><br>
-                    <span style="color: var(--primary);">The legal entity operating Hello Doctor</span><br>
+                    <span style="color: var(--primary);" data-i18n="footer_legal">The legal entity operating Hello Doctor</span><br>
                     Tax ID: 0318378996<br>
                     152/6 Thanh Thai Street, Ward 12, District 10, Ho Chi Minh City<br>
                     Phone: +84 19001246
                 </div>
             </div>
             <div class="footer-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
+                <a href="#" data-i18n="footer_l1">Privacy Policy</a>
+                <a href="#" data-i18n="footer_l2">Terms of Service</a>
                 <a href="mailto:founder@chaobs.com">founder@chaobs.com</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 SKTT COMPANY LIMITED. All rights reserved.</p>
+            <p data-i18n="footer_c">&copy; 2026 SKTT COMPANY LIMITED. All rights reserved.</p>
         </div>
     </footer>
 
@@ -275,8 +275,8 @@
                 <div class="chat-header-info">
                     <i class="ph-fill ph-robot"></i>
                     <div>
-                        <h4>AI Clinical Assistant (Demo)</h4>
-                        <span>Online</span>
+                        <h4 data-i18n="chat_h4">AI Clinical Assistant (Demo)</h4>
+                        <span data-i18n="chat_span">Online</span>
                     </div>
                 </div>
                 <button id="close-chat"><i class="ph ph-x"></i></button>
@@ -285,7 +285,7 @@
                 <!-- Messages injected via JS -->
             </div>
             <div class="chat-footer">
-                <input type="text" id="chat-input" placeholder="Nhập vấn đề bạn đang gặp phải...">
+                <input type="text" id="chat-input" placeholder="Nhập vấn đề bạn đang gặp phải..." data-i18n-placeholder="chat_placeholder">
                 <button id="send-btn"><i class="ph-fill ph-paper-plane-right"></i></button>
             </div>
         </div>
@@ -294,6 +294,7 @@
         </button>
     </div>
     
+    <script src="i18n.js"></script>
     <script src="chat.js"></script>
 </body>
 </html>
