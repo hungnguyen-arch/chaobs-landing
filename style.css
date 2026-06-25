@@ -671,3 +671,102 @@ footer {
         position: fixed;
     }
 }
+
+/* Stats Section */
+.stats {
+    padding: 40px 20px;
+    margin-top: -60px;
+    position: relative;
+    z-index: 10;
+}
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    background: rgba(13, 17, 23, 0.7);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+}
+.stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 5px;
+}
+.stat-label {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Architecture Section */
+.architecture {
+    padding: 80px 20px;
+}
+.arch-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.arch-step {
+    text-align: center;
+    flex: 1;
+    min-width: 150px;
+}
+.arch-step.highlight {
+    background: rgba(0, 240, 255, 0.1);
+    border: 1px solid var(--primary);
+    padding: 20px;
+    border-radius: 15px;
+}
+.arch-icon {
+    font-size: 40px;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+.arch-arrow {
+    font-size: 30px;
+    color: var(--text-muted);
+}
+.arch-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 1;
+    min-width: 200px;
+}
+.arch-step.small {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #FFF;
+}
+.arch-step.small i {
+    color: var(--secondary);
+    font-size: 20px;
+}
+@media (max-width: 768px) {
+    .arch-container {
+        flex-direction: column;
+    }
+    .arch-arrow {
+        transform: rotate(90deg);
+        margin: 10px 0;
+    }
+}
