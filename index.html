@@ -140,5 +140,33 @@
             <p>&copy; 2026 SKTT COMPANY LIMITED. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Chat Widget -->
+    <div id="chat-widget">
+        <div id="chat-window" class="hidden glass-card">
+            <div class="chat-header">
+                <div class="chat-header-info">
+                    <i class="ph-fill ph-robot"></i>
+                    <div>
+                        <h4>AI Clinical Assistant</h4>
+                        <span>Online</span>
+                    </div>
+                </div>
+                <button id="close-chat"><i class="ph ph-x"></i></button>
+            </div>
+            <div id="chat-body" class="chat-body mockup-body" style="padding: 20px;">
+                <!-- Messages injected via JS -->
+            </div>
+            <div class="chat-footer">
+                <input type="text" id="chat-input" placeholder="Nhập triệu chứng của bạn...">
+                <button id="send-btn"><i class="ph-fill ph-paper-plane-right"></i></button>
+            </div>
+        </div>
+        <button id="chat-btn" class="chat-btn pulse">
+            <i class="ph-fill ph-chat-teardrop-dots"></i>
+        </button>
+    </div>
+    
+    <script src="chat.js"></script>
 </body>
 </html>
