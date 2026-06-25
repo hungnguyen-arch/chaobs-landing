@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!chatWindow.classList.contains("hidden")) {
             chatInput.focus();
             if(chatBody.children.length === 0) {
-                 addMessage("bot", "Xin chào! Tôi là Trợ lý AI của Hello Doctor. Bạn đang gặp vấn đề gì về sức khoẻ cần tôi tư vấn hôm nay?");
+                 addMessage("bot", "Xin chào! Tôi là Trợ lý AI chuyên về Sức khoẻ tinh thần của Hello Doctor. Bạn đang cảm thấy thế nào, có gặp căng thẳng hay áp lực gì muốn chia sẻ không?");
             }
         }
     });
@@ -73,14 +73,14 @@ document.addEventListener("DOMContentLoaded", () => {
     let conversationStep = 0;
     function getMockResponse(userInput) {
         const input = userInput.toLowerCase();
-        if (input.includes("đau") || input.includes("sốt") || input.includes("mệt")) {
+        if (input.includes("căng thẳng") || input.includes("buồn") || input.includes("stress") || input.includes("mệt mỏi") || input.includes("áp lực") || input.includes("lo âu")) {
             conversationStep = 1;
-            return "Cảm ơn bạn đã thông tin. Triệu chứng này của bạn đã bắt đầu từ khi nào? Có kèm theo các dấu hiệu bất thường khác không?";
+            return "Tôi rất tiếc khi nghe bạn đang trải qua cảm giác này. Những cảm xúc này xuất hiện từ bao giờ? Nó có ảnh hưởng nhiều đến giấc ngủ hay sinh hoạt hàng ngày của bạn không?";
         }
         if (conversationStep === 1) {
             conversationStep = 2;
-            return "Tôi đã ghi nhận thông tin và phân tích dữ liệu lâm sàng ban đầu. Hệ thống đã tạo bệnh án nháp EMR và chuyển cho Bác sĩ chuyên khoa. Bác sĩ sẽ liên hệ với bạn trong ít phút nữa qua Zalo nhé!";
+            return "Cảm ơn bạn đã dũng cảm chia sẻ. Sức khoẻ tinh thần rất quan trọng và bạn không đơn độc. Hệ thống đã tạo hồ sơ tham vấn (EMR) an toàn. Một chuyên gia tâm lý sẽ sớm liên hệ qua Zalo để hỗ trợ bạn sâu hơn nhé.";
         }
-        return "Tôi hiểu. Bạn có thể cung cấp thêm chi tiết về tình trạng này không để tôi có dữ liệu phân tích và lên hồ sơ khám bệnh tốt nhất?";
+        return "Tôi luôn ở đây để lắng nghe không phán xét. Bạn có thể chia sẻ thêm về những suy nghĩ đang diễn ra trong đầu bạn lúc này không?";
     }
 });
