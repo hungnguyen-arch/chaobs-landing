@@ -803,3 +803,169 @@ footer {
     color: #FFF;
     border-color: var(--primary);
 }
+
+/* -----------------------------------
+   B2B / Enterprise Section Styles
+-------------------------------------- */
+
+/* Enterprise Banner on index.html */
+.enterprise-banner {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, rgba(2, 132, 199, 0.05) 0%, rgba(16, 185, 129, 0.05) 100%);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    text-align: center;
+}
+.enterprise-banner h2 {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+.enterprise-banner p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+/* Pricing Section */
+.pricing {
+    padding: 80px 20px;
+}
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+.pricing-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 40px 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+.pricing-card.popular {
+    border-color: var(--primary);
+    box-shadow: 0 10px 30px rgba(2, 132, 199, 0.1);
+}
+.pricing-card.popular::before {
+    content: 'Phổ biến nhất';
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary);
+    color: #FFF;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+.pricing-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--border-color);
+}
+.pricing-header h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+.pricing-price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 5px;
+}
+.pricing-price span {
+    font-size: 1rem;
+    color: var(--text-muted);
+    font-weight: 400;
+}
+.pricing-features {
+    list-style: none;
+    margin-bottom: 30px;
+    flex-grow: 1;
+}
+.pricing-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+.pricing-features li i {
+    color: var(--secondary);
+    font-size: 20px;
+    margin-top: 2px;
+}
+.pricing-features li.disabled {
+    color: var(--text-muted);
+}
+.pricing-features li.disabled i {
+    color: #CBD5E1;
+}
+.pricing-card .btn {
+    width: 100%;
+    justify-content: center;
+}
+
+/* B2B Problem Cards */
+.problem-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+.problem-card {
+    background: #FFF0F0; /* Light red tint for problems */
+    border: 1px solid #FECACA;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+.problem-card i {
+    font-size: 24px;
+    color: #EF4444;
+}
+.problem-card p {
+    color: var(--text-color);
+    font-weight: 500;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+/* Value List */
+.value-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.value-item {
+    background: #FFFFFF;
+    border-left: 4px solid var(--secondary);
+    padding: 20px;
+    border-radius: 0 12px 12px 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+}
+.value-item h4 {
+    color: var(--text-color);
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+.value-item p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin: 0;
+}

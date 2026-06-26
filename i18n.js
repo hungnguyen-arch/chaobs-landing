@@ -4,6 +4,7 @@ const dictionary = {
         nav_features: "Features",
         nav_ai: "AI Assistant",
         nav_about: "About Startup",
+        nav_enterprise: "For Enterprises",
         nav_contact: "Contact Us",
         hero_badge: "Next-Gen HealthTech Startup",
         hero_h1: "The Complete Ecosystem <br> for Mental Healthcare",
@@ -77,13 +78,17 @@ const dictionary = {
         footer_c: "© 2026 SKTT COMPANY LIMITED. All rights reserved.",
         chat_h4: "AI Clinical Assistant (Demo)",
         chat_span: "Online",
-        chat_placeholder: "Type your symptoms here..."
+        chat_placeholder: "Type your symptoms here...",
+        ent_banner_title: "Mental Health Assistant for Businesses",
+        ent_banner_desc: "Reduce burnout, improve performance, and build a healthy work environment with Hello Doctor's enterprise solution.",
+        ent_banner_btn: "Explore Enterprise Solutions"
     },
     vi: {
         title: "Hello Doctor - Hệ Sinh Thái Sức Khoẻ Tinh Thần",
         nav_features: "Tính năng",
         nav_ai: "Trợ lý AI",
         nav_about: "Về chúng tôi",
+        nav_enterprise: "Cho Doanh nghiệp",
         nav_contact: "Liên hệ",
         hero_badge: "Startup Y Tế Số Thế Hệ Mới",
         hero_h1: "Hệ Sinh Thái Toàn Diện <br> Cho Sức Khoẻ Tinh Thần",
@@ -157,7 +162,10 @@ const dictionary = {
         footer_c: "© 2026 CÔNG TY TNHH SKTT. Bản quyền đã được bảo hộ.",
         chat_h4: "Trợ lý AI (Bản Demo)",
         chat_span: "Trực tuyến",
-        chat_placeholder: "Nhập vấn đề bạn đang gặp phải..."
+        chat_placeholder: "Nhập vấn đề bạn đang gặp phải...",
+        ent_banner_title: "Nền tảng Trợ lý Sức khỏe Tinh thần cho Doanh nghiệp",
+        ent_banner_desc: "Giảm tỷ lệ nghỉ việc, nhận diện sớm rủi ro burnout và nâng cao hiệu suất làm việc với giải pháp B2B từ Hello Doctor.",
+        ent_banner_btn: "Khám phá ngay"
     }
 };
 

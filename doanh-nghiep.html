@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title">Hello Doctor - Hệ Sinh Thái Sức Khoẻ Tinh Thần</title>
+    <meta name="description" content="Nền tảng Trợ lý Sức khỏe Tinh thần cho Doanh nghiệp từ Hello Doctor. Giảm burnout, nâng cao hiệu suất làm việc.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts: Outfit for headings, Inter for body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <div class="glow-bg"></div>
+    <div class="glow-bg glow-2"></div>
+
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 10px;">
+                    <i class="ph-fill ph-heartbeat"></i>
+                    <span>Hello Doctor</span>
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html#features" data-i18n="nav_features">Features</a>
+                <a href="index.html#ai" data-i18n="nav_ai">AI Assistant</a>
+                <a href="doanh-nghiep.html" data-i18n="nav_enterprise" style="color: var(--primary); font-weight: 600;">For Enterprises</a>
+                <a href="index.html#about" data-i18n="nav_about">About Startup</a>
+            </div>
+            <div style="display: flex; gap: 15px; align-items: center;">
+                <button id="lang-toggle" class="btn-lang">EN | VI</button>
+                <a href="mailto:founder@chaobs.com" class="btn btn-outline" data-i18n="nav_contact">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <main style="padding-top: 100px;">
+        <!-- Hero Section -->
+        <section class="container" style="text-align: center; padding: 60px 20px;">
+            <div class="badge" style="margin-bottom: 20px;">
+                <span class="badge-dot"></span> B2B Mental Wellness
+            </div>
+            <h1 style="font-size: 3rem; margin-bottom: 20px; line-height: 1.2;">Nền tảng Trợ lý Sức khỏe Tinh thần <br><span style="color: var(--primary);">cho Doanh nghiệp</span></h1>
+            <p style="font-size: 1.1rem; color: var(--text-muted); max-width: 700px; margin: 0 auto 30px;">
+                Sức khỏe tinh thần đang trở thành một trong những nguyên nhân hàng đầu làm giảm hiệu suất làm việc và tăng chi phí vận hành. Hello Doctor cung cấp Trợ lý Sức khỏe Tinh thần cho Doanh nghiệp như một khoản đầu tư chiến lược để giữ chân và nâng cao hiệu suất nhân sự.
+            </p>
+            <a href="#pricing" class="btn btn-primary" style="font-size: 1.1rem; padding: 12px 30px;">Xem Bảng Giá</a>
+        </section>
+
+        <!-- Problem Section -->
+        <section class="container" style="padding: 40px 20px;">
+            <div class="section-header" style="margin-bottom: 30px;">
+                <h2>Bài toán của Doanh nghiệp</h2>
+                <p>Phần lớn doanh nghiệp đang phải đối mặt với những khó khăn sau trong việc quản trị nhân sự:</p>
+            </div>
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <i class="ph-fill ph-warning-circle"></i>
+                    <p>Nhân viên chịu áp lực, căng thẳng kéo dài nhưng không chủ động tìm kiếm sự hỗ trợ.</p>
+                </div>
+                <div class="problem-card">
+                    <i class="ph-fill ph-fire"></i>
+                    <p>Dấu hiệu burnout, trầm cảm/lo âu chỉ được phát hiện khi đã ảnh hưởng đến hiệu suất hoặc dẫn đến nghỉ việc.</p>
+                </div>
+                <div class="problem-card">
+                    <i class="ph-fill ph-eye-slash"></i>
+                    <p>HR thiếu công cụ để theo dõi sức khỏe tinh thần của tổ chức khoa học nhưng vẫn đảm bảo quyền riêng tư.</p>
+                </div>
+                <div class="problem-card">
+                    <i class="ph-fill ph-chart-line-down"></i>
+                    <p>Chi phí tuyển dụng và đào tạo nhân sự mới tăng cao do tỷ lệ nghỉ việc và kiệt sức.</p>
+                </div>
+                <div class="problem-card" style="grid-column: 1 / -1; justify-content: center; background: rgba(16, 185, 129, 0.1); border-color: rgba(16, 185, 129, 0.2);">
+                    <i class="ph-fill ph-check-circle" style="color: var(--secondary);"></i>
+                    <p style="color: var(--text-color);">Hello Doctor cung cấp Trợ lý Sức khỏe Tinh thần như một phúc lợi, tương tự bảo hiểm sức khỏe - khoản đầu tư sinh lời bền vững.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Value Section -->
+        <section class="container" style="padding: 60px 20px;">
+            <div class="section-header">
+                <h2>Giá trị Cốt lõi</h2>
+            </div>
+            
+            <h3 style="margin-bottom: 20px; font-size: 1.4rem; color: var(--primary); display: flex; align-items: center; gap: 10px;"><i class="ph-fill ph-buildings"></i> Mang lại cho Doanh nghiệp</h3>
+            <div class="value-list" style="margin-bottom: 50px;">
+                <div class="value-item">
+                    <h4>Phát hiện sớm rủi ro</h4>
+                    <p>Nhận diện sớm dấu hiệu căng thẳng, burnout trước khi ảnh hưởng đến hiệu suất.</p>
+                </div>
+                <div class="value-item">
+                    <h4>Nâng cao năng suất</h4>
+                    <p>Nhân viên được hỗ trợ đúng thời điểm, duy trì sự tập trung và động lực làm việc.</p>
+                </div>
+                <div class="value-item">
+                    <h4>Giảm tỷ lệ nghỉ việc</h4>
+                    <p>Đồng hành liên tục giúp giảm kiệt sức, tăng sự gắn kết và giữ chân nhân tài.</p>
+                </div>
+                <div class="value-item">
+                    <h4>Hỗ trợ HR ra quyết định</h4>
+                    <p>Báo cáo tổng hợp, ẩn danh về sức khỏe tổ chức để xây dựng chính sách phù hợp.</p>
+                </div>
+                <div class="value-item">
+                    <h4>Đảm bảo tính riêng tư</h4>
+                    <p>Thông tin cá nhân bảo mật; doanh nghiệp chỉ tiếp cận dữ liệu tổng hợp.</p>
+                </div>
+                <div class="value-item">
+                    <h4>Hỗ trợ chuyên môn khi cần</h4>
+                    <p>Hệ thống kết nối nhanh với bác sĩ và chuyên gia của Hello Doctor để can thiệp kịp thời.</p>
+                </div>
+            </div>
+
+            <h3 style="margin-bottom: 20px; font-size: 1.4rem; color: var(--primary); display: flex; align-items: center; gap: 10px;"><i class="ph-fill ph-users"></i> Mang lại cho Nhân viên</h3>
+            <div class="glass-card" style="padding: 30px;">
+                <ul class="pricing-features" style="margin-bottom: 0;">
+                    <li><i class="ph-fill ph-check-circle"></i> Có một Trợ lý sức khỏe tinh thần luôn sẵn sàng lắng nghe và đồng hành 24/7.</li>
+                    <li><i class="ph-fill ph-check-circle"></i> Được hỗ trợ quản lý căng thẳng, áp lực và cân bằng cuộc sống ngay từ giai đoạn sớm.</li>
+                    <li><i class="ph-fill ph-check-circle"></i> Tiếp cận chuyên gia một cách thuận tiện khi cần, không phải tự tìm kiếm nơi khám.</li>
+                    <li><i class="ph-fill ph-check-circle"></i> Yên tâm chia sẻ vì thông tin cá nhân được bảo mật tuyệt đối.</li>
+                    <li><i class="ph-fill ph-check-circle"></i> Cảm nhận được sự quan tâm thực sự từ doanh nghiệp đối với sức khỏe và hạnh phúc của mình.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Operation Model Section -->
+        <section class="container architecture" style="padding: 40px 20px;">
+            <div class="section-header">
+                <h2>Mô hình Hoạt động & Điểm khác biệt</h2>
+                <p>Đồng hành liên tục, kết hợp công nghệ AI với đội ngũ bác sĩ chuyên khoa.</p>
+            </div>
+            <div class="arch-container glass-card" style="margin-bottom: 40px;">
+                <div class="arch-step">
+                    <div class="arch-icon"><i class="ph-fill ph-chat-centered-text"></i></div>
+                    <h4>1. Trò chuyện</h4>
+                    <p style="font-size: 14px; color: var(--text-muted);">Nhân viên trò chuyện với Trợ lý bất cứ khi nào cần.</p>
+                </div>
+                <div class="arch-arrow"><i class="ph ph-arrow-right"></i></div>
+                <div class="arch-step highlight">
+                    <div class="arch-icon"><i class="ph-fill ph-brain"></i></div>
+                    <h4>2. Theo dõi & Gợi ý</h4>
+                    <p style="font-size: 14px; color: var(--text-muted);">AI theo dõi diễn biến và chủ động đưa lời khuyên phù hợp.</p>
+                </div>
+                <div class="arch-arrow"><i class="ph ph-arrow-right"></i></div>
+                <div class="arch-step">
+                    <div class="arch-icon"><i class="ph-fill ph-stethoscope"></i></div>
+                    <h4>3. Kết nối Chuyên gia</h4>
+                    <p style="font-size: 14px; color: var(--text-muted);">Khi phát hiện rủi ro, hệ thống đề xuất gặp bác sĩ tâm lý.</p>
+                </div>
+                <div class="arch-arrow"><i class="ph ph-arrow-right"></i></div>
+                <div class="arch-step">
+                    <div class="arch-icon"><i class="ph-fill ph-chart-pie-slice"></i></div>
+                    <h4>4. Báo cáo HR</h4>
+                    <p style="font-size: 14px; color: var(--text-muted);">HR theo dõi bức tranh tổng thể ẩn danh để triển khai Wellbeing.</p>
+                </div>
+            </div>
+            <div class="glass-card" style="padding: 30px; background: rgba(2, 132, 199, 0.03);">
+                <h3 style="margin-bottom: 15px; color: var(--primary);">Điểm khác biệt của Hello Doctor:</h3>
+                <ul class="pricing-features" style="margin-bottom: 0;">
+                    <li><i class="ph-fill ph-star"></i> <strong>Đồng hành liên tục</strong>, không chỉ là một công cụ khảo sát định kỳ.</li>
+                    <li><i class="ph-fill ph-star"></i> <strong>Kết hợp công nghệ</strong> với đội ngũ bác sĩ và chuyên gia tâm thần, tâm lý thực thụ.</li>
+                    <li><i class="ph-fill ph-star"></i> <strong>Hỗ trợ toàn bộ hành trình</strong>: Phòng ngừa → Phát hiện sớm → Hỗ trợ → Điều trị → Theo dõi sau điều trị.</li>
+                    <li><i class="ph-fill ph-star"></i> <strong>Linh hoạt quy mô</strong>, dễ dàng tích hợp vào hệ thống quản trị HRM hiện có của doanh nghiệp.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="pricing container">
+            <div class="section-header">
+                <h2>Mô hình Dịch vụ & Chi phí</h2>
+                <p>Một nền tảng chăm sóc sức khỏe tinh thần hiện đại, giúp doanh nghiệp phòng ngừa – phát hiện sớm – hỗ trợ – kết nối chuyên gia.</p>
+            </div>
+            
+            <h3 style="text-align: center; margin-bottom: 20px;">1. Platform Subscription (Nền tảng đồng hành)</h3>
+            <p style="text-align: center; color: var(--text-muted); margin-bottom: 40px;">Dịch vụ cốt lõi, triển khai cho toàn bộ nhân viên.</p>
+
+            <div class="pricing-grid">
+                <!-- Starter Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <div class="pricing-price">30.000đ <span>/nhân viên/tháng</span></div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="ph-bold ph-check"></i> Trợ lý sức khỏe tinh thần 24/7</li>
+                        <li><i class="ph-bold ph-check"></i> Trò chuyện không giới hạn</li>
+                        <li><i class="ph-bold ph-check"></i> Theo dõi trạng thái tinh thần</li>
+                        <li><i class="ph-bold ph-check"></i> Gợi ý bài tập & hỗ trợ cá nhân hóa</li>
+                        <li><i class="ph-bold ph-check"></i> Phát hiện sớm stress / burnout</li>
+                        <li><i class="ph-bold ph-check"></i> Kết nối chuyên gia khi cần</li>
+                        <li><i class="ph-bold ph-check"></i> Dashboard HR ẩn danh (Cơ bản)</li>
+                        <li><i class="ph-bold ph-check"></i> Báo cáo sức khỏe hàng tháng</li>
+                        <li class="disabled"><i class="ph-bold ph-x"></i> Tích hợp HRM / SSO</li>
+                        <li class="disabled"><i class="ph-bold ph-x"></i> White-label theo doanh nghiệp</li>
+                    </ul>
+                    <a href="mailto:founder@chaobs.com" class="btn btn-outline">Chọn Starter</a>
+                </div>
+
+                <!-- Professional Plan -->
+                <div class="pricing-card popular">
+                    <div class="pricing-header">
+                        <h3>Professional</h3>
+                        <div class="pricing-price">60.000đ <span>/nhân viên/tháng</span></div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="ph-bold ph-check"></i> Mọi tính năng của bản Starter</li>
+                        <li><i class="ph-bold ph-check"></i> Dashboard HR ẩn danh (Nâng cao)</li>
+                        <li><i class="ph-bold ph-check"></i> Tùy chọn Tích hợp HRM / SSO</li>
+                        <li><i class="ph-bold ph-check"></i> Tùy chọn White-label</li>
+                    </ul>
+                    <a href="mailto:founder@chaobs.com" class="btn btn-primary">Chọn Professional</a>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <div class="pricing-price" style="font-size: 1.5rem; margin-top: 10px;">Báo giá theo nhu cầu</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="ph-bold ph-check"></i> Mọi tính năng của bản Professional</li>
+                        <li><i class="ph-bold ph-check"></i> Dashboard Real-time chuyên sâu</li>
+                        <li><i class="ph-bold ph-check"></i> Mặc định Tích hợp HRM / SSO</li>
+                        <li><i class="ph-bold ph-check"></i> Mặc định White-label</li>
+                        <li><i class="ph-bold ph-check"></i> Quản lý tài khoản riêng (KAM)</li>
+                    </ul>
+                    <a href="mailto:founder@chaobs.com" class="btn btn-outline">Liên hệ Sale</a>
+                </div>
+            </div>
+
+            <div style="margin-top: 60px;">
+                <h3 style="margin-bottom: 20px;">2. Professional Services & Mental Health Credit</h3>
+                <div class="glass-card" style="padding: 30px;">
+                    <p style="margin-bottom: 15px;">Ngoài nền tảng lõi, Hello Doctor cung cấp các dịch vụ chuyên môn linh hoạt:</p>
+                    <ul style="list-style-position: inside; color: var(--text-color); margin-bottom: 20px; line-height: 1.8;">
+                        <li><strong>Chăm sóc cấp tổ chức:</strong> Khảo sát sức khỏe toàn công ty, Workshop quản lý stress, Talkshow chuyên gia, Đào tạo quản lý nhận diện rủi ro.</li>
+                        <li><strong>Chăm sóc cá nhân:</strong> Tư vấn tâm lý 1:1, Khám bác sĩ chuyên khoa (Online/Phòng khám), Theo dõi sau can thiệp.</li>
+                    </ul>
+                    <div style="background: #F1F5F9; padding: 20px; border-radius: 12px; border: 1px solid var(--border-color);">
+                        <h4 style="margin-bottom: 10px; color: var(--primary);">Mô hình tín dụng (Mental Health Credit)</h4>
+                        <p style="font-size: 0.95rem; margin-bottom: 15px;">Doanh nghiệp mua trước "Credit" để nhân viên sử dụng linh hoạt cho tư vấn 1:1, khám bác sĩ, đánh giá chuyên sâu.</p>
+                        <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                            <span style="background: #FFF; padding: 8px 15px; border-radius: 8px; font-weight: 600; border: 1px solid #CBD5E1;">🥈 Silver: 100 Credit/tháng</span>
+                            <span style="background: #FFF; padding: 8px 15px; border-radius: 8px; font-weight: 600; border: 1px solid #CBD5E1;">🥇 Gold: 300 Credit/tháng</span>
+                            <span style="background: #FFF; padding: 8px 15px; border-radius: 8px; font-weight: 600; border: 1px solid #CBD5E1;">💎 Platinum: 1.000 Credit/tháng</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <i class="ph-fill ph-heartbeat"></i>
+                    <span>Hello Doctor</span>
+                </div>
+                <p data-i18n="footer_p">Empowering clinics with Artificial Intelligence.</p>
+                <div style="margin-top: 16px; color: var(--text-muted); font-size: 13px; line-height: 1.8;">
+                    <strong style="color: #FFF;">SKTT COMPANY LIMITED</strong><br>
+                    <span style="color: var(--primary);" data-i18n="footer_legal">The legal entity operating Hello Doctor</span><br>
+                    Tax ID: 0318378996<br>
+                    152/6 Thanh Thai Street, Ward 12, District 10, Ho Chi Minh City<br>
+                    Phone: +84 19001246
+                </div>
+            </div>
+            <div class="footer-links">
+                <a href="#" data-i18n="footer_l1">Privacy Policy</a>
+                <a href="#" data-i18n="footer_l2">Terms of Service</a>
+                <a href="mailto:founder@chaobs.com">founder@chaobs.com</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer_c">&copy; 2026 SKTT COMPANY LIMITED. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Chat Widget (Reused from index.html) -->
+    <div id="chat-widget">
+        <div id="chat-window" class="hidden glass-card">
+            <div class="chat-header">
+                <div class="chat-header-info">
+                    <i class="ph-fill ph-robot"></i>
+                    <div>
+                        <h4 data-i18n="chat_h4">AI Clinical Assistant (Demo)</h4>
+                        <span data-i18n="chat_span">Online</span>
+                    </div>
+                </div>
+                <button id="close-chat"><i class="ph ph-x"></i></button>
+            </div>
+            <div id="chat-body" class="chat-body mockup-body" style="padding: 20px;">
+                <!-- Messages injected via JS -->
+            </div>
+            <div class="chat-footer">
+                <input type="text" id="chat-input" placeholder="Nhập vấn đề bạn đang gặp phải..." data-i18n-placeholder="chat_placeholder">
+                <button id="send-btn"><i class="ph-fill ph-paper-plane-right"></i></button>
+            </div>
+        </div>
+        <button id="chat-btn" class="chat-btn pulse">
+            <i class="ph-fill ph-chat-teardrop-dots"></i>
+        </button>
+    </div>
+    
+    <script src="i18n.js"></script>
+    <script src="chat.js"></script>
+</body>
+</html>
