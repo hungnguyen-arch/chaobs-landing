@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="title">Hello Doctor - AI-Powered Clinic Management Platform</title>
-    <meta name="description" content="Hello Doctor is a cutting-edge EMR and CRM platform for clinics in Vietnam, featuring an AI Clinical Assistant and deep Zalo integration.">
+    <title data-i18n="title">Hello Doctor AI - AI-Powered Clinic Management Platform</title>
+    <meta name="description" content="Hello Doctor AI is a cutting-edge EMR and CRM platform for clinics in Vietnam, featuring an AI Clinical Assistant and deep Zalo integration.">
     <link rel="stylesheet" href="style.css">
     <!-- Google Fonts: Outfit for headings, Inter for body -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,17 +21,19 @@
         <div class="container nav-content">
             <div class="logo">
                 <i class="ph-fill ph-heartbeat"></i>
-                <span>Hello Doctor</span>
+                <span>Hello Doctor AI</span>
             </div>
             <div class="nav-links">
-                <a href="#features" data-i18n="nav_features">Features</a>
-                <a href="#ai" data-i18n="nav_ai">AI Assistant</a>
+                <a href="index.html#features" data-i18n="nav_features">Features</a>
+                <a href="index.html#ai" data-i18n="nav_ai">AI Assistant</a>
+                <a href="ca-nhan.html" data-i18n="nav_individual">For Individuals</a>
                 <a href="doanh-nghiep.html" data-i18n="nav_enterprise">For Enterprises</a>
-                <a href="#about" data-i18n="nav_about">About Startup</a>
+                <a href="index.html#about" data-i18n="nav_about">About Startup</a>
             </div>
             <div style="display: flex; gap: 15px; align-items: center;">
                 <button id="lang-toggle" class="btn-lang">EN | VI</button>
-                <a href="mailto:founder@chaobs.com" class="btn btn-outline" data-i18n="nav_contact">Contact Us</a>
+                                <a href="mailto:founder@chaobs.com" class="btn btn-outline" data-i18n="nav_contact">Contact Us</a>
+                <button class="mobile-menu-btn" id="mobile-menu-btn"><i class="ph ph-list"></i></button>
             </div>
         </div>
     </nav>
@@ -153,7 +155,7 @@
         <section class="enterprise-banner">
             <div class="container">
                 <h2 data-i18n="ent_banner_title">Mental Health Assistant for Businesses</h2>
-                <p data-i18n="ent_banner_desc">Reduce burnout, improve performance, and build a healthy work environment with Hello Doctor's enterprise solution.</p>
+                <p data-i18n="ent_banner_desc">Reduce burnout, improve performance, and build a healthy work environment with Hello Doctor AI's enterprise solution.</p>
                 <a href="doanh-nghiep.html" class="btn btn-primary" data-i18n="ent_banner_btn">Explore Enterprise Solutions</a>
             </div>
         </section>
@@ -162,7 +164,7 @@
         <section id="architecture" class="architecture container">
             <div class="section-header">
                 <h2 data-i18n="arch_h2">AI Agentic Flow Engine</h2>
-                <p data-i18n="arch_p">We don't just wrap LLMs. Hello Doctor is powered by a sophisticated Multi-Agent architecture working in orchestration.</p>
+                <p data-i18n="arch_p">We don't just wrap LLMs. Hello Doctor AI is powered by a sophisticated Multi-Agent architecture working in orchestration.</p>
             </div>
             <div class="arch-container glass-card">
                 <div class="arch-step">
@@ -254,7 +256,7 @@
             <div class="glass-card about-card">
                 <div class="about-content">
                     <h2 data-i18n="about_h2">Built for Scale, Powered by AI</h2>
-                    <p data-i18n="about_p"><strong>Hello Doctor</strong> is a HealthTech platform developed and operated by <strong>SKTT COMPANY LIMITED</strong>. We are a strong, multidisciplinary team of Medical Experts and AI Engineers dedicated to democratizing access to quality mental healthcare.</p>
+                    <p data-i18n="about_p"><strong>Hello Doctor AI</strong> is a HealthTech platform developed and operated by <strong>SKTT COMPANY LIMITED</strong>. We are a strong, multidisciplinary team of Medical Experts and AI Engineers dedicated to democratizing access to quality mental healthcare.</p>
                     <ul class="tech-list">
                         <li><i class="ph-fill ph-users-three"></i> <span data-i18n="about_li1">Multidisciplinary Medical & Engineering Team</span></li>
                         <li><i class="ph-fill ph-chart-line-up"></i> <span data-i18n="about_li2">Sustainable B2B SaaS Growth & Positive Cashflow</span></li>
@@ -280,12 +282,12 @@
             <div class="footer-brand">
                 <div class="logo">
                     <i class="ph-fill ph-heartbeat"></i>
-                    <span>Hello Doctor</span>
+                    <span>Hello Doctor AI</span>
                 </div>
                 <p data-i18n="footer_p">Empowering clinics with Artificial Intelligence.</p>
                 <div style="margin-top: 16px; color: var(--text-muted); font-size: 13px; line-height: 1.8;">
                     <strong style="color: #FFF;">SKTT COMPANY LIMITED</strong><br>
-                    <span style="color: var(--primary);" data-i18n="footer_legal">The legal entity operating Hello Doctor</span><br>
+                    <span style="color: var(--primary);" data-i18n="footer_legal">The legal entity operating Hello Doctor AI</span><br>
                     Tax ID: 0318378996<br>
                     152/6 Thanh Thai Street, Ward 12, District 10, Ho Chi Minh City<br>
                     Phone: +84 19001246
@@ -328,7 +330,20 @@
         </button>
     </div>
     
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const menuBtn = document.getElementById("mobile-menu-btn");
+            const navLinks = document.querySelector(".nav-links");
+            if (menuBtn && navLinks) {
+                menuBtn.addEventListener("click", () => {
+                    navLinks.classList.toggle("active");
+                });
+            }
+        });
+    </script>
     <script src="i18n.js"></script>
+
     <script src="chat.js"></script>
 </body>
 </html>

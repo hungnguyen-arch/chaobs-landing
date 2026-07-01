@@ -748,8 +748,23 @@ footer {
     100% { box-shadow: 0 0 0 0 rgba(2, 132, 199, 0); }
 }
 
+
+/* Mobile Menu Toggle */
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
+    .mobile-menu-btn {
+        display: block;
+    }
+
     .hero {
         flex-direction: column;
         text-align: center;
@@ -773,6 +788,22 @@ footer {
     }
     .nav-links {
         display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #FFF;
+        flex-direction: column;
+        padding: 20px 0;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        border-top: 1px solid var(--border-color);
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .nav-links a {
+        margin: 15px 20px;
+        font-size: 1.1rem;
     }
     #chat-window {
         width: 300px;

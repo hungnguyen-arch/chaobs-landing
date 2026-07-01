@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title">Hello Doctor AI - Hệ Sinh Thái Sức Khoẻ Tinh Thần</title>
+    <meta name="description" content="Trợ lý AI tư vấn tâm lý chuyên sâu cá nhân.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts: Outfit for headings, Inter for body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <div class="glow-bg"></div>
+    <div class="glow-bg glow-2"></div>
+
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 10px;">
+                    <i class="ph-fill ph-heartbeat"></i>
+                    <span>Hello Doctor AI</span>
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html#features" data-i18n="nav_features">Features</a>
+                <a href="index.html#ai" data-i18n="nav_ai">AI Assistant</a>
+                <a href="ca-nhan.html" data-i18n="nav_individual" style="color: var(--primary); font-weight: 600;">For Individuals</a>
+                <a href="doanh-nghiep.html" data-i18n="nav_enterprise">For Enterprises</a>
+                <a href="index.html#about" data-i18n="nav_about">About Startup</a>
+            </div>
+            <div style="display: flex; gap: 15px; align-items: center;">
+                <button id="lang-toggle" class="btn-lang">EN | VI</button>
+                                <a href="mailto:founder@chaobs.com" class="btn btn-outline" data-i18n="nav_contact">Contact Us</a>
+                <button class="mobile-menu-btn" id="mobile-menu-btn"><i class="ph ph-list"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main style="padding-top: 100px;">
+        <!-- Hero Section -->
+        <section class="container" style="text-align: center; padding: 60px 20px;">
+            <div class="badge" style="margin-bottom: 20px;">
+                <span class="badge-dot"></span> <span data-i18n="b2c_badge">B2C Mental Wellness</span>
+            </div>
+            <h1 data-i18n="b2c_h1" style="font-size: 3rem; margin-bottom: 20px; line-height: 1.2;">Tư Vấn Sức Khỏe Tinh Thần Chuyên Sâu <br><span style="color: var(--primary);">Đột Phá Với AI</span></h1>
+            <p data-i18n="b2c_hero_p" style="font-size: 1.1rem; color: var(--text-muted); max-width: 800px; margin: 0 auto 30px;">
+                Không chỉ là những lời động viên sáo rỗng. Trợ lý AI của Hello Doctor AI được huấn luyện trên hàng triệu dữ liệu y khoa, mang đến cho bạn lộ trình Tư vấn & Trị liệu chuyên sâu bằng các phương pháp khoa học (CBT, MBCT) ngay trên điện thoại. Giải quyết triệt để căng thẳng, lo âu và rối loạn giấc ngủ.
+            </p>
+            
+            <!-- Promo Banner -->
+            <div style="background: rgba(2, 132, 199, 0.1); border: 1px solid rgba(2, 132, 199, 0.3); border-radius: 12px; padding: 20px; max-width: 600px; margin: 0 auto 30px;">
+                <p data-i18n="b2c_hero_promo" style="margin: 0; color: var(--text-color); font-size: 1.05rem; line-height: 1.5;">
+                    <strong>Đăng ký ngay hôm nay – Nhận ngay 5.000 AI Credits!</strong><br>
+                    (Sử dụng để thực hiện các bài test lâm sàng và trải nghiệm phiên tư vấn chuyên sâu hoàn toàn miễn phí).
+                </p>
+            </div>
+            
+            <a href="https://zalo.me/hellodoctors" target="_blank" class="btn btn-primary" data-i18n="b2c_hero_btn" style="font-size: 1.1rem; padding: 12px 30px;">Nhận 5.000 Credits & Bắt đầu tư vấn ngay</a>
+        </section>
+
+        <!-- Differences Section -->
+        <section class="container" style="padding: 40px 20px;">
+            <div class="section-header" style="margin-bottom: 30px;">
+                <h2 data-i18n="b2c_diff_h2">Sự Khác Biệt: Tư Vấn Chuyên Sâu vs Trò Chuyện Thông Thường</h2>
+            </div>
+            <div class="problem-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                <div class="problem-card">
+                    <i class="ph-fill ph-chat-circle-text"></i>
+                    <p data-i18n="b2c_diff_1"><strong>Không chỉ là tâm sự:</strong> Thay vì những câu trả lời rập khuôn, AI sẽ đóng vai trò như một chuyên gia tâm lý thực thụ. Đặt câu hỏi khai vấn (coaching), phân tích nguyên nhân gốc rễ (root cause) của nỗi buồn hay sự lo âu.</p>
+                </div>
+                <div class="problem-card">
+                    <i class="ph-fill ph-brain"></i>
+                    <p data-i18n="b2c_diff_2"><strong>Liệu pháp Nhận thức Hành vi (CBT):</strong> Dùng Credit để mở khóa lộ trình tự chữa lành chuyên sâu. AI sẽ hướng dẫn bạn tái cấu trúc suy nghĩ tiêu cực thông qua các bài tập cụ thể mỗi ngày.</p>
+                </div>
+                <div class="problem-card">
+                    <i class="ph-fill ph-warning-circle" style="color: #EF4444;"></i>
+                    <p data-i18n="b2c_diff_3"><strong>Đánh giá rủi ro y khoa:</strong> Hệ thống có khả năng nhận diện các dấu hiệu cảnh báo (Red flags) của trầm cảm hoặc kiệt sức (burnout) để kích hoạt mạng lưới chuyên gia bác sĩ hỗ trợ kịp thời.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing & AI Wallet Section -->
+        <section id="pricing" class="pricing container">
+            <div class="section-header">
+                <h2 data-i18n="b2c_price_h2">Bảng Giá & Cơ Chế AI Wallet (Pay-as-you-go)</h2>
+            </div>
+            
+            <div class="pricing-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+                
+                <!-- Basic Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 data-i18n="b2c_p1_h3">Tư Vấn Sơ Bộ (Miễn phí mỗi ngày)</h3>
+                        <div class="pricing-price" style="font-size: 1.1rem; margin-top: 10px; color: var(--text-muted); line-height: 1.4;" data-i18n="b2c_p1_desc">Đích đến: Giúp bạn làm quen với AI.</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="ph-bold ph-check"></i> <span data-i18n="b2c_p1_1"><strong>Nhận diện vấn đề:</strong> Chia sẻ cảm xúc hiện tại để AI phân tích sơ bộ mức độ căng thẳng.</span></li>
+                        <li><i class="ph-bold ph-check"></i> <span data-i18n="b2c_p1_2"><strong>Theo dõi nhật ký cảm xúc:</strong> Ghi chép và biểu đồ hóa tâm trạng hàng tuần.</span></li>
+                    </ul>
+                    <div style="margin-top: auto; padding-top: 20px;">
+                        <div class="pricing-price" data-i18n="b2c_p1_price">0đ</div>
+                    </div>
+                </div>
+
+                <!-- AI Credit Plan -->
+                <div class="pricing-card popular">
+                    <div class="pricing-header">
+                        <h3 data-i18n="b2c_p2_h3">Tư Vấn Chuyên Sâu (Sử dụng AI Credit)</h3>
+                        <div class="pricing-price" style="font-size: 1.1rem; margin-top: 10px; color: var(--primary); line-height: 1.4;" data-i18n="b2c_p2_desc">Đích đến: Khai thác tối đa 5.000 Credits được tặng để giải quyết triệt để nỗi lo.</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="ph-bold ph-check"></i> <span data-i18n="b2c_p2_1"><strong>Phiên tư vấn 1:1 với AI Chuyên gia:</strong> Trừ Credit cho mỗi câu trả lời phân tích chuyên sâu, đi tìm nguyên nhân lõi của chấn thương tâm lý.</span></li>
+                        <li><i class="ph-bold ph-check"></i> <span data-i18n="b2c_p2_2"><strong>Thực hiện Test Lâm sàng (PHQ-9, GAD-7):</strong> AI tự động đặt câu hỏi, chấm điểm và trả về báo cáo đánh giá mức độ trầm cảm/lo âu chuẩn y khoa.</span></li>
+                        <li><i class="ph-bold ph-check"></i> <span data-i18n="b2c_p2_3"><strong>Thiết kế lộ trình CBT cá nhân hóa:</strong> Trừ Credit để AI tạo ra bài tập thực hành giảm stress dành riêng cho tình trạng của bạn trong 7-14 ngày.</span></li>
+                    </ul>
+                    <div style="margin-top: auto; padding-top: 20px;">
+                        <div class="pricing-price" style="font-size: 1.5rem;" data-i18n="b2c_p2_price">Dùng đến đâu trừ đến đó</div>
+                    </div>
+                </div>
+
+                <!-- Expert Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 data-i18n="b2c_p3_h3">Đặt Lịch Chuyên Gia Thực Thụ</h3>
+                        <div class="pricing-price" style="font-size: 1.1rem; margin-top: 10px; color: var(--text-muted); line-height: 1.4;" data-i18n="b2c_p3_desc">Đích đến: Kết nối đến trực tiếp phòng khám khi bạn cần sự can thiệp y tế chuyên sâu.</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="ph-bold ph-check"></i> <span data-i18n="b2c_p3_1">Khi vấn đề quá phức tạp, dùng AI Credit để <strong>đặt lịch Video Call hoặc đến khám trực tiếp</strong> với Bác sĩ Tâm thần / Chuyên gia Tâm lý lâm sàng của Hello Doctor AI.</span></li>
+                        <li><i class="ph-bold ph-check"></i> <span data-i18n="b2c_p3_2">Trợ lý AI sẽ tóm tắt toàn bộ bệnh án chuyên sâu trước đó gửi cho Bác sĩ, giúp bạn không cần kể lại nỗi đau từ đầu.</span></li>
+                    </ul>
+                    <div style="margin-top: auto; padding-top: 20px;">
+                         <div class="pricing-price" style="font-size: 1.5rem;" data-i18n="b2c_p3_price">Thanh toán bằng Credit</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sticky CTA / Bottom Banner -->
+        <section class="container" style="padding: 40px 20px 80px;">
+            <div class="glass-card" style="padding: 40px; text-align: center; border-color: var(--primary);">
+                <p data-i18n="b2c_cta_p" style="font-size: 1.2rem; font-weight: 500; margin-bottom: 20px; color: var(--text-color);">
+                    "Hành trình chữa lành bắt đầu từ sự thấu hiểu chuyên sâu. Đừng bỏ lỡ gói quà tặng 5.000 Credits để trải nghiệm sự khác biệt của Trợ lý AI Y khoa. Số lượng có hạn!"
+                </p>
+                <a href="https://zalo.me/hellodoctors" target="_blank" class="btn btn-primary" data-i18n="b2c_cta_btn" style="font-size: 1.2rem; padding: 15px 40px;">
+                    Mở khóa 5.000 Credits của tôi
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <i class="ph-fill ph-heartbeat"></i>
+                    <span>Hello Doctor AI</span>
+                </div>
+                <p data-i18n="footer_p">Empowering clinics with Artificial Intelligence.</p>
+                <div style="margin-top: 16px; color: var(--text-muted); font-size: 13px; line-height: 1.8;">
+                    <strong style="color: #FFF;">SKTT COMPANY LIMITED</strong><br>
+                    <span style="color: var(--primary);" data-i18n="footer_legal">The legal entity operating Hello Doctor AI</span><br>
+                    Tax ID: 0318378996<br>
+                    152/6 Thanh Thai Street, Ward 12, District 10, Ho Chi Minh City<br>
+                    Phone: +84 19001246
+                </div>
+            </div>
+            <div class="footer-links">
+                <a href="#" data-i18n="footer_l1">Privacy Policy</a>
+                <a href="#" data-i18n="footer_l2">Terms of Service</a>
+                <a href="mailto:founder@chaobs.com">founder@chaobs.com</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer_c">&copy; 2026 SKTT COMPANY LIMITED. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Chat Widget (Reused from index.html) -->
+    <div id="chat-widget">
+        <div id="chat-window" class="hidden glass-card">
+            <div class="chat-header">
+                <div class="chat-header-info">
+                    <i class="ph-fill ph-robot"></i>
+                    <div>
+                        <h4 data-i18n="chat_h4">AI Clinical Assistant (Demo)</h4>
+                        <span data-i18n="chat_span">Online</span>
+                    </div>
+                </div>
+                <button id="close-chat"><i class="ph ph-x"></i></button>
+            </div>
+            <div id="chat-body" class="chat-body mockup-body" style="padding: 20px;">
+                <!-- Messages injected via JS -->
+            </div>
+            <div class="chat-footer">
+                <input type="text" id="chat-input" placeholder="Nhập vấn đề bạn đang gặp phải..." data-i18n-placeholder="chat_placeholder">
+                <button id="send-btn"><i class="ph-fill ph-paper-plane-right"></i></button>
+            </div>
+        </div>
+        <button id="chat-btn" class="chat-btn pulse">
+            <i class="ph-fill ph-chat-teardrop-dots"></i>
+        </button>
+    </div>
+    
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const menuBtn = document.getElementById("mobile-menu-btn");
+            const navLinks = document.querySelector(".nav-links");
+            if (menuBtn && navLinks) {
+                menuBtn.addEventListener("click", () => {
+                    navLinks.classList.toggle("active");
+                });
+            }
+        });
+    </script>
+    <script src="i18n.js"></script>
+
+    <script src="chat.js"></script>
+</body>
+</html>
