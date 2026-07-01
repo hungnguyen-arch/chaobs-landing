@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title">Hello Doctor AI - Hệ Sinh Thái Sức Khoẻ Tinh Thần</title>
+    <meta name="description" content="Giải pháp Trợ lý AI dành cho Bác sĩ và Tâm lý gia.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <div class="glow-bg"></div>
+    <div class="glow-bg glow-2"></div>
+
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 10px;">
+                    <i class="ph-fill ph-heartbeat"></i>
+                    <span>Hello Doctor AI</span>
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html#features" data-i18n="nav_features">Features</a>
+                <a href="ca-nhan.html" data-i18n="nav_individual">Cá nhân</a>
+                <a href="doanh-nghiep.html" data-i18n="nav_enterprise">Doanh nghiệp</a>
+                <a href="bac-si.html" data-i18n="nav_doctor" style="color: var(--primary); font-weight: 600;">Bác sĩ</a>
+                <a href="bao-hiem.html" data-i18n="nav_insurance">Bảo hiểm</a>
+            </div>
+            <div style="display: flex; gap: 15px; align-items: center;">
+                <button id="lang-toggle" class="btn-lang">EN | VI</button>
+                <a href="mailto:founder@chaobs.com" class="btn btn-outline" data-i18n="nav_contact">Contact Us</a>
+                <button class="mobile-menu-btn" id="mobile-menu-btn"><i class="ph ph-list"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main style="padding-top: 100px;">
+        <!-- Hero Section -->
+        <section class="container" style="text-align: center; padding: 60px 20px;">
+            <div class="badge" style="margin-bottom: 20px;">
+                <span class="badge-dot"></span> <span data-i18n="doc_badge">Cho Bác sĩ & Tâm lý gia</span>
+            </div>
+            <h1 data-i18n="doc_h1" style="font-size: 3rem; margin-bottom: 20px; line-height: 1.2;">Title</h1>
+            <p data-i18n="doc_hero_p" style="font-size: 1.1rem; color: var(--text-muted); max-width: 800px; margin: 0 auto 30px;">
+                Hero Desc
+            </p>
+            <a href="mailto:founder@chaobs.com" class="btn btn-primary" data-i18n="doc_hero_btn" style="font-size: 1.1rem; padding: 12px 30px;">CTA</a>
+        </section>
+
+        <!-- Pain Points Section -->
+        <section class="container" style="padding: 40px 20px;">
+            <div class="section-header" style="margin-bottom: 30px;">
+                <h2 data-i18n="doc_pain_h2">Pain Points</h2>
+            </div>
+            <div class="problem-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                <div class="problem-card">
+                    <i class="ph-fill ph-clock-countdown"></i>
+                    <h3 data-i18n="doc_pain_1_title" style="margin-bottom: 10px; font-size: 1.2rem;">Title</h3>
+                    <p data-i18n="doc_pain_1_desc" style="color: var(--text-muted);">Desc</p>
+                </div>
+                <div class="problem-card">
+                    <i class="ph-fill ph-warning-circle" style="color: #EF4444;"></i>
+                    <h3 data-i18n="doc_pain_2_title" style="margin-bottom: 10px; font-size: 1.2rem;">Title</h3>
+                    <p data-i18n="doc_pain_2_desc" style="color: var(--text-muted);">Desc</p>
+                </div>
+                <div class="problem-card">
+                    <i class="ph-fill ph-eye-closed"></i>
+                    <h3 data-i18n="doc_pain_3_title" style="margin-bottom: 10px; font-size: 1.2rem;">Title</h3>
+                    <p data-i18n="doc_pain_3_desc" style="color: var(--text-muted);">Desc</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="container" style="padding: 40px 20px;">
+            <div class="section-header" style="margin-bottom: 30px;">
+                <h2 data-i18n="doc_val_h2">Values</h2>
+            </div>
+            <div class="features-grid">
+                <div class="glass-card feature-card">
+                    <div class="feature-icon"><i class="ph-fill ph-chart-line-up"></i></div>
+                    <h3 data-i18n="doc_val_1_title">Title</h3>
+                    <p data-i18n="doc_val_1_desc">Desc</p>
+                </div>
+                <div class="glass-card feature-card">
+                    <div class="feature-icon"><i class="ph-fill ph-robot"></i></div>
+                    <h3 data-i18n="doc_val_2_title">Title</h3>
+                    <p data-i18n="doc_val_2_desc">Desc</p>
+                </div>
+                <div class="glass-card feature-card">
+                    <div class="feature-icon"><i class="ph-fill ph-presentation-chart"></i></div>
+                    <h3 data-i18n="doc_val_3_title">Title</h3>
+                    <p data-i18n="doc_val_3_desc">Desc</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="container" style="padding: 40px 20px 80px;">
+            <div class="section-header" style="margin-bottom: 30px;">
+                <h2 data-i18n="doc_how_h2">How It Works</h2>
+            </div>
+            <div class="arch-container glass-card" style="align-items: stretch;">
+                <div class="arch-step" style="background: #F8FAFC; padding: 20px; border-radius: 12px;">
+                    <div class="arch-icon"><i class="ph-fill ph-number-circle-one"></i></div>
+                    <h4 data-i18n="doc_how_1_title" style="margin-bottom: 10px;">Title</h4>
+                    <p data-i18n="doc_how_1_desc" style="color: var(--text-muted);">Desc</p>
+                </div>
+                <div class="arch-arrow" style="align-self: center;"><i class="ph ph-arrow-right"></i></div>
+                <div class="arch-step highlight" style="padding: 20px;">
+                    <div class="arch-icon"><i class="ph-fill ph-number-circle-two"></i></div>
+                    <h4 data-i18n="doc_how_2_title" style="margin-bottom: 10px;">Title</h4>
+                    <p data-i18n="doc_how_2_desc" style="color: var(--text-muted);">Desc</p>
+                </div>
+                <div class="arch-arrow" style="align-self: center;"><i class="ph ph-arrow-right"></i></div>
+                <div class="arch-step" style="background: #F8FAFC; padding: 20px; border-radius: 12px;">
+                    <div class="arch-icon"><i class="ph-fill ph-number-circle-three"></i></div>
+                    <h4 data-i18n="doc_how_3_title" style="margin-bottom: 10px;">Title</h4>
+                    <p data-i18n="doc_how_3_desc" style="color: var(--text-muted);">Desc</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <i class="ph-fill ph-heartbeat"></i>
+                    <span>Hello Doctor AI</span>
+                </div>
+                <p data-i18n="footer_p">Empowering clinics with Artificial Intelligence.</p>
+                <div style="margin-top: 16px; color: var(--text-muted); font-size: 13px; line-height: 1.8;">
+                    <strong style="color: #FFF;">SKTT COMPANY LIMITED</strong><br>
+                    <span style="color: var(--primary);" data-i18n="footer_legal">The legal entity operating Hello Doctor AI</span><br>
+                    Tax ID: 0318378996<br>
+                    152/6 Thanh Thai Street, Ward 12, District 10, Ho Chi Minh City<br>
+                    Phone: +84 19001246
+                </div>
+            </div>
+            <div class="footer-links">
+                <a href="#" data-i18n="footer_l1">Privacy Policy</a>
+                <a href="#" data-i18n="footer_l2">Terms of Service</a>
+                <a href="mailto:founder@chaobs.com">founder@chaobs.com</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer_c">&copy; 2026 SKTT COMPANY LIMITED. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const menuBtn = document.getElementById("mobile-menu-btn");
+            const navLinks = document.querySelector(".nav-links");
+            if (menuBtn && navLinks) {
+                menuBtn.addEventListener("click", () => {
+                    navLinks.classList.toggle("active");
+                });
+            }
+        });
+    </script>
+    <script src="i18n.js"></script>
+</body>
+</html>
