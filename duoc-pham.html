@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="pharma_title">Hello Doctor AI - Giải pháp Patient Support Program</title>
+    <meta name="description" content="Nền tảng Trợ lý Sức khỏe Tinh thần cho Hãng Dược từ Hello Doctor AI. Tăng tỷ lệ tuân thủ điều trị.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <div class="glow-bg"></div>
+    <div class="glow-bg glow-2"></div>
+
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 10px;">
+                    <i class="ph-fill ph-heartbeat"></i>
+                    <span>Hello Doctor AI</span>
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html#features" data-i18n="nav_ai">AI</a>
+                <a href="index.html#architecture" data-i18n="nav_health_record">Health Record</a>
+                <a href="index.html#ecosystem" data-i18n="nav_continuous_care">Continuous Care</a>
+                <a href="index.html#pricing" data-i18n="nav_pricing">Pricing</a>
+                <div class="dropdown">
+                    <a href="#" class="dropbtn" data-i18n="nav_solutions" style="color: var(--primary); font-weight: 600;">Solutions <i class="ph ph-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="duoc-pham.html" data-i18n="nav_pharma" style="color: var(--primary); font-weight: 600;">Pharma</a>
+                        <a href="bac-si.html" data-i18n="nav_clinic">Clinic</a>
+                        <a href="doanh-nghiep.html" data-i18n="nav_enterprise">Enterprise</a>
+                        <a href="bao-hiem.html" data-i18n="nav_insurance">Insurance</a>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; gap: 15px; align-items: center;">
+                <button id="lang-toggle" class="btn-lang">EN | VI</button>
+                <a href="mailto:founder@chaobs.com" class="btn btn-outline" data-i18n="nav_contact">Contact Us</a>
+                <button class="mobile-menu-btn" id="mobile-menu-btn"><i class="ph ph-list"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main style="padding-top: 100px;">
+        <!-- Hero Section -->
+        <section class="container" style="text-align: center; padding: 60px 20px;">
+            <div class="badge" style="margin-bottom: 20px;">
+                <span class="badge-dot"></span> <span data-i18n="pharma_badge">B2B Patient Support Program</span>
+            </div>
+            <h1 data-i18n="pharma_h1" style="font-size: 3rem; margin-bottom: 20px; line-height: 1.2;">Giải pháp AI Patient Support Program <br><span style="color: var(--primary);">cho Hãng Dược</span></h1>
+            <p data-i18n="pharma_hero_p" style="font-size: 1.1rem; color: var(--text-muted); max-width: 700px; margin: 0 auto 30px;">
+                Đừng bán công nghệ AI. Hãy bán KPI. Nền tảng theo dõi và đồng hành cùng bệnh nhân của Hello Doctor AI giúp Hãng dược giải quyết bài toán cốt lõi: Tăng tỷ lệ tuân thủ điều trị và thu thập dữ liệu Real World Evidence.
+            </p>
+            <a href="mailto:founder@chaobs.com?subject=Tư vấn PSP cho Hãng dược" class="btn btn-primary" data-i18n="pharma_hero_btn" style="font-size: 1.1rem; padding: 12px 30px;">Hợp tác tài trợ PSP</a>
+        </section>
+
+        <!-- Problem Section -->
+        <section class="container" style="padding: 40px 20px;">
+            <div class="section-header" style="margin-bottom: 30px;">
+                <h2 data-i18n="pharma_prob_h2">Bài toán KPI hàng tỷ đồng</h2>
+                <p data-i18n="pharma_prob_p">Hãng dược không cần chatbot, hãng dược cần bệnh nhân dùng thuốc đúng và đủ.</p>
+            </div>
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <i class="ph-fill ph-chart-line-down"></i>
+                    <p data-i18n="pharma_prob_1">Tỷ lệ bỏ điều trị cao. Sau 3 tháng chỉ còn 35% bệnh nhân trầm cảm còn tiếp tục uống thuốc.</p>
+                </div>
+                <div class="problem-card">
+                    <i class="ph-fill ph-warning-circle"></i>
+                    <p data-i18n="pharma_prob_2">Thiếu cơ chế cảnh báo khi bệnh nhân gặp tác dụng phụ khiến họ tự ý ngưng thuốc mà bác sĩ không biết.</p>
+                </div>
+                <div class="problem-card">
+                    <i class="ph-fill ph-database"></i>
+                    <p data-i18n="pharma_prob_3">Thiếu dữ liệu Real World Evidence (RWE) về tính an toàn và hiệu quả của thuốc sau khi tung ra thị trường.</p>
+                </div>
+                <div class="problem-card">
+                    <i class="ph-fill ph-shield-warning"></i>
+                    <p data-i18n="pharma_prob_4">Sự gắt gao trong luật quảng cáo khiến việc tương tác trực tiếp với bệnh nhân gặp nhiều khó khăn pháp lý.</p>
+                </div>
+                <div class="problem-card" style="grid-column: 1 / -1; justify-content: center; background: rgba(16, 185, 129, 0.1); border-color: rgba(16, 185, 129, 0.2);">
+                    <i class="ph-fill ph-check-circle" style="color: var(--secondary);"></i>
+                    <p data-i18n="pharma_prob_5" style="color: var(--text-color);">Giá trị cốt lõi: Nếu AI giúp tăng tuân thủ điều trị từ 45% lên 60%, đó là giá trị kinh tế khổng lồ và ý nghĩa y khoa to lớn.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Disease Area & Trust Triangle Section -->
+        <section class="container" style="padding: 60px 20px;">
+            <div class="section-header">
+                <h2 data-i18n="pharma_trust_h2">Mô hình Niềm tin (The Trust Triangle)</h2>
+                <p data-i18n="pharma_trust_p">Tiếp cận theo vùng bệnh lý (Disease Area) thay vì nhãn thuốc, được giới thiệu bởi Bác sĩ.</p>
+            </div>
+            
+            <div class="value-list" style="margin-bottom: 50px;">
+                <div class="value-item">
+                    <h4 data-i18n="pharma_trust_1h">AI + Bác sĩ + Phòng khám</h4>
+                    <p data-i18n="pharma_trust_1p">Người giới thiệu chương trình không phải Hãng dược, mà là Bác sĩ điều trị. Niềm tin của bệnh nhân đặt ở Bác sĩ, giúp việc Onboard trở nên tự nhiên và đáng tin cậy.</p>
+                </div>
+                <div class="value-item">
+                    <h4 data-i18n="pharma_trust_2h">Tiếp cận theo Lĩnh vực bệnh (Disease Area)</h4>
+                    <p data-i18n="pharma_trust_2p">Ví dụ "Chương trình đồng hành bệnh nhân Mất ngủ". Việc này đảm bảo tính trung lập về điều trị, không mang tính chất quảng bá thuốc trực tiếp.</p>
+                </div>
+                <div class="value-item">
+                    <h4 data-i18n="pharma_trust_3h">Tuân thủ hoàn toàn quy định ngành</h4>
+                    <p data-i18n="pharma_trust_3p">Hãng dược đóng vai trò Nhà tài trợ (Sponsorship) cho chương trình, tuân thủ nghiêm ngặt các nguyên tắc đạo đức y tế và quy định quảng cáo.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Operation Model Section -->
+        <section class="container architecture" style="padding: 40px 20px;">
+            <div class="section-header">
+                <h2 data-i18n="pharma_flow_h2">Hành trình Đồng hành (Patient Journey)</h2>
+                <p data-i18n="pharma_flow_p">Luồng theo dõi tự động giúp phát hiện nguy cơ và giữ bệnh nhân ở lại với phác đồ.</p>
+            </div>
+            <div class="arch-container glass-card" style="margin-bottom: 40px;">
+                <div class="arch-step">
+                    <div class="arch-icon"><i class="ph-fill ph-qr-code"></i></div>
+                    <h4 data-i18n="pharma_flow_1h">Bác sĩ cấp QR</h4>
+                    <p data-i18n="pharma_flow_1p" style="font-size: 14px; color: var(--text-muted);">Sau khi kê đơn, Bác sĩ giới thiệu: "Anh quét QR này, AI sẽ đồng hành trong 3 tháng."</p>
+                </div>
+                <div class="arch-arrow"><i class="ph ph-arrow-right"></i></div>
+                <div class="arch-step highlight">
+                    <div class="arch-icon"><i class="ph-fill ph-brain"></i></div>
+                    <h4 data-i18n="pharma_flow_2h">AI Chủ động Theo dõi</h4>
+                    <p data-i18n="pharma_flow_2p" style="font-size: 14px; color: var(--text-muted);">Ngày 3: Còn chóng mặt không? Ngày 7: Quên thuốc không? Ngày 14: Tác dụng phụ?</p>
+                </div>
+                <div class="arch-arrow"><i class="ph ph-arrow-right"></i></div>
+                <div class="arch-step">
+                    <div class="arch-icon"><i class="ph-fill ph-warning-circle"></i></div>
+                    <h4 data-i18n="pharma_flow_3h">Phát hiện Nguy cơ</h4>
+                    <p data-i18n="pharma_flow_3p" style="font-size: 14px; color: var(--text-muted);">Nếu AI phát hiện bệnh nhân muốn bỏ thuốc hoặc có bất thường, hệ thống kích hoạt cảnh báo.</p>
+                </div>
+                <div class="arch-arrow"><i class="ph ph-arrow-right"></i></div>
+                <div class="arch-step">
+                    <div class="arch-icon"><i class="ph-fill ph-stethoscope"></i></div>
+                    <h4 data-i18n="pharma_flow_4h">Báo cáo & Tái khám</h4>
+                    <p data-i18n="pharma_flow_4p" style="font-size: 14px; color: var(--text-muted);">Chuyển ngay thông tin cho Bác sĩ điều trị để can thiệp kịp thời, yêu cầu tái khám.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Value Section -->
+        <section class="container" style="padding: 60px 20px;">
+            <div class="section-header">
+                <h2 data-i18n="pharma_val_h2">Sự hợp tác Win-Win</h2>
+            </div>
+            
+            <h3 style="margin-bottom: 20px; font-size: 1.4rem; color: var(--primary); display: flex; align-items: center; gap: 10px;"><i class="ph-fill ph-first-aid"></i> <span data-i18n="pharma_val_b_h3">Hãng dược (Nhà tài trợ) nhận được gì?</span></h3>
+            <div class="glass-card" style="padding: 30px; margin-bottom: 30px;">
+                <ul class="pricing-features" style="margin-bottom: 0;">
+                    <li><i class="ph-fill ph-check-circle"></i> <span data-i18n="pharma_val_b1">Tăng tỷ lệ tuân thủ điều trị (Medication Adherence) một cách rõ rệt.</span></li>
+                    <li><i class="ph-fill ph-check-circle"></i> <span data-i18n="pharma_val_b2">Thu thập dữ liệu Real World Evidence (RWE) quy mô lớn.</span></li>
+                    <li><i class="ph-fill ph-check-circle"></i> <span data-i18n="pharma_val_b3">Giáo dục bệnh nhân hiểu đúng về bệnh lý một cách tự nhiên.</span></li>
+                    <li><i class="ph-fill ph-check-circle"></i> <span data-i18n="pharma_val_b4">Gia tăng giá trị thặng dư kinh tế thông qua việc duy trì phác đồ điều trị lâu dài.</span></li>
+                </ul>
+            </div>
+
+            <h3 style="margin-bottom: 20px; font-size: 1.4rem; color: var(--primary); display: flex; align-items: center; gap: 10px;"><i class="ph-fill ph-heartbeat"></i> <span data-i18n="pharma_val_e_h3">Hello Doctor & Phòng khám nhận được gì?</span></h3>
+            <div class="glass-card" style="padding: 30px;">
+                <ul class="pricing-features" style="margin-bottom: 0;">
+                    <li><i class="ph-fill ph-check-circle"></i> <span data-i18n="pharma_val_e1">Có được hàng trăm ngàn người dùng thực tế từ kênh Bác sĩ giới thiệu.</span></li>
+                    <li><i class="ph-fill ph-check-circle"></i> <span data-i18n="pharma_val_e2">Dữ liệu theo dõi chất lượng cao đóng góp vào kho tàng y khoa lâm sàng.</span></li>
+                    <li><i class="ph-fill ph-check-circle"></i> <span data-i18n="pharma_val_e3">Xây dựng uy tín như một trợ lý y khoa AI hàng đầu, bảo mật và đạo đức.</span></li>
+                    <li><i class="ph-fill ph-check-circle"></i> <span data-i18n="pharma_val_e4">Doanh thu tài trợ B2B bền vững từ mô hình Patient Support Program (PSP).</span></li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <i class="ph-fill ph-heartbeat"></i>
+                    <span>Hello Doctor AI</span>
+                </div>
+                <p data-i18n="footer_p">Empowering clinics with Artificial Intelligence.</p>
+                <div style="margin-top: 16px; color: var(--text-muted); font-size: 13px; line-height: 1.8;">
+                    <strong style="color: #FFF;">SKTT COMPANY LIMITED</strong><br>
+                    <span style="color: var(--primary);" data-i18n="footer_legal">The legal entity operating Hello Doctor AI</span><br>
+                    Tax ID: 0318378996<br>
+                    152/6 Thanh Thai Street, Ward 12, District 10, Ho Chi Minh City<br>
+                    Phone: +84 19001246
+                </div>
+            </div>
+            <div class="footer-links">
+                <a href="#" data-i18n="footer_l1">Privacy Policy</a>
+                <a href="#" data-i18n="footer_l2">Terms of Service</a>
+                <a href="mailto:founder@chaobs.com">founder@chaobs.com</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer_c">&copy; 2026 SKTT COMPANY LIMITED. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Chat Widget -->
+    <div id="chat-widget">
+        <div id="chat-window" class="hidden glass-card">
+            <div class="chat-header">
+                <div class="chat-header-info">
+                    <i class="ph-fill ph-robot"></i>
+                    <div>
+                        <h4 data-i18n="chat_h4">AI Clinical Assistant (Demo)</h4>
+                        <span data-i18n="chat_span">Online</span>
+                    </div>
+                </div>
+                <button id="close-chat"><i class="ph ph-x"></i></button>
+            </div>
+            <div id="chat-body" class="chat-body mockup-body" style="padding: 20px;">
+            </div>
+            <div class="chat-footer">
+                <input type="text" id="chat-input" placeholder="Nhập vấn đề bạn đang gặp phải..." data-i18n-placeholder="chat_placeholder">
+                <button id="send-btn"><i class="ph-fill ph-paper-plane-right"></i></button>
+            </div>
+        </div>
+        <button id="chat-btn" class="chat-btn pulse">
+            <i class="ph-fill ph-chat-teardrop-dots"></i>
+        </button>
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const menuBtn = document.getElementById("mobile-menu-btn");
+            const navLinks = document.querySelector(".nav-links");
+            if (menuBtn && navLinks) {
+                menuBtn.addEventListener("click", () => {
+                    navLinks.classList.toggle("active");
+                });
+            }
+        });
+    </script>
+    <script src="i18n.js"></script>
+    <script src="chat.js"></script>
+</body>
+</html>
