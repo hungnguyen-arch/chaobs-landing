@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="cc_title">Hello Doctor - Chăm Sóc Liên Tục Dành Cho Bạn</title>
+    <meta name="description" content="Trợ lý Sức khỏe đồng hành cùng bạn 24/7 ngay trên Zalo. Không bao giờ đơn độc trên hành trình chữa lành.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <div class="glow-bg"></div>
+    <div class="glow-bg glow-2"></div>
+
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 10px;">
+                    <i class="ph-fill ph-heartbeat"></i>
+                    <span>Hello Doctor AI</span>
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html#features" data-i18n="nav_ai">AI</a>
+                <a href="index.html#architecture" data-i18n="nav_health_record">Health Record</a>
+                <a href="index.html#ecosystem" data-i18n="nav_continuous_care" style="color: var(--primary); font-weight: 600;">Continuous Care</a>
+                <a href="index.html#pricing" data-i18n="nav_pricing">Pricing</a>
+                <div class="dropdown">
+                    <a href="index.html#ecosystem" class="dropbtn" data-i18n="nav_solutions">Solutions <i class="ph ph-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="duoc-pham.html" data-i18n="nav_pharma">Pharma</a>
+                        <a href="bac-si.html" data-i18n="nav_clinic">Clinic</a>
+                        <a href="doanh-nghiep.html" data-i18n="nav_enterprise">Enterprise</a>
+                        <a href="bao-hiem.html" data-i18n="nav_insurance">Insurance</a>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; gap: 15px; align-items: center;">
+                <button id="lang-toggle" class="btn-lang">EN | VI</button>
+                <a href="mailto:founder@chaobs.com" class="btn btn-outline" data-i18n="nav_contact">Contact Us</a>
+                <button class="mobile-menu-btn" id="mobile-menu-btn"><i class="ph ph-list"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main style="padding-top: 50px;">
+        <!-- Hero Section -->
+        <section class="hero container">
+            <div class="hero-content">
+                <div class="badge">
+                    <span class="badge-dot"></span> <span data-i18n="cc_hero_badge">Đồng Hành 24/7</span>
+                </div>
+                <h1 data-i18n="cc_hero_h1">Bạn Không Bao Giờ Đơn Độc Trên Hành Trình Chữa Lành</h1>
+                <p data-i18n="cc_hero_p">Từ những lời nhắc uống thuốc ân cần đến người bạn lắng nghe lúc nửa đêm. Trợ lý Sức khỏe đồng hành cùng bạn 24/7 ngay trên Zalo, giúp hành trình điều trị trở nên nhẹ nhàng và an tâm hơn.</p>
+                <div class="hero-cta">
+                    <a href="#" class="btn btn-primary" data-i18n="cc_hero_btn1">Bắt Đầu Hành Trình</a>
+                    <a href="#journey" class="btn btn-secondary"><span data-i18n="cc_hero_btn2">Tìm hiểu thêm</span> <i class="ph ph-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="glass-card mockup-card">
+                    <div class="mockup-header">
+                        <div class="mockup-dots"><span></span><span></span><span></span></div>
+                        <div class="mockup-title" data-i18n="cc_mockup_title">Trợ Lý Thấu Cảm</div>
+                    </div>
+                    <div class="mockup-body">
+                        <div class="chat-bubble user" data-i18n="cc_mockup_user1">Dạo này mình thấy rất mệt mỏi và hay mất ngủ, cảm giác không có động lực làm gì cả...</div>
+                        <div class="chat-bubble bot" data-i18n="cc_mockup_bot1">Mình hiểu bạn đang phải trải qua một khoảng thời gian khó khăn. Những lúc thế này, cảm thấy kiệt sức là điều rất bình thường. Bạn đừng tạo áp lực cho bản thân nhé. Mình ở đây để lắng nghe, bạn có muốn kể thêm điều gì đang làm bạn lo lắng không?</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="gradient-blob" style="background: radial-gradient(circle, rgba(16,185,129,0.2) 0%, rgba(30,41,59,0) 70%);"></div>
+            </div>
+        </section>
+
+        <!-- Problem Section -->
+        <section class="features container" style="padding: 60px 20px;">
+            <div class="section-header">
+                <h2 data-i18n="cc_prob_h2">Những Khó Khăn Sau Cánh Cửa Phòng Khám</h2>
+                <p data-i18n="cc_prob_p">Chúng tôi hiểu rằng việc chữa trị không kết thúc khi bạn rời khỏi phòng khám.</p>
+            </div>
+            <div class="features-grid">
+                <div class="glass-card feature-card">
+                    <div class="feature-icon"><i class="ph-fill ph-question"></i></div>
+                    <h3 data-i18n="cc_prob1_h3">Cảm Giác Chới Với</h3>
+                    <p data-i18n="cc_prob1_p">Bạn thường mang theo nhiều lo âu: Tác dụng phụ của thuốc này là gì? Đêm nay mất ngủ thì biết hỏi ai?</p>
+                </div>
+                <div class="glass-card feature-card">
+                    <div class="feature-icon"><i class="ph-fill ph-calendar-x"></i></div>
+                    <h3 data-i18n="cc_prob2_h3">Dễ Bỏ Cuộc</h3>
+                    <p data-i18n="cc_prob2_p">Thiếu động lực duy trì phác đồ điều trị lâu dài, hay quên lịch uống thuốc giữa bộn bề cuộc sống.</p>
+                </div>
+                <div class="glass-card feature-card">
+                    <div class="feature-icon"><i class="ph-fill ph-ear"></i></div>
+                    <h3 data-i18n="cc_prob3_h3">Cần Người Lắng Nghe</h3>
+                    <p data-i18n="cc_prob3_p">Trong những khoảnh khắc tâm lý yếu đuối nhất (đêm khuya, lúc căng thẳng), bạn e ngại làm phiền bác sĩ hay người thân.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Journey Section -->
+        <section id="journey" class="roadmap container">
+            <div class="section-header">
+                <h2 data-i18n="cc_journey_h2">Luồng Đồng Hành Chăm Sóc Liên Tục</h2>
+                <p data-i18n="cc_journey_p">Cách hệ thống chăm sóc và hỗ trợ bạn mỗi ngày.</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot active" style="background: var(--secondary); box-shadow: 0 0 10px var(--secondary);"></div>
+                    <div class="timeline-content glass-card">
+                        <h3 data-i18n="cc_j1_h3">Đánh Giá Sức Khỏe Thông Minh</h3>
+                        <p class="timeline-date"><i class="ph-fill ph-sun"></i> Hàng ngày</p>
+                        <p data-i18n="cc_j1_p">Thay vì bắt bạn điền những tờ khai y tế khô khan, Hệ thống sẽ thu thập chỉ số sức khỏe qua những câu hỏi tự nhiên như một người bạn (VD: "Đêm qua trời lạnh, bạn ngủ có ngon giấc không?"). Qua đó, ngầm đánh giá chính xác mức độ tiến triển của bạn.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <h3 data-i18n="cc_j2_h3">Lắng Nghe & Thấu Cảm 24/7</h3>
+                        <p class="timeline-date"><i class="ph-fill ph-moon"></i> Bất cứ lúc nào bạn cần</p>
+                        <p data-i18n="cc_j2_p">Một người bạn luôn thức. Hệ thống có khả năng nhận diện cảm xúc để đưa ra những lời động viên chân thành nhất, giúp bạn giải tỏa căng thẳng và áp lực mà không có sự phán xét.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <h3 data-i18n="cc_j3_h3">Nhìn Thấy Sự Tiến Bộ</h3>
+                        <p class="timeline-date"><i class="ph-fill ph-chart-line-up"></i> Hàng tuần</p>
+                        <p data-i18n="cc_j3_p">Cung cấp các biểu đồ sức khỏe sinh động ngay trên Zalo. Khen thưởng và tạo động lực khi bạn đạt được những "cột mốc chữa lành" (Ví dụ: 7 ngày tuân thủ thuốc hoàn hảo).</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <h3 data-i18n="cc_j4_h3">Cầu Nối An Toàn Khẩn Cấp</h3>
+                        <p class="timeline-date"><i class="ph-fill ph-warning-circle"></i> Tình huống nguy hiểm</p>
+                        <p data-i18n="cc_j4_p">Bất cứ khi nào bạn có dấu hiệu nguy hiểm hoặc bệnh tình trở nặng, hệ thống lập tức báo động để Bác sĩ hoặc chuyên viên y tế thật can thiệp hỗ trợ kịp thời.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="trust-banner container">
+            <div class="section-header" style="margin-bottom: 30px;">
+                <h2 data-i18n="cc_val_h2" style="font-size: 1.8rem;">Tại Sao Người Bệnh Chọn Hệ Thống?</h2>
+            </div>
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <i class="ph-fill ph-device-mobile"></i>
+                    <h4 data-i18n="cc_val1_h">Tiện Lợi Qua Zalo</h4>
+                    <p data-i18n="cc_val1_p">Không cần tải App rườm rà. Mọi thao tác nhắn tin, làm bài test, xem biểu đồ đều nằm gọn trong Zalo.</p>
+                </div>
+                <div class="trust-item">
+                    <i class="ph-fill ph-lock-key" style="color: #10B981;"></i>
+                    <h4 data-i18n="cc_val2_h">Bảo Mật Tuyệt Đối</h4>
+                    <p data-i18n="cc_val2_p">Mọi cuộc trò chuyện và dữ liệu tâm lý được mã hóa an toàn, chỉ bạn và bác sĩ mới có quyền truy cập.</p>
+                </div>
+                <div class="trust-item">
+                    <i class="ph-fill ph-heart"></i>
+                    <h4 data-i18n="cc_val3_h">Hiệu Quả Tối Đa</h4>
+                    <p data-i18n="cc_val3_p">Sự nhắc nhở và theo dõi sát sao giúp bạn tuân thủ đúng phác đồ, rút ngắn thời gian phục hồi.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="team container" style="padding-top: 20px;">
+            <div class="section-header">
+                <h2 data-i18n="cc_test_h2">Câu Chuyện Chữa Lành</h2>
+                <p data-i18n="cc_test_p">Những thay đổi tích cực từ người dùng của chúng tôi.</p>
+            </div>
+            <div class="features-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                <div class="glass-card feature-card" style="padding: 30px;">
+                    <div style="color: var(--secondary); margin-bottom: 15px; font-size: 1.5rem;"><i class="ph-fill ph-quotes"></i></div>
+                    <p data-i18n="cc_t1_p" style="font-style: italic; color: var(--text-color); margin-bottom: 20px;">"Mình từng rất ngại chia sẻ tâm lý với bác sĩ vì sợ bị đánh giá. Nhờ có hệ thống hỏi thăm mỗi ngày, mình thấy an tâm hơn hẳn. Những lúc mất ngủ đêm khuya, có một 'người' lắng nghe thật sự giúp mình nhẹ nhõm."</p>
+                    <div style="display: flex; align-items: center; gap: 15px;">
+                        <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--border-color); display: flex; align-items: center; justify-content: center;"><i class="ph ph-user"></i></div>
+                        <div>
+                            <h4 style="margin: 0; font-size: 0.95rem;">H. Trang (28 tuổi)</h4>
+                            <span style="color: var(--text-muted); font-size: 0.85rem;">Trầm cảm nhẹ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass-card feature-card" style="padding: 30px;">
+                    <div style="color: var(--secondary); margin-bottom: 15px; font-size: 1.5rem;"><i class="ph-fill ph-quotes"></i></div>
+                    <p data-i18n="cc_t2_p" style="font-style: italic; color: var(--text-color); margin-bottom: 20px;">"Công việc bận rộn làm mình toàn quên lịch uống thuốc. Từ ngày dùng dịch vụ, hệ thống nhắc nhở cực kỳ đúng giờ lại rất thân thiện. Mình cũng thích xem biểu đồ sức khỏe cuối tuần để thấy bản thân đang tốt lên."</p>
+                    <div style="display: flex; align-items: center; gap: 15px;">
+                        <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--border-color); display: flex; align-items: center; justify-content: center;"><i class="ph ph-user"></i></div>
+                        <div>
+                            <h4 style="margin: 0; font-size: 0.95rem;">M. Tuấn (35 tuổi)</h4>
+                            <span style="color: var(--text-muted); font-size: 0.85rem;">Rối loạn lo âu</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section class="about container" style="margin-top: 40px; text-align: center;">
+            <div class="glass-card about-card" style="flex-direction: column; align-items: center; padding: 50px;">
+                <h2 data-i18n="cc_cta_h2" style="font-size: 2rem; margin-bottom: 20px;">Sẵn sàng bắt đầu hành trình của bạn?</h2>
+                <p data-i18n="cc_cta_p" style="color: var(--text-muted); margin-bottom: 30px; max-width: 600px;">Hệ thống chăm sóc sức khỏe tâm lý toàn diện qua Zalo. Nhẹ nhàng, an toàn và hoàn toàn tự nhiên.</p>
+                <a href="#" class="btn btn-primary" style="font-size: 1.1rem; padding: 15px 30px;" data-i18n="cc_cta_btn">Trải Nghiệm Ngay</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <i class="ph-fill ph-heartbeat"></i>
+                    <span>Hello Doctor AI</span>
+                </div>
+                <p data-i18n="footer_p">Empowering clinics with Artificial Intelligence.</p>
+                <div style="margin-top: 16px; color: var(--text-muted); font-size: 13px; line-height: 1.8;">
+                    <strong style="color: #FFF;">SKTT COMPANY LIMITED</strong><br>
+                    <span style="color: var(--primary);" data-i18n="footer_legal">The legal entity operating Hello Doctor AI</span><br>
+                    Tax ID: 0318378996<br>
+                    152/6 Thanh Thai Street, Ward 12, District 10, Ho Chi Minh City<br>
+                    Phone: +84 19001246
+                </div>
+            </div>
+            <div class="footer-links">
+                <a href="#" data-i18n="footer_l1">Privacy Policy</a>
+                <a href="#" data-i18n="footer_l2">Terms of Service</a>
+                <a href="mailto:founder@chaobs.com">founder@chaobs.com</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer_c">&copy; 2026 SKTT COMPANY LIMITED. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Chat Widget (Hidden for this subpage or keep default) -->
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const menuBtn = document.getElementById("mobile-menu-btn");
+            const navLinks = document.querySelector(".nav-links");
+            if (menuBtn && navLinks) {
+                menuBtn.addEventListener("click", () => {
+                    navLinks.classList.toggle("active");
+                });
+            }
+        });
+    </script>
+    <script src="i18n.js"></script>
+</body>
+</html>
