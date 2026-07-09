@@ -333,7 +333,7 @@ h1, h2, h3, h4, .logo span {
 }
 .trust-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
     gap: 20px;
     background: #FFFFFF;
     border: 1px solid var(--border-color);
@@ -381,7 +381,7 @@ h1, h2, h3, h4, .logo span {
 }
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
     gap: 30px;
 }
 .feature-card {
@@ -531,7 +531,7 @@ h1, h2, h3, h4, .logo span {
 }
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
     gap: 30px;
     margin-top: 40px;
 }
@@ -809,6 +809,12 @@ footer {
         text-align: center;
         padding-top: 120px;
     }
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    .section-header h2, .enterprise-banner h2 {
+        font-size: 1.8rem;
+    }
     .hero-cta {
         justify-content: center;
     }
@@ -904,7 +910,7 @@ footer {
 }
 .pricing-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
     gap: 30px;
     margin-top: 40px;
 }
@@ -992,7 +998,7 @@ footer {
 /* B2B Problem Cards */
 .problem-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
     gap: 20px;
     margin-top: 30px;
 }
@@ -1019,7 +1025,7 @@ footer {
 /* Value List */
 .value-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
     gap: 20px;
 }
 .value-item {
