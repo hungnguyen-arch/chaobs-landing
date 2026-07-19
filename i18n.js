@@ -374,7 +374,21 @@ const dictionary = {
         cc_t2_p: "\"My busy work schedule makes me constantly forget my medication. Since using the service, the system reminds me extremely punctually and very friendly. I also like looking at the health charts on weekends to see myself getting better.\"",
         cc_cta_h2: "Ready to start your journey?",
         cc_cta_p: "A comprehensive mental healthcare system via Zalo. Gentle, safe, and completely natural.",
-        cc_cta_btn: "Experience Now"
+        cc_cta_btn: "Experience Now",
+        sktt_h2: "About Us",
+        sktt_p: "SKTT - The Tech Hub of Hello Doctor Ecosystem",
+        sktt_about_title: "1. ABOUT US",
+        sktt_about_desc: "Founded in early 2024, SKTT is an early-stage, AI-first MedTech startup operating within the Hello Doctor healthcare network. We specialize in building next-generation EMR platforms and automated clinical triage solutions for mental health and neurology.",
+        sktt_core_title: "2. OUR CORE AI TECHNOLOGIES",
+        sktt_core_intro: "We build a highly scalable, secure data and AI infrastructure on the cloud:",
+        sktt_core1_h: "AI Clinical Triage",
+        sktt_core1_p: "Integrating LLMs into messaging channels to take patient history, assess tests (PHQ-9), and alert dangerous risks.",
+        sktt_core2_h: "Vocal Biomarkers",
+        sktt_core2_p: "Mining audio data from CS calls using Machine Learning to analyze patient stress levels without costly hardware.",
+        sktt_core3_h: "RAG Clinical Decision Support",
+        sktt_core3_p: "A Vector database built from thousands of regimens, helping doctors lookup drug interactions in seconds.",
+        sktt_vision_title: "3. VISION & MISSION",
+        sktt_vision_desc: "\"Our 2024 mission is to democratize mental healthcare. By leveraging LLMs and clinical machine learning, we aim to eliminate physician burnout and provide patients with 24/7 AI-driven clinical support.\""
     },
     vi: {
         title: "Hello Doctor AI - Hệ Sinh Thái Sức Khoẻ Tinh Thần",
@@ -751,7 +765,21 @@ const dictionary = {
         cc_t2_p: "\"Công việc bận rộn làm mình toàn quên lịch uống thuốc. Từ ngày dùng dịch vụ, hệ thống nhắc nhở cực kỳ đúng giờ lại rất thân thiện. Mình cũng thích xem biểu đồ sức khỏe cuối tuần để thấy bản thân đang tốt lên.\"",
         cc_cta_h2: "Sẵn sàng bắt đầu hành trình của bạn?",
         cc_cta_p: "Hệ thống chăm sóc sức khỏe tâm lý toàn diện qua Zalo. Nhẹ nhàng, an toàn và hoàn toàn tự nhiên.",
-        cc_cta_btn: "Trải Nghiệm Ngay"
+        cc_cta_btn: "Trải Nghiệm Ngay",
+        sktt_h2: "Về Chúng Tôi (About Us)",
+        sktt_p: "SKTT - Trái tim công nghệ của hệ sinh thái Hello Doctor",
+        sktt_about_title: "1. VỀ CHÚNG TÔI",
+        sktt_about_desc: "Thành lập vào đầu năm 2024, SKTT (Sức Khỏe Tinh Thần) là một Startup công nghệ y tế (MedTech Startup) trực thuộc hệ sinh thái y tế Hello Doctor. Ra đời trong kỷ nguyên bùng nổ của Trí tuệ Nhân tạo tạo sinh (Generative AI), SKTT mang sứ mệnh trở thành \"Trái tim công nghệ\" (Tech Hub), chuyên phát triển nền tảng Quản lý Bệnh án Điện tử (EMR) thế hệ mới và các giải pháp Tự động hóa Lâm sàng dành riêng cho lĩnh vực Thần kinh và Tâm lý.",
+        sktt_core_title: "2. CÔNG NGHỆ CỐT LÕI",
+        sktt_core_intro: "Tại SKTT, chúng tôi xây dựng một kiến trúc hạ tầng dữ liệu và AI bảo mật, có khả năng mở rộng mạnh mẽ dựa trên điện toán đám mây:",
+        sktt_core1_h: "AI Clinical Triage (Phân loại bệnh nhân bằng AI)",
+        sktt_core1_p: "Tích hợp trực tiếp Trợ lý AI (LLMs) vào các kênh nhắn tin (Zalo,FB,Web) để hỏi bệnh sử, đánh giá sơ bộ các bài test tâm lý (PHQ-9, GAD-7) và cảnh báo theo thời gian thực các rủi ro nguy hiểm (như ý định tự sát).",
+        sktt_core2_h: "Vocal Biomarkers (Phân tích giọng nói)",
+        sktt_core2_p: "Khai thác dữ liệu âm thanh từ tổng đài Chăm sóc khách hàng (Voice SIP) và sử dụng Machine Learning để phân tích mức độ căng thẳng, trầm cảm của bệnh nhân mà không cần thiết bị phần cứng tốn kém.",
+        sktt_core3_h: "RAG Clinical Decision Support (Hệ thống hỗ trợ quyết định y khoa)",
+        sktt_core3_p: "Số hóa và xây dựng cơ sở dữ liệu Vector từ hàng ngàn phác đồ điều trị chuyên khoa. Hệ thống AI đóng vai trò như một thư viện y khoa thông minh, giúp bác sĩ tra cứu tương tác thuốc và phác đồ chỉ trong vài giây.",
+        sktt_vision_title: "3. TẦM NHÌN & SỨ MỆNH",
+        sktt_vision_desc: "\"Bằng việc ứng dụng Trí tuệ Nhân tạo, SKTT giải quyết triệt để bài toán quá tải của bác sĩ chuyên khoa và sự đứt gãy trong trải nghiệm bệnh nhân. Sứ mệnh của chúng tôi là Dân chủ hóa chăm sóc sức khỏe tinh thần – giúp mọi phòng khám vận hành trơn tru hơn (B2B) và mọi bệnh nhân đều có một trợ lý y khoa túc trực 24/7 (B2C).\""
     }
 };
 
