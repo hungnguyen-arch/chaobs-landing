@@ -1045,3 +1045,23 @@ footer {
     font-size: 0.95rem;
     margin: 0;
 }
+
+/* LinkedIn Button */
+.linkedin-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #0077b5;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+.linkedin-btn:hover {
+    background-color: #005582;
+    color: #fff;
+}
