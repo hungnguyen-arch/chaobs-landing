@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title">Hello Doctor AI - About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <div class="glow-bg"></div>
+    <div class="glow-bg glow-2"></div>
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="logo">
+                <a href="index.html" style="color: inherit; text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                    <i class="ph-fill ph-heartbeat"></i>
+                    <span>Hello Doctor AI</span>
+                </a>
+            </div>
+            <div style="display: flex; gap: 15px; align-items: center;">
+                <button id="lang-toggle" class="btn-lang">EN | VI</button>
+                <a href="contact.html" class="btn btn-outline" data-i18n="nav_contact">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+    <main class="container" style="padding: 100px 20px; max-width: 900px; min-height: 70vh;">
+        <div class="section-header" style="text-align: center; margin-bottom: 50px;">
+            <h1 data-i18n="sktt_h2" style="font-size: 2.5rem; color: var(--primary);">About Us</h1>
+            <p data-i18n="sktt_p" style="color: var(--text-muted); font-size: 1.1rem; margin-top: 10px;">SKTT - The Tech Hub of Hello Doctor Ecosystem</p>
+        </div>
+        
+        <div class="glass-card about-card" style="margin-bottom: 30px;">
+            <div class="about-content" style="width: 100%;">
+                <h3 data-i18n="sktt_about_title" style="margin-bottom: 15px; color: var(--primary);">1. ABOUT US</h3>
+                <p data-i18n="sktt_about_desc" style="line-height: 1.8;">Founded in early 2024, SKTT is an early-stage, AI-first MedTech startup operating within the Hello Doctor healthcare network. We specialize in building next-generation EMR platforms and automated clinical triage solutions for mental health and neurology.</p>
+            </div>
+        </div>
+
+        <div class="glass-card about-card" style="margin-bottom: 30px;">
+            <div class="about-content" style="width: 100%;">
+                <h3 data-i18n="sktt_core_title" style="margin-bottom: 20px; color: var(--primary);">2. OUR CORE AI TECHNOLOGIES</h3>
+                <p data-i18n="sktt_core_intro" style="margin-bottom: 20px;">We build a highly scalable, secure data and AI infrastructure on the cloud:</p>
+                
+                <div class="features-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+                    <div class="feature-card" style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
+                        <div style="font-size: 2rem; margin-bottom: 10px;">🩺</div>
+                        <h4 data-i18n="sktt_core1_h">AI Clinical Triage</h4>
+                        <p data-i18n="sktt_core1_p" style="font-size: 0.95rem; color: var(--text-muted);">Integrating LLMs into messaging channels to take patient history, assess tests (PHQ-9), and alert dangerous risks.</p>
+                    </div>
+                    <div class="feature-card" style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
+                        <div style="font-size: 2rem; margin-bottom: 10px;">🎙️</div>
+                        <h4 data-i18n="sktt_core2_h">Vocal Biomarkers</h4>
+                        <p data-i18n="sktt_core2_p" style="font-size: 0.95rem; color: var(--text-muted);">Mining audio data from CS calls using Machine Learning to analyze patient stress levels without costly hardware.</p>
+                    </div>
+                    <div class="feature-card" style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
+                        <div style="font-size: 2rem; margin-bottom: 10px;">🧠</div>
+                        <h4 data-i18n="sktt_core3_h">RAG Clinical Decision Support</h4>
+                        <p data-i18n="sktt_core3_p" style="font-size: 0.95rem; color: var(--text-muted);">A Vector database built from thousands of regimens, helping doctors lookup drug interactions in seconds.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="glass-card about-card" style="background: linear-gradient(135deg, rgba(16,185,129,0.1) 0%, rgba(13,148,136,0.1) 100%); border-color: rgba(16,185,129,0.3);">
+            <div class="about-content" style="text-align: center; width: 100%;">
+                <h3 data-i18n="sktt_vision_title" style="margin-bottom: 15px; color: var(--primary);">3. VISION & MISSION</h3>
+                <p data-i18n="sktt_vision_desc" style="font-size: 1.1rem; line-height: 1.8; font-style: italic; color: #FFF;">"Our 2024 mission is to democratize mental healthcare. By leveraging LLMs and clinical machine learning, we aim to eliminate physician burnout and provide patients with 24/7 AI-driven clinical support."</p>
+            </div>
+        </div>
+
+        <!-- Team Section -->
+        <section id="team" class="team container" style="margin-top: 60px;">
+            <div class="section-header">
+                <h2 data-i18n="team_h2">Leadership Team</h2>
+                <p data-i18n="team_p">A unique synergy of Medical Experts and AI Engineers.</p>
+            </div>
+            <div class="team-grid" style="display: flex; justify-content: center;">
+                <div class="team-card glass-card" style="max-width: 350px; width: 100%;">
+                    <div class="team-avatar" style="padding: 0; overflow: hidden; border-radius: 50%;">
+                        <img src="hungnguyen.jpeg" alt="Hung Nguyen" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h3>Hung Nguyen</h3>
+                    <p class="team-role" data-i18n="team1_role">Founder & CEO</p>
+                    <a href="https://www.linkedin.com/in/hung-nguyen-1549733a/" target="_blank" class="linkedin-btn">
+                        <i class="ph-fill ph-linkedin-logo"></i> View LinkedIn
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <i class="ph-fill ph-heartbeat"></i>
+                    <span>Hello Doctor AI</span>
+                </div>
+                <p data-i18n="footer_p">Empowering clinics with Artificial Intelligence.</p>
+                <div style="margin-top: 16px; color: var(--text-muted); font-size: 13px; line-height: 1.8;">
+                    <strong style="color: #FFF;">SKTT COMPANY LIMITED</strong><br>
+                    <span style="color: var(--primary);" data-i18n="footer_legal">The legal entity operating Hello Doctor AI</span><br>
+                    Tax ID: 0318378996<br>
+                    152/6 Thanh Thai Street, Ward 12, District 10, Ho Chi Minh City<br>
+                    Phone: +84 19001246
+                </div>
+            </div>
+            <div class="footer-links">
+                <a href="about.html" data-i18n="nav_about">About Us</a>
+                <a href="contact.html" data-i18n="nav_contact">Contact Us</a>
+                <a href="privacy.html" data-i18n="footer_l1">Privacy Policy</a>
+                <a href="terms.html" data-i18n="footer_l2">Terms of Service</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer_c">&copy; 2026 SKTT COMPANY LIMITED. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="i18n.js"></script>
+</body>
+</html>
