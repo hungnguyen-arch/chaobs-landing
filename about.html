@@ -9,11 +9,91 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        .about-hero {
+            padding: 120px 20px 80px;
+            text-align: center;
+            position: relative;
+        }
+        .about-hero::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 300px;
+            background: var(--primary);
+            filter: blur(150px);
+            opacity: 0.15;
+            z-index: -1;
+            border-radius: 50%;
+        }
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+        @media(min-width: 768px) {
+            .about-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        .feature-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            border-color: rgba(16, 185, 129, 0.4) !important;
+        }
+        .vision-card {
+            background: linear-gradient(135deg, rgba(16,185,129,0.15) 0%, rgba(13,148,136,0.15) 100%);
+            border: 1px solid rgba(16,185,129,0.3);
+            border-radius: 20px;
+            padding: 50px 30px;
+            text-align: center;
+            margin-top: 60px;
+            position: relative;
+            overflow: hidden;
+        }
+        .vision-card::before {
+            content: '"';
+            position: absolute;
+            top: -20px;
+            left: 30px;
+            font-size: 120px;
+            color: rgba(16, 185, 129, 0.2);
+            font-family: 'Outfit', sans-serif;
+            font-weight: 800;
+        }
+        .team-card {
+            padding: 30px;
+            text-align: center;
+            border-radius: 20px;
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            transition: transform 0.3s;
+        }
+        .team-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+        }
+        .team-avatar-container {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            padding: 5px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+        }
+    </style>
 </head>
 <body>
     <div class="glow-bg"></div>
     <div class="glow-bg glow-2"></div>
-        <nav class="navbar">
+    <nav class="navbar">
         <div class="container nav-content">
             <div class="logo">
                 <a href="index.html" style="color: inherit; text-decoration: none; display: flex; align-items: center; gap: 8px;">
@@ -43,72 +123,117 @@
             </div>
         </div>
     </nav>
-    <main class="container" style="padding: 100px 20px; max-width: 900px; min-height: 70vh;">
-        <div class="section-header" style="text-align: center; margin-bottom: 50px;">
-            <h1 data-i18n="sktt_h2" style="font-size: 2.5rem; color: var(--primary);">About Us</h1>
-            <p data-i18n="sktt_p" style="color: var(--text-muted); font-size: 1.1rem; margin-top: 10px;">SKTT - The Tech Hub of Hello Doctor Ecosystem</p>
-        </div>
-        
-        <div class="glass-card about-card" style="margin-bottom: 30px;">
-            <div class="about-content" style="width: 100%;">
-                <h3 data-i18n="sktt_about_title" style="margin-bottom: 15px; color: var(--primary);">1. ABOUT US</h3>
-                <p data-i18n="sktt_about_desc" style="line-height: 1.8;">Founded in early 2024, SKTT is an early-stage, AI-first MedTech startup operating within the Hello Doctor healthcare network. We specialize in building next-generation EMR platforms and automated clinical triage solutions for mental health and neurology.</p>
-            </div>
-        </div>
-
-        <div class="glass-card about-card" style="margin-bottom: 30px;">
-            <div class="about-content" style="width: 100%;">
-                <h3 data-i18n="sktt_core_title" style="margin-bottom: 20px; color: var(--primary);">2. OUR CORE AI TECHNOLOGIES</h3>
-                <p data-i18n="sktt_core_intro" style="margin-bottom: 20px;">We build a highly scalable, secure data and AI infrastructure on the cloud:</p>
-                
-                <div class="features-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
-                    <div class="feature-card" style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
-                        <div style="font-size: 2rem; margin-bottom: 10px;">🩺</div>
-                        <h4 data-i18n="sktt_core1_h">AI Clinical Triage</h4>
-                        <p data-i18n="sktt_core1_p" style="font-size: 0.95rem; color: var(--text-muted);">Integrating LLMs into messaging channels to take patient history, assess tests (PHQ-9), and alert dangerous risks.</p>
-                    </div>
-                    <div class="feature-card" style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
-                        <div style="font-size: 2rem; margin-bottom: 10px;">🎙️</div>
-                        <h4 data-i18n="sktt_core2_h">Vocal Biomarkers</h4>
-                        <p data-i18n="sktt_core2_p" style="font-size: 0.95rem; color: var(--text-muted);">Mining audio data from CS calls using Machine Learning to analyze patient stress levels without costly hardware.</p>
-                    </div>
-                    <div class="feature-card" style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
-                        <div style="font-size: 2rem; margin-bottom: 10px;">🧠</div>
-                        <h4 data-i18n="sktt_core3_h">RAG Clinical Decision Support</h4>
-                        <p data-i18n="sktt_core3_p" style="font-size: 0.95rem; color: var(--text-muted);">A Vector database built from thousands of regimens, helping doctors lookup drug interactions in seconds.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="glass-card about-card" style="background: linear-gradient(135deg, rgba(16,185,129,0.1) 0%, rgba(13,148,136,0.1) 100%); border-color: rgba(16,185,129,0.3);">
-            <div class="about-content" style="text-align: center; width: 100%;">
-                <h3 data-i18n="sktt_vision_title" style="margin-bottom: 15px; color: var(--primary);">3. VISION & MISSION</h3>
-                <p data-i18n="sktt_vision_desc" style="font-size: 1.1rem; line-height: 1.8; font-style: italic; color: #FFF;">"Our 2024 mission is to democratize mental healthcare. By leveraging LLMs and clinical machine learning, we aim to eliminate physician burnout and provide patients with 24/7 AI-driven clinical support."</p>
-            </div>
-        </div>
-
-        <!-- Team Section -->
-        <section id="team" class="team container" style="margin-top: 60px;">
-            <div class="section-header">
-                <h2 data-i18n="team_h2">Leadership Team</h2>
-                <p data-i18n="team_p">A unique synergy of Medical Experts and AI Engineers.</p>
-            </div>
-            <div class="team-grid" style="display: flex; justify-content: center;">
-                <div class="team-card glass-card" style="max-width: 350px; width: 100%;">
-                    <div class="team-avatar" style="padding: 0; overflow: hidden; border-radius: 50%;">
-                        <img src="hungnguyen.jpeg" alt="Hung Nguyen" style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <h3>Hung Nguyen</h3>
-                    <p class="team-role" data-i18n="team1_role">Founder & CEO</p>
-                    <a href="https://www.linkedin.com/in/hung-nguyen-1549733a/" target="_blank" class="linkedin-btn">
-                        <i class="ph-fill ph-linkedin-logo"></i> View LinkedIn
-                    </a>
-                </div>
-            </div>
+    <main>
+        <!-- Hero Section -->
+        <section class="about-hero container">
+            <h1 data-i18n="sktt_h2" style="font-size: 3.5rem; font-family: 'Outfit', sans-serif; font-weight: 800; color: #FFF; margin-bottom: 20px;">
+                About Us
+            </h1>
+            <p data-i18n="sktt_p" style="color: var(--primary); font-size: 1.2rem; font-weight: 500; letter-spacing: 1px; text-transform: uppercase;">
+                SKTT - The Tech Hub of Hello Doctor Ecosystem
+            </p>
         </section>
 
+        <div class="container" style="max-width: 1000px; padding: 0 20px 80px;">
+            
+            <div class="about-grid">
+                <!-- Company Overview -->
+                <div class="glass-card" style="padding: 40px;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
+                        <i class="ph-fill ph-buildings" style="font-size: 2rem; color: var(--primary);"></i>
+                        <h3 data-i18n="sktt_about_title" style="font-size: 1.5rem; color: #FFF; font-family: 'Outfit', sans-serif;">ABOUT US</h3>
+                    </div>
+                    <p data-i18n="sktt_about_desc" style="line-height: 1.8; color: rgba(255,255,255,0.8); font-size: 1.05rem;">
+                        Founded in early 2024, SKTT is an early-stage, AI-first MedTech startup operating within the Hello Doctor healthcare network. We specialize in building next-generation EMR platforms and automated clinical triage solutions for mental health and neurology.
+                    </p>
+                </div>
+
+                <!-- Stats / Highlight (New Element for premium feel) -->
+                <div class="glass-card" style="padding: 40px; display: flex; flex-direction: column; justify-content: center;">
+                    <div style="display: flex; gap: 30px; justify-content: center; text-align: center;">
+                        <div>
+                            <h2 style="font-size: 2.5rem; color: var(--primary); font-family: 'Outfit', sans-serif; margin-bottom: 5px;">2024</h2>
+                            <p style="color: var(--text-muted); font-size: 0.9rem;">Founded</p>
+                        </div>
+                        <div>
+                            <h2 style="font-size: 2.5rem; color: var(--primary); font-family: 'Outfit', sans-serif; margin-bottom: 5px;">AI</h2>
+                            <p style="color: var(--text-muted); font-size: 0.9rem;">Native Core</p>
+                        </div>
+                        <div>
+                            <h2 style="font-size: 2.5rem; color: var(--primary); font-family: 'Outfit', sans-serif; margin-bottom: 5px;">B2B</h2>
+                            <p style="color: var(--text-muted); font-size: 0.9rem;">Focus</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Core AI Technologies -->
+            <div style="margin-top: 80px;">
+                <div style="text-align: center; margin-bottom: 50px;">
+                    <h3 data-i18n="sktt_core_title" style="font-size: 2rem; color: #FFF; font-family: 'Outfit', sans-serif; margin-bottom: 15px;">OUR CORE AI TECHNOLOGIES</h3>
+                    <p data-i18n="sktt_core_intro" style="color: var(--text-muted); font-size: 1.1rem; max-width: 600px; margin: 0 auto;">We build a highly scalable, secure data and AI infrastructure on the cloud:</p>
+                </div>
+                
+                <div class="features-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                    <div class="feature-card glass-card" style="padding: 30px; border-radius: 20px;">
+                        <div style="width: 60px; height: 60px; border-radius: 15px; background: rgba(16,185,129,0.1); display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                            <i class="ph-fill ph-chat-teardrop-text" style="font-size: 2rem; color: var(--primary);"></i>
+                        </div>
+                        <h4 data-i18n="sktt_core1_h" style="font-size: 1.3rem; margin-bottom: 15px; color: #FFF;">AI Clinical Triage</h4>
+                        <p data-i18n="sktt_core1_p" style="font-size: 1rem; color: rgba(255,255,255,0.7); line-height: 1.6;">Integrating LLMs into messaging channels to take patient history, assess tests (PHQ-9), and alert dangerous risks.</p>
+                    </div>
+                    
+                    <div class="feature-card glass-card" style="padding: 30px; border-radius: 20px;">
+                        <div style="width: 60px; height: 60px; border-radius: 15px; background: rgba(16,185,129,0.1); display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                            <i class="ph-fill ph-waveform" style="font-size: 2rem; color: var(--primary);"></i>
+                        </div>
+                        <h4 data-i18n="sktt_core2_h" style="font-size: 1.3rem; margin-bottom: 15px; color: #FFF;">Vocal Biomarkers</h4>
+                        <p data-i18n="sktt_core2_p" style="font-size: 1rem; color: rgba(255,255,255,0.7); line-height: 1.6;">Mining audio data from CS calls using Machine Learning to analyze patient stress levels without costly hardware.</p>
+                    </div>
+
+                    <div class="feature-card glass-card" style="padding: 30px; border-radius: 20px;">
+                        <div style="width: 60px; height: 60px; border-radius: 15px; background: rgba(16,185,129,0.1); display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                            <i class="ph-fill ph-brain" style="font-size: 2rem; color: var(--primary);"></i>
+                        </div>
+                        <h4 data-i18n="sktt_core3_h" style="font-size: 1.3rem; margin-bottom: 15px; color: #FFF;">RAG Clinical Decision Support</h4>
+                        <p data-i18n="sktt_core3_p" style="font-size: 1rem; color: rgba(255,255,255,0.7); line-height: 1.6;">A Vector database built from thousands of regimens, helping doctors lookup drug interactions in seconds.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vision & Mission -->
+            <div class="vision-card">
+                <h3 data-i18n="sktt_vision_title" style="margin-bottom: 25px; color: var(--primary); font-size: 1.8rem; font-family: 'Outfit', sans-serif;">VISION & MISSION</h3>
+                <p data-i18n="sktt_vision_desc" style="font-size: 1.3rem; line-height: 1.8; font-style: italic; color: #FFF; max-width: 800px; margin: 0 auto;">
+                    "Our 2024 mission is to democratize mental healthcare. By leveraging LLMs and clinical machine learning, we aim to eliminate physician burnout and provide patients with 24/7 AI-driven clinical support."
+                </p>
+            </div>
+
+            <!-- Team Section -->
+            <section id="team" style="margin-top: 100px;">
+                <div style="text-align: center; margin-bottom: 50px;">
+                    <h2 data-i18n="team_h2" style="font-size: 2.5rem; color: #FFF; font-family: 'Outfit', sans-serif; margin-bottom: 15px;">Leadership Team</h2>
+                    <p data-i18n="team_p" style="color: var(--text-muted); font-size: 1.1rem;">A unique synergy of Medical Experts and AI Engineers.</p>
+                </div>
+                
+                <div style="display: flex; justify-content: center;">
+                    <div class="team-card" style="max-width: 320px; width: 100%;">
+                        <div class="team-avatar-container">
+                            <div style="width: 100%; height: 100%; border-radius: 50%; overflow: hidden; border: 4px solid var(--bg-color);">
+                                <img src="hungnguyen.jpeg" alt="Hung Nguyen" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                        </div>
+                        <h3 style="font-size: 1.5rem; color: #FFF; margin-bottom: 8px;">Hung Nguyen</h3>
+                        <p class="team-role" data-i18n="team1_role" style="color: var(--primary); font-weight: 500; margin-bottom: 20px;">Founder & CEO</p>
+                        <a href="https://www.linkedin.com/in/hung-nguyen-1549733a/" target="_blank" class="btn btn-outline" style="width: 100%; display: flex; justify-content: center; gap: 8px;">
+                            <i class="ph-fill ph-linkedin-logo"></i> View LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
+    
     <footer>
         <div class="container footer-content">
             <div class="footer-brand">
@@ -136,8 +261,8 @@
             <p data-i18n="footer_c">&copy; 2026 SKTT COMPANY LIMITED. All rights reserved.</p>
         </div>
     </footer>
+    
     <script src="i18n.js"></script>
-
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const menuBtn = document.getElementById("mobile-menu-btn");
@@ -149,6 +274,5 @@
             }
         });
     </script>
-
 </body>
 </html>
