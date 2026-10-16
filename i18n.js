@@ -888,4 +888,31 @@ document.addEventListener("DOMContentLoaded", () => {
             applyLanguage(newLang);
         });
     }
+
+    // --- GCLID Tracking Logic ---
+    try {
+        const urlParams = new URLSearchParams(window.location.search);
+        const gclid = urlParams.get('gclid');
+        
+        if (gclid) {
+            localStorage.setItem('mkt_gclid', gclid);
+        }
+        
+        const savedGclid = localStorage.getItem('mkt_gclid');
+        
+        if (savedGclid) {
+            const zaloLinks = document.querySelectorAll('a[href*="zalo.me"]');
+            zaloLinks.forEach(link => {
+                try {
+                    let url = new URL(link.href);
+                    url.searchParams.set('src', 'gclid_' + savedGclid);
+                    link.href = url.toString();
+                } catch (e) {
+                    // Ignore invalid URLs
+                }
+            });
+        }
+    } catch (err) {
+        console.error("Error in GCLID tracking:", err);
+    }
 });
