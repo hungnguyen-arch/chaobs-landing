@@ -1,4 +1,17 @@
 User-agent: *
+User-agent: Bingbot
 Allow: /
+Disallow: /admin/
+Disallow: /cms/
+Disallow: /login
+Disallow: /register
+Disallow: /my-profile
+Disallow: /search
+Disallow: /*?q=*
+Disallow: /*?s=*
+Disallow: /*?utm_*
+Disallow: /*?fbclid=*
+Disallow: /*?gclid=*
+Disallow: /*?msclkid=*
 
 Sitemap: https://chaobs.com/sitemap.xml
