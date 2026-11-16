@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="title">Hello Doctor AI - AI-Powered Clinic Management Platform</title>
-    <meta name="description" content="Hello Doctor AI is a cutting-edge EMR and CRM platform for clinics in Vietnam, featuring an AI Clinical Assistant and deep Zalo integration.">
+    <title data-i18n="title">Hello Doctor AI - Hệ Sinh Thái Sức Khoẻ Tinh Thần</title>
+    <meta name="description" content="Hello Doctor AI - Nền tảng Y tế Số phát triển bởi Công ty TNHH SKTT (MST: 0318378996) gắn kết Phòng khám cấp phép 10627/HCM-GPHD: Sàng lọc tâm lý (PHQ-9, GAD-7, ISI), chăm sóc sức khỏe tinh thần cộng đồng, học đường và nơi làm việc 24/7 trên Zalo OA.">
     <link rel="stylesheet" href="style.css">
     <!-- Google Fonts: Outfit for headings, Inter for body -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,24 +24,24 @@
                 <i class="ph-fill ph-heartbeat"></i>
                 <span>Hello Doctor AI</span>
             </div>
-                        <div class="nav-links">
-                <a href="index.html#features" data-i18n="nav_ai" style="color: var(--primary); font-weight: 600;">AI</a>
-                <a href="index.html#architecture" data-i18n="nav_health_record">Health Record</a>
-                <a href="cham-soc-lien-tuc.html" data-i18n="nav_continuous_care">Continuous Care</a>
-                <a href="index.html#pricing" data-i18n="nav_pricing">Pricing</a>
+            <div class="nav-links">
+                <a href="index.html#community-pillars" data-i18n="nav_ai" style="color: var(--primary); font-weight: 600;">Trợ lý AI</a>
+                <a href="index.html#architecture" data-i18n="nav_health_record">Hồ sơ sức khoẻ</a>
+                <a href="cham-soc-lien-tuc.html" data-i18n="nav_continuous_care">Chăm sóc liên tục</a>
+                <a href="index.html#pricing" data-i18n="nav_pricing">Bảng giá</a>
                 <div class="dropdown">
-                    <a href="index.html#ecosystem" class="dropbtn" data-i18n="nav_solutions">Solutions <i class="ph ph-caret-down"></i></a>
+                    <a href="index.html#ecosystem" class="dropbtn" data-i18n="nav_solutions">Giải pháp <i class="ph ph-caret-down"></i></a>
                     <div class="dropdown-content">
-                        <a href="duoc-pham.html" data-i18n="nav_pharma">Pharma</a>
-                        <a href="bac-si.html" data-i18n="nav_clinic">Clinic</a>
-                        <a href="doanh-nghiep.html" data-i18n="nav_enterprise">Enterprise</a>
-                        <a href="bao-hiem.html" data-i18n="nav_insurance">Insurance</a>
+                        <a href="duoc-pham.html" data-i18n="nav_pharma">Dược phẩm</a>
+                        <a href="bac-si.html" data-i18n="nav_clinic">Phòng khám</a>
+                        <a href="doanh-nghiep.html" data-i18n="nav_enterprise">Cho Doanh nghiệp</a>
+                        <a href="bao-hiem.html" data-i18n="nav_insurance">Cho Bảo hiểm</a>
                     </div>
                 </div>
             </div>
             <div style="display: flex; gap: 15px; align-items: center;">
-                <button id="lang-toggle" class="btn-lang">EN | VI</button>
-                                <a href="contact.html" class="btn btn-outline" data-i18n="nav_contact">Contact Us</a>
+                <button id="lang-toggle" class="btn-lang">VI | EN</button>
+                <a href="contact.html" class="btn btn-outline" data-i18n="nav_contact">Liên hệ</a>
                 <button class="mobile-menu-btn" id="mobile-menu-btn"><i class="ph ph-list"></i></button>
             </div>
         </div>
@@ -52,26 +52,33 @@
         <section class="hero container">
             <div class="hero-content">
                 <div class="badge">
-                    <span class="badge-dot"></span> <span data-i18n="hero_badge">Next-Gen HealthTech Startup</span>
+                    <span class="badge-dot"></span> <span data-i18n="hero_badge">Hệ Sinh Thái Y Tế Số & Trợ Lý AI Sức Khỏe Tinh Thần</span>
                 </div>
-                <h1 data-i18n="hero_h1">The AI-Powered EMR <br> for Modern Clinics</h1>
-                <p data-i18n="hero_p">Automate patient onboarding, leverage AI for initial clinical diagnosis, and manage everything effortlessly with seamless Zalo integration.</p>
+                <h1 data-i18n="hero_h1">Trợ Lý AI Sức Khỏe Tinh Thần & <br>Sàng Lọc Tâm Lý Cộng Đồng</h1>
+                <p data-i18n="hero_p">Phát triển bởi Công ty TNHH SKTT (MST: 0318378996) gắn kết cùng cơ sở y tế được cấp phép GPHĐ 10627/HCM-GPHD trong hệ thống Hello Doctor. Hỗ trợ sàng lọc sớm tâm lý (PHQ-9, GAD-7, ISI), chăm sóc giảm căng thẳng nghề nghiệp ẩn danh 24/7 và kết nối bác sĩ chuyên khoa.</p>
                 <div class="hero-cta">
-                    <a href="mailto:founder@chaobs.com" class="btn btn-primary" data-i18n="hero_btn1">Request a Demo</a>
-                    <a href="#features" class="btn btn-secondary"><span data-i18n="hero_btn2">Explore Features</span> <i class="ph ph-arrow-right"></i></a>
+                    <a href="https://zalo.me/hellodoctors" target="_blank" rel="noopener noreferrer" class="btn btn-zalo">
+                        <i class="ph-fill ph-chat-circle-dots"></i> <span data-i18n="hero_btn1">Trải Nghiệm AI Thật trên Zalo OA</span>
+                    </a>
+                    <a href="https://hellodoctors.vn/trac-nghiem" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <i class="ph-fill ph-clipboard-text"></i> <span data-i18n="hero_btn_quiz">Làm Test Sàng Lọc Y Khoa</span>
+                    </a>
+                    <a href="#community-pillars" class="btn btn-secondary">
+                        <span data-i18n="hero_btn2">Khám Phá Giải Pháp Cộng Đồng</span> <i class="ph ph-arrow-right"></i>
+                    </a>
                 </div>
             </div>
             <div class="hero-visual">
                 <div class="glass-card mockup-card">
                     <div class="mockup-header">
                         <div class="mockup-dots"><span></span><span></span><span></span></div>
-                        <div class="mockup-title" data-i18n="mockup_title">AI Patient Triage</div>
+                        <div class="mockup-title" data-i18n="mockup_title">Minh họa luồng Triage AI (Thật trên Zalo)</div>
                     </div>
                     <div class="mockup-body">
-                        <div class="chat-bubble bot" data-i18n="mockup_bot1">Hello! I'm your Hello Doctor AI Assistant. Could you please describe your symptoms today?</div>
-                        <div class="chat-bubble user" data-i18n="mockup_user1">I've been having a severe headache and slight fever since yesterday.</div>
+                        <div class="chat-bubble bot" data-i18n="mockup_bot1">Xin chào! Tôi là Trợ lý AI Hello Doctor. Bạn đang gặp mất ngủ, lo âu kéo dài hay áp lực kiệt sức (burnout) trong công việc/học tập?</div>
+                        <div class="chat-bubble user" data-i18n="mockup_user1">Mình mất ngủ và lo âu kéo dài gần 3 tuần nay, rất mệt mỏi.</div>
                         <div class="chat-bubble bot ai-generating">
-                            <i class="ph ph-sparkle"></i> <span data-i18n="mockup_bot2">Analyzing symptoms...</span>
+                            <i class="ph ph-sparkle"></i> <span data-i18n="mockup_bot2">Đang phân tích triệu chứng & mở thang đo PHQ-9 / GAD-7 chuẩn y khoa...</span>
                         </div>
                     </div>
                 </div>
@@ -81,56 +88,100 @@
             </div>
         </section>
 
-        <!-- Startup Growth & Traction Section -->
+        <!-- Verified Operational Scale Section -->
         <section class="stats container">
             <div style="text-align: center; margin-bottom: 25px;">
-                <h2 style="font-size: 1.2rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 2px;" data-i18n="stat_title">Startup Growth & Clinical Reach</h2>
-                <p style="color: #10B981; font-weight: bold; margin-top: 10px; font-size: 1.1rem;"><i class="ph-bold ph-trend-up"></i> <span data-i18n="stat_subtitle">Growing 25% Month-over-Month</span></p>
+                <h2 style="font-size: 1.2rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 2px;" data-i18n="stat_title">Năng Lực Vận Hành Thực Tế (2024 – 2026)</h2>
+                <p style="color: #10B981; font-weight: bold; margin-top: 10px; font-size: 1.05rem;"><i class="ph-bold ph-check-circle"></i> <span data-i18n="stat_subtitle">Số liệu xác thực từ Hệ thống EMR Đa cơ sở & Nền tảng AI Production</span></p>
             </div>
             <div class="stats-grid" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px;">
                 <div class="stat-item">
-                    <h3 class="stat-number">$15K</h3>
-                    <p class="stat-label" data-i18n="stat_1">MRR (Revenue)</p>
+                    <h3 class="stat-number">52.832+</h3>
+                    <p class="stat-label" data-i18n="stat_1">Hồ sơ bệnh án EMR</p>
                 </div>
                 <div class="stat-item">
-                    <h3 class="stat-number">4</h3>
-                    <p class="stat-label" data-i18n="stat_2">Paying Clinics</p>
+                    <h3 class="stat-number">20</h3>
+                    <p class="stat-label" data-i18n="stat_2">Bác sĩ & Chuyên gia</p>
                 </div>
                 <div class="stat-item">
-                    <h3 class="stat-number">20+</h3>
-                    <p class="stat-label" data-i18n="stat_3">Specialist Doctors</p>
+                    <h3 class="stat-number">2.330+</h3>
+                    <p class="stat-label" data-i18n="stat_3">Bài viết y khoa chuẩn hóa</p>
                 </div>
                 <div class="stat-item">
-                    <h3 class="stat-number">5,000+</h3>
-                    <p class="stat-label" data-i18n="stat_4">Monthly Consults</p>
+                    <h3 class="stat-number">5.513+</h3>
+                    <p class="stat-label" data-i18n="stat_4">Hồ sơ tương tác Zalo OA</p>
                 </div>
                 <div class="stat-item">
-                    <h3 class="stat-number">12</h3>
-                    <p class="stat-label" data-i18n="stat_5">Provinces Covered</p>
+                    <h3 class="stat-number">828+</h3>
+                    <p class="stat-label" data-i18n="stat_5">Lượt test sàng lọc tâm lý</p>
                 </div>
             </div>
         </section>
 
-        <!-- Clinical Trust Banner -->
+        <!-- Clinical Trust & Compliance Banner -->
         <section class="trust-banner container">
             <div class="section-header" style="margin-bottom: 30px;">
-                <h2 data-i18n="trust_title" style="font-size: 1.8rem;">Clinical Trust & Security Standards</h2>
+                <h2 data-i18n="trust_title" style="font-size: 1.8rem;">Chuẩn Pháp Lý Sở Y Tế & An Toàn Y Khoa</h2>
             </div>
             <div class="trust-grid">
                 <div class="trust-item">
-                    <i class="ph-fill ph-database"></i>
-                    <h4 data-i18n="trust_2_h">10+ Years Data Moat</h4>
-                    <p data-i18n="trust_2_p">Trained on a decade of proprietary psychiatric & neurological records.</p>
+                    <i class="ph-fill ph-certificate"></i>
+                    <h4 data-i18n="trust_2_h">GPHĐ 10627/HCM-GPHD & Nhà thuốc GPP</h4>
+                    <p data-i18n="trust_2_p">Phòng khám Nội tổng hợp thuộc Công ty TNHH SKTT (Sở Y tế TP.HCM cấp 03/12/2024), Nhà thuốc GPP 2417/GPP và mạng lưới Hà Nội (562/HNO-GPHD).</p>
                 </div>
                 <div class="trust-item">
                     <i class="ph-fill ph-shield-check" style="color: #10B981;"></i>
-                    <h4 data-i18n="trust_3_h">HIPAA & GPP/GDP</h4>
-                    <p data-i18n="trust_3_p">Fully compliant cloud architecture and audit-ready pharmacy inventory.</p>
+                    <h4 data-i18n="trust_3_h">Bảo mật NĐ 13/2023 & Microsoft</h4>
+                    <p data-i18n="trust_3_p">Bảo vệ dữ liệu cá nhân ẩn danh theo Nghị định 13/2023/NĐ-CP; hạ tầng công nghệ được hỗ trợ tài nguyên từ Microsoft for Startups.</p>
                 </div>
                 <div class="trust-item">
                     <i class="ph-fill ph-stethoscope"></i>
-                    <h4 data-i18n="trust_4_h">Evidence-Based</h4>
-                    <p data-i18n="trust_4_p">RAG Knowledge Base anchored in DSM-5, PHQ-9, and clinical guidelines.</p>
+                    <h4 data-i18n="trust_4_h">Kiến trúc AI 5 Tầng An toàn Y khoa</h4>
+                    <p data-i18n="trust_4_p">Kho RAG bám sát hướng dẫn Bộ Y tế, WHO, DSM-5-TR, ICD-10; phát hiện khẩn cấp nguy cơ tự hại và không thay thế bác sĩ.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community & Mental Health Pillars (Community/School + Workplace/Burnout) -->
+        <section id="community-pillars" class="features container" style="padding: 40px 20px 60px;">
+            <div class="section-header">
+                <div class="badge" style="margin-bottom: 15px;">
+                    <span class="badge-dot"></span> <span data-i18n="pub_badge">Sức Khỏe Tâm Thần Cộng Đồng, Học Đường &amp; Nghề Nghiệp</span>
+                </div>
+                <h2 data-i18n="pub_h2">Hai Trụ Cột Chăm Sóc Sức Khỏe Tinh Thần Cộng Đồng 24/7</h2>
+                <p data-i18n="pub_p">Thiết kế để người dân, học sinh – sinh viên và người lao động tiếp cận sàng lọc ẩn danh, hướng dẫn tự chăm sóc chuẩn chứng cứ và điều hướng y tế kịp thời.</p>
+            </div>
+            <div class="features-grid" style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));">
+                <div class="glass-card feature-card">
+                    <span class="pillar-badge mental" data-i18n="pub1_badge">Trụ cột 1 • Cộng đồng &amp; Y tế Học đường</span>
+                    <h3 data-i18n="pub1_h3">Tầm Soát Sức Khỏe Tâm Thần Cộng Đồng &amp; Học Đường</h3>
+                    <p data-i18n="pub1_p">Tầm soát sớm ẩn danh cho 7 mảng chủ lực (Trầm cảm, Lo âu, Mất ngủ, OCD, ADHD, Nghiện chất/hành vi, Khủng hoảng &amp; Tự hại) qua Zalo và Web.</p>
+                    <ul class="pillar-list">
+                        <li><i class="ph-fill ph-check-circle"></i> <span data-i18n="pub1_li1">Thang đo WebForm chuẩn hóa: PHQ-9, GAD-7, ISI, DASS-21, Y-BOCS, DAST-10 (828+ lượt thực hiện).</span></li>
+                        <li><i class="ph-fill ph-check-circle"></i> <span data-i18n="pub1_li2">Nhận diện tức thì dấu hiệu nguy cơ tự hại (Lớp 1 EMERGENCY), điều hướng khẩn cấp 115 / 1900 1246.</span></li>
+                        <li><i class="ph-fill ph-check-circle"></i> <span data-i18n="pub1_li3">Cố vấn bởi BSCKII Huỳnh Thanh Hiển &amp; ThS Tâm lý Lâm sàng Trần Thu Trang.</span></li>
+                    </ul>
+                </div>
+                <div class="glass-card feature-card">
+                    <span class="pillar-badge workplace" data-i18n="pub2_badge">Trụ cột 2 • Sức khỏe Nghề nghiệp</span>
+                    <h3 data-i18n="pub2_h3">Sức Khỏe Tinh Thần Nơi Làm Việc &amp; Phòng Ngừa Burnout 24/7</h3>
+                    <p data-i18n="pub2_p">Đồng hành cùng người lao động, nhân viên văn phòng và đội ngũ y tế tuyến cơ sở giảm kiệt sức nghề nghiệp, cải thiện giấc ngủ và ổn định tâm lý.</p>
+                    <ul class="pillar-list">
+                        <li><i class="ph-fill ph-check-circle"></i> <span data-i18n="pub2_li1">Đánh giá căng thẳng nghề nghiệp qua thang đo chuẩn hóa (PSS-10, DASS-21) hoàn toàn ẩn danh, không kỳ thị.</span></li>
+                        <li><i class="ph-fill ph-check-circle"></i> <span data-i18n="pub2_li2">Trợ lý đồng hành thấu cảm dựa trên liệu pháp nhận thức hành vi (CBT) hỗ trợ điều chỉnh thói quen giấc ngủ &amp; cảm xúc.</span></li>
+                        <li><i class="ph-fill ph-check-circle"></i> <span data-i18n="pub2_li3">Báo cáo tổng hợp xu hướng ẩn danh (Voice of Community) hỗ trợ công tác truyền thông – dự phòng của các đơn vị y tế.</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="glass-card" style="margin-top: 28px; padding: 24px 28px; background: #F0F9FF; border-color: #BAE6FD; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px;">
+                <p data-i18n="pub_cta_note" style="margin: 0; color: #0C4A6E; font-size: 0.95rem; flex: 1; min-width: 260px;">Lưu ý minh bạch: Trang web chaobs.com cung cấp thông tin và minh họa luồng xử lý mẫu (Demo). Để trải nghiệm trực tiếp Trợ lý AI 5 tầng thật 24/7, vui lòng mở Zalo OA hoặc trang Trắc nghiệm Y khoa:</p>
+                <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+                    <a href="https://zalo.me/hellodoctors" target="_blank" rel="noopener noreferrer" class="btn btn-zalo">
+                        <i class="ph-fill ph-chat-circle-dots"></i> <span data-i18n="hero_btn1">Trải Nghiệm AI Thật trên Zalo OA</span>
+                    </a>
+                    <a href="https://hellodoctors.vn/trac-nghiem" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                        <span data-i18n="hero_btn_quiz">Làm Test Sàng Lọc Y Khoa</span>
+                    </a>
                 </div>
             </div>
         </section>
@@ -138,67 +189,62 @@
         <!-- Product Showcase Section -->
         <section id="showcase" class="showcase container" style="padding: 60px 20px;">
             <div class="section-header">
-                <h2 data-i18n="showcase_h2">Platform Showcase</h2>
-                <p data-i18n="showcase_p">Experience our live, launched product interface designed for seamless clinic management.</p>
+                <h2 data-i18n="showcase_h2">Hệ Sinh Thái Sản Phẩm Đang Vận Hành</h2>
+                <p data-i18n="showcase_p">Các phân hệ thực tế đang phục vụ công tác khám chữa bệnh và chăm sóc bệnh nhân mỗi ngày.</p>
             </div>
             <div class="showcase-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
                 <div class="glass-card feature-card" style="padding: 15px; text-align: center;">
                     <div style="background: rgba(255,255,255,0.05); border: 1px dashed rgba(255,255,255,0.2); border-radius: 8px; height: 200px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; overflow: hidden;">
-                        <img src="emr.png" alt="EMR Placeholder" onerror="this.style.display='none'" style="width: 100%; height: 100%; object-fit: cover;">
-                        <span style="color: var(--text-muted); font-size: 0.9rem; position: absolute; z-index: -1;">[Screenshot: EMR]</span>
+                        <img src="emr.png" alt="EMR Hello Doctor" onerror="this.style.display='none'" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
-                    <h3 data-i18n="showcase_1_h3" style="font-size: 1.1rem; margin-bottom: 10px;">Clinical Dashboard</h3>
-                    <p data-i18n="showcase_1_p" style="font-size: 0.9rem; color: var(--text-muted);">Real-time overview of patient metrics and clinic performance.</p>
+                    <h3 data-i18n="showcase_1_h3" style="font-size: 1.1rem; margin-bottom: 10px;">Bệnh án Điện tử (EMR)</h3>
+                    <p data-i18n="showcase_1_p" style="font-size: 0.9rem; color: var(--text-muted);">52.832+ hồ sơ ngoại trú tích hợp đơn thuốc, xét nghiệm và lịch sử trị liệu tâm lý.</p>
                 </div>
                 <div class="glass-card feature-card" style="padding: 15px; text-align: center;">
                     <div style="background: rgba(255,255,255,0.05); border: 1px dashed rgba(255,255,255,0.2); border-radius: 8px; height: 200px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; overflow: hidden;">
-                        <img src="chat.png" alt="AI Chat Placeholder" onerror="this.style.display='none'" style="width: 100%; height: 100%; object-fit: cover;">
-                        <span style="color: var(--text-muted); font-size: 0.9rem; position: absolute; z-index: -1;">[Screenshot: AI Chat]</span>
+                        <img src="chat.png" alt="Trợ lý AI Zalo OA" onerror="this.style.display='none'" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
-                    <h3 data-i18n="showcase_2_h3" style="font-size: 1.1rem; margin-bottom: 10px;">Electronic Medical Records</h3>
-                    <p data-i18n="showcase_2_p" style="font-size: 0.9rem; color: var(--text-muted);">Comprehensive patient history and treatment tracking.</p>
+                    <h3 data-i18n="showcase_2_h3" style="font-size: 1.1rem; margin-bottom: 10px;">Trợ lý AI Thật trên Zalo OA</h3>
+                    <p data-i18n="showcase_2_p" style="font-size: 0.9rem; color: var(--text-muted);">Sơ vấn thấu cảm 24/7, mở WebForm PHQ-9/GAD-7 và nhắc tuân thủ điều trị.</p>
                 </div>
                 <div class="glass-card feature-card" style="padding: 15px; text-align: center;">
                     <div style="background: rgba(255,255,255,0.05); border: 1px dashed rgba(255,255,255,0.2); border-radius: 8px; height: 200px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; overflow: hidden;">
-                        <img src="graph.png" alt="AI Graph Placeholder" onerror="this.style.display='none'" style="width: 100%; height: 100%; object-fit: cover;">
-                        <span style="color: var(--text-muted); font-size: 0.9rem; position: absolute; z-index: -1;">[Screenshot: AI Graph]</span>
+                        <img src="graph.png" alt="Kiến trúc AI 5 tầng" onerror="this.style.display='none'" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
-                    <h3 data-i18n="showcase_3_h3" style="font-size: 1.1rem; margin-bottom: 10px;">AI Assistant Interface</h3>
-                    <p data-i18n="showcase_3_p" style="font-size: 0.9rem; color: var(--text-muted);">Interactive AI triage and continuous care companion.</p>
+                    <h3 data-i18n="showcase_3_h3" style="font-size: 1.1rem; margin-bottom: 10px;">Kiến trúc AI Đa tầng 5 Lớp</h3>
+                    <p data-i18n="showcase_3_p" style="font-size: 0.9rem; color: var(--text-muted);">Tách bạch rạch ròi giữa phân loại ý định, cảnh báo khẩn cấp và kho RAG chuẩn hóa.</p>
                 </div>
                 <div class="glass-card feature-card" style="padding: 15px; text-align: center;">
                     <div style="background: rgba(255,255,255,0.05); border: 1px dashed rgba(255,255,255,0.2); border-radius: 8px; height: 200px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; overflow: hidden;">
-                        <img src="wallet.png" alt="AI Wallet Placeholder" onerror="this.style.display='none'" style="width: 100%; height: 100%; object-fit: cover;">
-                        <span style="color: var(--text-muted); font-size: 0.9rem; position: absolute; z-index: -1;">[Screenshot: AI Wallet]</span>
+                        <img src="wallet.png" alt="Quản trị Ví AI" onerror="this.style.display='none'" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
-                    <h3 data-i18n="showcase_4_h3" style="font-size: 1.1rem; margin-bottom: 10px;">Enterprise AI Wallet</h3>
-                    <p data-i18n="showcase_4_p" style="font-size: 0.9rem; color: var(--text-muted);">Manage AI credit allocation and monitor usage across the organization.</p>
+                    <h3 data-i18n="showcase_4_h3" style="font-size: 1.1rem; margin-bottom: 10px;">Quản trị Tài nguyên Ví AI</h3>
+                    <p data-i18n="showcase_4_p" style="font-size: 0.9rem; color: var(--text-muted);">Theo dõi định mức và phân bổ tài nguyên minh bạch cho doanh nghiệp & chương trình cộng đồng.</p>
                 </div>
             </div>
         </section>
 
-
         <!-- Features Section -->
         <section id="features" class="features container">
             <div class="section-header">
-                <h2 data-i18n="feat_h2">Strategic Moats & Capabilities</h2>
-                <p data-i18n="feat_p">A comprehensive Digital Health Ecosystem specializing in Mental Health, designed to eliminate operational pain points and maximize clinical outcomes.</p>
+                <h2 data-i18n="feat_h2">Năng Lực Công Nghệ & Lâm Sàng Cốt Lõi</h2>
+                <p data-i18n="feat_p">Vận hành trên quy trình phòng khám ngoại trú thực tế, rào chắn an toàn y khoa nhiều lớp và kho tri thức chuẩn hóa.</p>
             </div>
             <div class="features-grid">
                 <div class="glass-card feature-card">
                     <div class="feature-icon"><i class="ph-fill ph-brain"></i></div>
-                    <h3 data-i18n="feat1_h3">AI Mental Health Tele-Triage</h3>
-                    <p data-i18n="feat1_p">Proprietary AI Assistant powered by advanced Generative AI. Automates clinical tests (PHQ-9, GAD-7) via Zalo, detects high-risk patterns, and provides CBT-based conversational support.</p>
+                    <h3 data-i18n="feat1_h3">AI Phân luồng & Sàng lọc 5 Tầng</h3>
+                    <p data-i18n="feat1_p">Tự động hóa thang đo lâm sàng (PHQ-9, GAD-7, ISI, DAST-10) qua Zalo OA (5.513+ hồ sơ, 166.866+ tin nhắn) kèm cảnh báo rủi ro tự hại tức thì.</p>
                 </div>
                 <div class="glass-card feature-card">
                     <div class="feature-icon"><i class="ph-fill ph-database"></i></div>
-                    <h3 data-i18n="feat2_h3">"Audit-Ready" EMR & Inventory</h3>
-                    <p data-i18n="feat2_p">A scalable, multi-clinic EMR with GPP/GDP compliant inventory tracking. Automates bank reconciliations, tax compliance for returns, and eliminates pharmaceutical dead-stock.</p>
+                    <h3 data-i18n="feat2_h3">Bệnh án EMR Đa cơ sở & Nhà thuốc GPP</h3>
+                    <p data-i18n="feat2_p">Quản trị 52.832+ hồ sơ bệnh án ngoại trú, 119.408 đơn thuốc, 3.244 buổi trị liệu tâm lý và kho dược đạt chuẩn GPP 2417/GPP liên thông đối soát.</p>
                 </div>
                 <div class="glass-card feature-card">
                     <div class="feature-icon"><i class="ph-fill ph-shield-check"></i></div>
-                    <h3 data-i18n="feat3_h3">Proprietary Clinical RAG Moat</h3>
-                    <p data-i18n="feat3_p">Not just a SaaS. Backed by 10 years of proprietary clinical data, voice biomarkers, and a vast RAG knowledge base ensuring safe, guideline-compliant medical decisions.</p>
+                    <h3 data-i18n="feat3_h3">Kho Tri thức RAG Kiểm duyệt & Voice AI</h3>
+                    <p data-i18n="feat3_p">2.330+ bài viết y khoa đã thẩm định chuyên môn, đồng hành cùng 20 bác sĩ & chuyên gia và chặn đứng nguy cơ AI tự suy diễn phác đồ.</p>
                 </div>
             </div>
         </section>
@@ -207,7 +253,7 @@
         <section id="ecosystem" class="features container" style="padding: 60px 20px;">
             <div class="section-header">
                 <h2 data-i18n="eco_title">Hệ Sinh Thái Giải Pháp</h2>
-                <p data-i18n="eco_desc">Ứng dụng công nghệ AI tạo sinh để giải quyết triệt để bài toán chăm sóc sức khoẻ tinh thần cho mọi đối tượng.</p>
+                <p data-i18n="eco_desc">Ứng dụng công nghệ AI tạo sinh có kiểm soát để giải quyết bài toán chăm sóc sức khoẻ tinh thần và dự phòng cho từng nhóm đối tượng.</p>
             </div>
             <div class="features-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
                 <div class="glass-card feature-card" style="text-align: center; padding: 30px 20px;">
@@ -240,41 +286,41 @@
         <!-- Architecture Section -->
         <section id="architecture" class="architecture container">
             <div class="section-header">
-                <h2 data-i18n="arch_h2">AI Agentic Flow Engine</h2>
-                <p data-i18n="arch_p">We don't just wrap LLMs. Hello Doctor AI is powered by a sophisticated Multi-Agent architecture working in orchestration.</p>
+                <h2 data-i18n="arch_h2">Kiến Trúc AI Y Khoa 5 Tầng Có Kiểm Soát</h2>
+                <p data-i18n="arch_p">Chúng tôi không để LLM trả lời tự do cho người bệnh. Mọi câu hỏi đều đi qua 05 tầng kiểm soát trạng thái và an toàn y khoa.</p>
             </div>
             <div class="arch-container glass-card">
                 <div class="arch-step">
                     <div class="arch-icon"><i class="ph-fill ph-user-circle"></i></div>
-                    <h4 data-i18n="arch1_h4">Patient Input</h4>
-                    <p data-i18n="arch1_p">Zalo Mini App / Voice Call</p>
+                    <h4 data-i18n="arch1_h4">Đầu vào Người dân / Bệnh nhân</h4>
+                    <p data-i18n="arch1_p">Zalo OA / WebForm / Tổng đài 1900 1246</p>
                 </div>
                 <div class="arch-arrow"><i class="ph ph-arrow-right"></i></div>
                 <div class="arch-step highlight">
                     <div class="arch-icon"><i class="ph-fill ph-cpu"></i></div>
-                    <h4 data-i18n="arch2_h4">Orchestrator Agent</h4>
-                    <p data-i18n="arch2_p">Routes intent & manages context</p>
+                    <h4 data-i18n="arch2_h4">Tầng 1 CUE & Tầng 2 State Matrix</h4>
+                    <p data-i18n="arch2_p">Hiểu ý định, quét khẩn cấp & điều phối luồng</p>
                 </div>
                 <div class="arch-arrow"><i class="ph ph-arrow-right"></i></div>
                 <div class="arch-stack">
                     <div class="arch-step small">
-                        <i class="ph-fill ph-book-open-text"></i> <span data-i18n="arch3_lbl">Clinical RAG Agent</span>
+                        <i class="ph-fill ph-book-open-text"></i> <span data-i18n="arch3_lbl">Tầng 3: Kho RAG Y khoa & Hồ sơ EMR</span>
                     </div>
                     <div class="arch-step small">
-                        <i class="ph-fill ph-heartbeat"></i> <span data-i18n="arch4_lbl">DTx/CBT Agent</span>
+                        <i class="ph-fill ph-heartbeat"></i> <span data-i18n="arch4_lbl">Tầng 4: Phản hồi Thấu cảm Giới hạn An toàn</span>
                     </div>
                     <div class="arch-step small">
-                        <i class="ph-fill ph-database"></i> <span data-i18n="arch5_lbl">EMR Sync Agent</span>
+                        <i class="ph-fill ph-database"></i> <span data-i18n="arch5_lbl">Tầng 5: Trí nhớ & Thống kê Ẩn danh VoC</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Pricing Section -->
+        <!-- Pricing / Access Section -->
         <section id="pricing" class="features container" style="padding: 60px 20px;">
             <div class="section-header">
-                <h2 data-i18n="pricing_h2">Bảng Giá Dịch Vụ AI</h2>
-                <p data-i18n="pricing_p">Đầu tư vào sức khỏe tinh thần với chi phí tối ưu nhờ công nghệ AI. Dùng đến đâu, trả đến đó (Pay-as-you-go).</p>
+                <h2 data-i18n="pricing_h2">Miễn Phí Cộng Đồng & Gói Đồng Hành Chuyên Sâu</h2>
+                <p data-i18n="pricing_p">Hoạt động sàng lọc tâm lý cơ bản, làm thang đo chuẩn hóa (PHQ-9, GAD-7, DAST-10) và hỏi đáp giáo dục sức khỏe cộng đồng luôn Miễn phí 0đ. Gói Credit chỉ áp dụng cho nhu cầu đồng hành trị liệu cá nhân dài hạn trên Zalo OA.</p>
             </div>
             <div class="features-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
                 <!-- Package 1 -->
@@ -286,7 +332,7 @@
                         <li style="margin-bottom: 10px;"><i class="ph-fill ph-check-circle" style="color: var(--secondary);"></i> <span data-i18n="pkg1_f1">Cộng: 16.000 AI Credits</span></li>
                         <li style="margin-bottom: 10px;"><i class="ph-fill ph-check-circle" style="color: var(--secondary);"></i> <span data-i18n="pkg1_f2">Hạn dùng: 30 ngày</span></li>
                     </ul>
-                    <a href="https://zalo.me/hellodoctors" target="_blank" class="btn btn-outline" data-i18n="pkg_btn" style="width: 100%; justify-content: center;">Chọn Gói Này</a>
+                    <a href="https://zalo.me/hellodoctors" target="_blank" rel="noopener noreferrer" class="btn btn-outline" data-i18n="pkg_btn" style="width: 100%; justify-content: center;">Mở trên Zalo OA</a>
                 </div>
                 <!-- Package 2 -->
                 <div class="glass-card feature-card" style="text-align: center; padding: 40px 20px; border: 2px solid var(--primary); position: relative;">
@@ -298,7 +344,7 @@
                         <li style="margin-bottom: 10px;"><i class="ph-fill ph-check-circle" style="color: var(--secondary);"></i> <span data-i18n="pkg2_f1">Cộng: 66.000 AI Credits</span></li>
                         <li style="margin-bottom: 10px;"><i class="ph-fill ph-check-circle" style="color: var(--secondary);"></i> <span data-i18n="pkg2_f2">Hạn dùng: 60 ngày</span></li>
                     </ul>
-                    <a href="https://zalo.me/hellodoctors" target="_blank" class="btn btn-primary" data-i18n="pkg_btn" style="width: 100%; justify-content: center;">Chọn Gói Này</a>
+                    <a href="https://zalo.me/hellodoctors" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-i18n="pkg_btn" style="width: 100%; justify-content: center;">Mở trên Zalo OA</a>
                 </div>
                 <!-- Package 3 -->
                 <div class="glass-card feature-card" style="text-align: center; padding: 40px 20px;">
@@ -309,7 +355,7 @@
                         <li style="margin-bottom: 10px;"><i class="ph-fill ph-check-circle" style="color: var(--secondary);"></i> <span data-i18n="pkg3_f1">Cộng: 160.000 AI Credits</span></li>
                         <li style="margin-bottom: 10px;"><i class="ph-fill ph-check-circle" style="color: var(--secondary);"></i> <span data-i18n="pkg3_f2">Hạn dùng: 120 ngày</span></li>
                     </ul>
-                    <a href="https://zalo.me/hellodoctors" target="_blank" class="btn btn-outline" data-i18n="pkg_btn" style="width: 100%; justify-content: center;">Chọn Gói Này</a>
+                    <a href="https://zalo.me/hellodoctors" target="_blank" rel="noopener noreferrer" class="btn btn-outline" data-i18n="pkg_btn" style="width: 100%; justify-content: center;">Mở trên Zalo OA</a>
                 </div>
             </div>
         </section>
@@ -317,92 +363,99 @@
         <!-- Roadmap Section -->
         <section id="roadmap" class="roadmap container">
             <div class="section-header">
-                <h2 data-i18n="road_h2">Strategic Roadmap</h2>
-                <p data-i18n="road_p">Our path to becoming the #1 AI-Driven Mental Healthcare Platform.</p>
+                <h2 data-i18n="road_h2">Chặng Đường Thực Tế & Lộ Trình 2026 – 2027</h2>
+                <p data-i18n="road_p">Từ hạ tầng phòng khám ngoại trú thực tế tiến tới hợp tác y tế dự phòng cộng đồng.</p>
             </div>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-dot active"></div>
                     <div class="timeline-content glass-card">
-                        <h3 data-i18n="road1_h3">Phase 1: Enterprise Mental Wellness</h3>
-                        <p class="timeline-date" data-i18n="road1_date">Current - 6 Months</p>
-                        <p data-i18n="road1_p">Building comprehensive mental wellness solutions for corporate enterprises and organizations.</p>
+                        <h3 data-i18n="road1_h3">2024 – 2025: Nền tảng Pháp lý & Lâm sàng (Đã hoàn thành)</h3>
+                        <p class="timeline-date" data-i18n="road1_date">Đã hoàn thành</p>
+                        <p data-i18n="road1_p">Thành lập Công ty TNHH SKTT (MST 0318378996), cấp phép Phòng khám 10627/HCM-GPHD, Nhà thuốc GPP 2417/GPP và số hóa 52.832+ hồ sơ EMR.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot active"></div>
+                    <div class="timeline-content glass-card">
+                        <h3 data-i18n="road2_h3">2026: Vận hành Production AI 5 Tầng & Tri thức Y khoa (Đang chạy)</h3>
+                        <p class="timeline-date" data-i18n="road2_date">Đang vận hành Production</p>
+                        <p data-i18n="road2_p">Vận hành Trợ lý AI 5 tầng trên Zalo OA (5.513+ hồ sơ, 166.866+ tin nhắn), 2.330+ bài viết y khoa chuẩn hóa và 828+ lượt test sàng lọc.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content glass-card">
-                        <h3 data-i18n="road2_h3">Phase 2: AI-Assisted Clinical Care</h3>
-                        <p class="timeline-date" data-i18n="road2_date">6 - 18 Months</p>
-                        <p data-i18n="road2_p">Integrating advanced AI capabilities to support diagnosis, tele-triage, and clinical workflows.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-card">
-                        <h3 data-i18n="road3_h3">Phase 3: National Care Infrastructure</h3>
-                        <p class="timeline-date" data-i18n="road3_date">Year 2 - Year 3</p>
-                        <p data-i18n="road3_p">Establishing a scalable, nationwide healthcare infrastructure and interconnected clinical network.</p>
+                        <h3 data-i18n="road3_h3">2026 – 2027: Thí điểm Cổng AI Y tế Dự phòng Cộng đồng (Trọng tâm)</h3>
+                        <p class="timeline-date" data-i18n="road3_date">2026 – 2027</p>
+                        <p data-i18n="road3_p">Phối hợp cơ quan y tế dự phòng triển khai thí điểm cổng Trợ lý AI Sức khỏe Tâm thần Cộng đồng, Học đường &amp; Nơi làm việc có thẩm định chuyên môn.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Team Section -->
+        <!-- Team & Medical Governance Section -->
         <section id="team" class="team container">
             <div class="section-header">
-                <h2 data-i18n="team_h2">Leadership Team</h2>
-                <p data-i18n="team_p">A unique synergy of Medical Experts and AI Engineers.</p>
+                <h2 data-i18n="team_h2">Ban Điều Hành & Hội Đồng Chuyên Môn</h2>
+                <p data-i18n="team_p">Sự phối hợp chặt chẽ giữa 20 Bác sĩ, Chuyên gia Tâm lý và Đội ngũ Kỹ sư AI.</p>
             </div>
-            <div class="team-grid" style="display: flex; justify-content: center;">
-                <div class="team-card glass-card" style="max-width: 350px; width: 100%;">
+            <div class="team-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 360px)); justify-content: center; gap: 30px;">
+                <div class="team-card glass-card">
                     <div class="team-avatar" style="padding: 0; overflow: hidden; border-radius: 50%;">
-                        <img src="hungnguyen.jpeg" alt="Hung Nguyen" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="hungnguyen.jpeg" alt="Nguyễn Minh Hùng" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
-                    <h3>Hung Nguyen</h3>
-                    <p class="team-role" data-i18n="team1_role">Founder & CEO</p>
-                    <a href="https://www.linkedin.com/in/hung-nguyen-1549733a/" target="_blank" class="linkedin-btn">
-                        <i class="ph-fill ph-linkedin-logo"></i> View LinkedIn
+                    <h3>Nguyễn Minh Hùng</h3>
+                    <p class="team-role" data-i18n="team1_role">Nhà Sáng lập & Giám đốc Công ty TNHH SKTT</p>
+                    <a href="https://www.linkedin.com/in/hung-nguyen-1549733a/" target="_blank" rel="noopener noreferrer" class="linkedin-btn">
+                        <i class="ph-fill ph-linkedin-logo"></i> LinkedIn
                     </a>
+                </div>
+                <div class="team-card glass-card" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                    <div class="team-avatar">
+                        <i class="ph-fill ph-stethoscope" style="color: var(--primary);"></i>
+                    </div>
+                    <h3 data-i18n="team2_name">Hội đồng Chuyên môn Hello Doctor</h3>
+                    <p class="team-role" data-i18n="team2_role" style="font-size: 0.92rem; line-height: 1.5; margin-top: 8px;">BS. Nguyễn Hùng Anh (CMMKT 0025644/HCM-CCHN) • BSCKII Huỳnh Thanh Hiển • ThS Tâm lý Lâm sàng Trần Thu Trang</p>
+                    <a href="https://hellodoctors.vn/bac-si" target="_blank" rel="noopener noreferrer" class="btn btn-outline" data-i18n="team2_btn" style="margin-top: 16px;">Xem Đội ngũ Bác sĩ &amp; Chuyên gia</a>
                 </div>
             </div>
         </section>
 
-        <!-- Technical / Startup Profile Section -->
-        <!-- Technical / Startup Profile Section -->
+        <!-- About / Legal Profile Section -->
         <section id="about" class="about container" style="padding: 60px 20px;">
             <div class="section-header">
-                <h2 data-i18n="sktt_h2">About Us</h2>
-                <p data-i18n="sktt_p">SKTT - The Tech Hub of Hello Doctor Ecosystem</p>
+                <h2 data-i18n="sktt_h2">Về Chúng Tôi (About Us)</h2>
+                <p data-i18n="sktt_p">CÔNG TY TNHH SKTT — Hạ tầng Công nghệ & Y tế thuộc Hệ sinh thái Hello Doctor</p>
             </div>
-            
+
             <div class="glass-card about-card" style="margin-bottom: 30px;">
                 <div class="about-content" style="width: 100%;">
-                    <h3 data-i18n="sktt_about_title" style="margin-bottom: 15px; color: var(--primary);">1. ABOUT US</h3>
-                    <p data-i18n="sktt_about_desc" style="line-height: 1.8;">Founded in early 2024, SKTT is an early-stage, AI-first MedTech startup operating within the Hello Doctor healthcare network. We specialize in building next-generation EMR platforms and automated clinical triage solutions for mental health and neurology.</p>
+                    <h3 data-i18n="sktt_about_title" style="margin-bottom: 15px; color: var(--primary);">1. VỀ CÔNG TY TNHH SKTT & HELLO DOCTOR</h3>
+                    <p data-i18n="sktt_about_desc" style="line-height: 1.8;">Thành lập vào tháng 03/2024 (MST: 0318378996), Công ty TNHH SKTT là đơn vị phát triển nền tảng công nghệ y tế Hello Doctor AI và là đơn vị chủ quản Phòng khám Nội tổng hợp trực thuộc (GPHĐ số 10627/HCM-GPHD do Sở Y tế TP.HCM cấp ngày 03/12/2024; Nhà thuốc chuẩn GPP số 2417/GPP) gắn kết trong hệ thống Hello Doctor (52.832+ hồ sơ EMR, 20 bác sĩ & chuyên gia tâm lý).</p>
                 </div>
             </div>
 
             <div class="glass-card about-card" style="margin-bottom: 30px;">
                 <div class="about-content" style="width: 100%;">
-                    <h3 data-i18n="sktt_core_title" style="margin-bottom: 20px; color: var(--primary);">2. OUR CORE AI TECHNOLOGIES</h3>
-                    <p data-i18n="sktt_core_intro" style="margin-bottom: 20px;">We build a highly scalable, secure data and AI infrastructure on the cloud:</p>
-                    
+                    <h3 data-i18n="sktt_core_title" style="margin-bottom: 20px; color: var(--primary);">2. HẠ TẦNG CÔNG NGHỆ & Y KHOA CỐT LÕI</h3>
+                    <p data-i18n="sktt_core_intro" style="margin-bottom: 20px;">Phát triển theo kiến trúc an toàn y khoa 5 tầng với sự hỗ trợ hạ tầng từ Microsoft for Startups:</p>
+
                     <div class="features-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
-                        <div class="feature-card" style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
+                        <div class="feature-card" style="background: rgba(2,132,199,0.03); padding: 20px; border-radius: 12px; border: 1px solid var(--border-color);">
                             <div style="font-size: 2rem; margin-bottom: 10px;">🩺</div>
-                            <h4 data-i18n="sktt_core1_h">AI Clinical Triage</h4>
-                            <p data-i18n="sktt_core1_p" style="font-size: 0.95rem; color: var(--text-muted);">Integrating LLMs into messaging channels to take patient history, assess tests (PHQ-9), and alert dangerous risks.</p>
+                            <h4 data-i18n="sktt_core1_h">AI Phân luồng 5 Tầng (Tele-Triage)</h4>
+                            <p data-i18n="sktt_core1_p" style="font-size: 0.95rem; color: var(--text-muted);">Tích hợp trên Zalo OA (5.513+ hồ sơ) để triển khai thang đo PHQ-9/GAD-7/DAST-10, cảnh báo khẩn cấp nguy cơ tự hại (L1 EMERGENCY) và tuyệt đối không thay thế bác sĩ.</p>
                         </div>
-                        <div class="feature-card" style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
-                            <div style="font-size: 2rem; margin-bottom: 10px;">🎙️</div>
-                            <h4 data-i18n="sktt_core2_h">Vocal Biomarkers</h4>
-                            <p data-i18n="sktt_core2_p" style="font-size: 0.95rem; color: var(--text-muted);">Mining audio data from CS calls using Machine Learning to analyze patient stress levels without costly hardware.</p>
+                        <div class="feature-card" style="background: rgba(16,185,129,0.03); padding: 20px; border-radius: 12px; border: 1px solid var(--border-color);">
+                            <div style="font-size: 2rem; margin-bottom: 10px;">🛡️</div>
+                            <h4 data-i18n="sktt_core2_h">Sức khỏe Tâm thần Học đường &amp; Nơi làm việc</h4>
+                            <p data-i18n="sktt_core2_p" style="font-size: 0.95rem; color: var(--text-muted);">Hỗ trợ sàng lọc trầm cảm, lo âu, mất ngủ và kiệt sức nghề nghiệp (burnout) ẩn danh 24/7 dưới sự tham vấn của Hội đồng Bác sĩ Tâm thần &amp; Tâm lý Lâm sàng.</p>
                         </div>
-                        <div class="feature-card" style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
+                        <div class="feature-card" style="background: rgba(2,132,199,0.03); padding: 20px; border-radius: 12px; border: 1px solid var(--border-color);">
                             <div style="font-size: 2rem; margin-bottom: 10px;">🧠</div>
-                            <h4 data-i18n="sktt_core3_h">RAG Clinical Decision Support</h4>
-                            <p data-i18n="sktt_core3_p" style="font-size: 0.95rem; color: var(--text-muted);">A Vector database built from thousands of regimens, helping doctors lookup drug interactions in seconds.</p>
+                            <h4 data-i18n="sktt_core3_h">Kho RAG Kiểm duyệt & EMR Đa cơ sở</h4>
+                            <p data-i18n="sktt_core3_p" style="font-size: 0.95rem; color: var(--text-muted);">2.330+ bài viết tri thức y khoa đã thẩm định chuyên môn và kho phác đồ RAG kết nối đồng bộ hệ thống EMR và kho dược chuẩn GPP.</p>
                         </div>
                     </div>
                 </div>
@@ -410,8 +463,8 @@
 
             <div class="glass-card about-card" style="background: linear-gradient(135deg, rgba(16,185,129,0.1) 0%, rgba(13,148,136,0.1) 100%); border-color: rgba(16,185,129,0.3);">
                 <div class="about-content" style="text-align: center; width: 100%;">
-                    <h3 data-i18n="sktt_vision_title" style="margin-bottom: 15px; color: var(--primary);">3. VISION & MISSION</h3>
-                    <p data-i18n="sktt_vision_desc" style="font-size: 1.1rem; line-height: 1.8; font-style: italic; color: var(--text-color);">"Our 2024 mission is to democratize mental healthcare. By leveraging LLMs and clinical machine learning, we aim to eliminate physician burnout and provide patients with 24/7 AI-driven clinical support."</p>
+                    <h3 data-i18n="sktt_vision_title" style="margin-bottom: 15px; color: var(--primary);">3. TẦM NHÌN & SỨ MỆNH Y TẾ CỘNG ĐỒNG</h3>
+                    <p data-i18n="sktt_vision_desc" style="font-size: 1.1rem; line-height: 1.8; font-style: italic; color: var(--text-color);">"Giai đoạn 2024 – 2026+, sứ mệnh của chúng tôi là đưa công cụ sàng lọc sức khỏe tinh thần và tư vấn y tế dự phòng chuẩn chứng cứ tiếp cận miễn phí, kín đáo 24/7 tới từng người dân, nhà trường, doanh nghiệp và cơ sở y tế."</p>
                 </div>
             </div>
         </section>
@@ -424,45 +477,45 @@
                     <i class="ph-fill ph-heartbeat"></i>
                     <span>Hello Doctor AI</span>
                 </div>
-                <p data-i18n="footer_p">Empowering clinics with Artificial Intelligence.</p>
+                <p data-i18n="footer_p">Hệ sinh thái AI Y tế Dự phòng & Chăm sóc Sức khỏe Tinh thần.</p>
                 <div style="margin-top: 16px; color: var(--text-muted); font-size: 13px; line-height: 1.8;">
-                    <strong style="color: var(--text-color);">SKTT COMPANY LIMITED</strong><br>
-                    <span style="color: var(--primary);" data-i18n="footer_legal">The legal entity operating Hello Doctor AI</span><br>
-                    Tax ID: 0318378996<br>
-                    152/6 Thanh Thai Street, Ward 12, District 10, Ho Chi Minh City<br>
-                    Phone: +84 19001246
+                    <strong style="color: var(--text-color);">CÔNG TY TNHH SKTT (SKTT COMPANY LIMITED)</strong><br>
+                    <span style="color: var(--primary);" data-i18n="footer_legal">Pháp nhân vận hành: CÔNG TY TNHH SKTT • GPHĐ Phòng khám trực thuộc: 10627/HCM-GPHD (03/12/2024)</span><br>
+                    MST / Tax ID: 0318378996<br>
+                    <span data-i18n="footer_addr">152/6 Thành Thái, Phường 12, Quận 10, TP. Hồ Chí Minh</span><br>
+                    Hotline: 1900 1246 | Email: founder@chaobs.com
                 </div>
             </div>
             <div class="footer-links">
-                <a href="about.html" data-i18n="nav_about">About Us</a>
-                <a href="contact.html" data-i18n="nav_contact">Contact Us</a>
-                <a href="privacy.html" data-i18n="footer_l1">Privacy Policy</a>
-                <a href="terms.html" data-i18n="footer_l2">Terms of Service</a>
+                <a href="about.html" data-i18n="nav_about">Về chúng tôi</a>
+                <a href="contact.html" data-i18n="nav_contact">Liên hệ</a>
+                <a href="privacy.html" data-i18n="footer_l1">Chính sách Bảo mật</a>
+                <a href="terms.html" data-i18n="footer_l2">Điều khoản Sử dụng</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <p data-i18n="footer_c">&copy; 2026 SKTT COMPANY LIMITED. All rights reserved.</p>
+            <p data-i18n="footer_c">&copy; 2026 CÔNG TY TNHH SKTT (MST: 0318378996). Bảo lưu mọi quyền.</p>
         </div>
     </footer>
 
-    <!-- Chat Widget -->
+    <!-- Chat Widget (Interactive Flow Demo + Direct Zalo OA Live Link) -->
     <div id="chat-widget">
         <div id="chat-window" class="hidden glass-card">
             <div class="chat-header">
                 <div class="chat-header-info">
                     <i class="ph-fill ph-robot"></i>
                     <div>
-                        <h4 data-i18n="chat_h4">AI Clinical Assistant (Demo)</h4>
-                        <span data-i18n="chat_span">Online</span>
+                        <h4 data-i18n="chat_h4">Trợ lý AI Y tế (Demo Minh họa)</h4>
+                        <span data-i18n="chat_span">Trải nghiệm AI thật trên Zalo OA</span>
                     </div>
                 </div>
                 <button id="close-chat"><i class="ph ph-x"></i></button>
             </div>
-            <div id="chat-body" class="chat-body mockup-body" style="padding: 20px;">
+            <div id="chat-body" class="chat-body mockup-body" style="padding: 16px;">
                 <!-- Messages injected via JS -->
             </div>
             <div class="chat-footer">
-                <input type="text" id="chat-input" placeholder="Nhập vấn đề bạn đang gặp phải..." data-i18n-placeholder="chat_placeholder">
+                <input type="text" id="chat-input" placeholder="Hỏi thử về mất ngủ, lo âu hoặc kiệt sức..." data-i18n-placeholder="chat_placeholder">
                 <button id="send-btn"><i class="ph-fill ph-paper-plane-right"></i></button>
             </div>
         </div>
@@ -470,8 +523,7 @@
             <i class="ph-fill ph-chat-teardrop-dots"></i>
         </button>
     </div>
-    
-    
+
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const menuBtn = document.getElementById("mobile-menu-btn");
@@ -484,7 +536,6 @@
         });
     </script>
     <script src="i18n.js"></script>
-
     <script src="chat.js"></script>
 </body>
 </html>

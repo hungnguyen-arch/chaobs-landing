@@ -221,6 +221,7 @@ h1, h2, h3, h4, .logo span {
 }
 .hero-cta {
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
 }
 .hero-visual {
@@ -1064,4 +1065,105 @@ footer {
 .linkedin-btn:hover {
     background-color: #005582;
     color: #fff;
+}
+
+/* 2026 Community Pillars & Demo Chat Enhancements */
+.btn-zalo {
+    background: #0068FF;
+    color: #FFFFFF;
+}
+.btn-zalo:hover {
+    background: #0052CC;
+    color: #FFFFFF;
+    box-shadow: 0 4px 15px rgba(0, 104, 255, 0.3);
+}
+.pillar-badge {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+.pillar-badge.mental {
+    background: rgba(2, 132, 199, 0.1);
+    color: #0369A1;
+}
+.pillar-badge.workplace {
+    background: rgba(16, 185, 129, 0.12);
+    color: #047857;
+}
+.pillar-list {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 0 0;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+.pillar-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+.pillar-list li i {
+    color: var(--secondary);
+    font-size: 18px;
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+.chat-demo-notice {
+    background: #EFF6FF;
+    border: 1px solid #BFDBFE;
+    color: #1E3A8A;
+    border-radius: 12px;
+    padding: 10px 12px;
+    font-size: 12.5px;
+    line-height: 1.45;
+}
+.chat-demo-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+.chat-demo-chip {
+    background: #FFFFFF;
+    border: 1px solid #CBD5E1;
+    color: var(--text-color);
+    border-radius: 16px;
+    padding: 6px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: left;
+}
+.chat-demo-chip:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    background: #F0F9FF;
+}
+.chat-live-cta-bar {
+    padding: 10px 15px;
+    background: #F0FDF4;
+    border-top: 1px solid #BBF7D0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    font-size: 12px;
+}
+.chat-live-cta-bar a {
+    background: #0068FF;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 16px;
+    font-weight: 600;
+    font-size: 12px;
+    white-space: nowrap;
+}
+.chat-live-cta-bar a:hover {
+    background: #0052CC;
 }
