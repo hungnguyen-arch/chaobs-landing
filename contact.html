@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="title">Hello Doctor AI - Liên hệ</title>
+    <meta name="description" content="Thông tin liên hệ hợp tác Công ty TNHH SKTT & Phòng khám Chuyên khoa Tâm thần Hello Doctor: 152/6 Thành Thái Q.10 TP.HCM, Hoàng Cầu Hà Nội, Hotline 1900 1246.">
+    <link rel="canonical" href="https://chaobs.com/contact.html">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" href="favicon.ico">
+    <link rel="preload" as="font" href="icons.woff2" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@700;800&display=optional" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@700;800&display=optional" rel="stylesheet"></noscript>
 </head>
 <body>
     <div class="glow-bg"></div>
@@ -39,7 +45,7 @@
             <div style="display: flex; gap: 15px; align-items: center;">
                 <button id="lang-toggle" class="btn-lang">VI | EN</button>
                 <a href="contact.html" class="btn btn-outline" data-i18n="nav_contact">Liên hệ</a>
-                <button class="mobile-menu-btn" id="mobile-menu-btn"><i class="ph ph-list"></i></button>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Mở menu điều hướng"><i class="ph ph-list" aria-hidden="true"></i></button>
             </div>
         </div>
     </nav>
@@ -101,7 +107,7 @@
             <p data-i18n="footer_c">&copy; 2026 CÔNG TY TNHH SKTT (MST: 0318378996). Bảo lưu mọi quyền.</p>
         </div>
     </footer>
-    <script src="i18n.js"></script>
+    <script src="i18n.js" defer></script>
 
     <script>
         document.addEventListener("DOMContentLoaded", () => {

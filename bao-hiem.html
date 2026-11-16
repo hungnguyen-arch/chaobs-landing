@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="title">Hello Doctor AI - Hệ Sinh Thái Sức Khoẻ Tinh Thần</title>
     <meta name="description" content="Giải pháp Trợ lý AI dành cho Công ty Bảo hiểm và Insurtech.">
+    <link rel="canonical" href="https://chaobs.com/bao-hiem.html">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" href="favicon.ico">
+    <link rel="preload" as="font" href="icons.woff2" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@700;800&display=optional" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@700;800&display=optional" rel="stylesheet"></noscript>
     <meta name="google-site-verification" content="oFe73GjnvNT0SoEwdBMHk9RJ_Iky41XXUb16byKOrxc" />
 </head>
 <body>
@@ -42,7 +47,7 @@
             <div style="display: flex; gap: 15px; align-items: center;">
                 <button id="lang-toggle" class="btn-lang">EN | VI</button>
                 <a href="contact.html" class="btn btn-outline" data-i18n="nav_contact">Contact Us</a>
-                <button class="mobile-menu-btn" id="mobile-menu-btn"><i class="ph ph-list"></i></button>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Mở menu điều hướng"><i class="ph ph-list" aria-hidden="true"></i></button>
             </div>
         </div>
     </nav>
@@ -174,6 +179,6 @@
             }
         });
     </script>
-    <script src="i18n.js"></script>
+    <script src="i18n.js" defer></script>
 </body>
 </html>

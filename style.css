@@ -2,9 +2,9 @@
     --bg-color: #F8FAFC;         /* Soft slate off-white */
     --bg-secondary: #FFFFFF;     /* Pure white for cards */
     --text-color: #1E293B;       /* Dark Slate */
-    --text-muted: #64748B;       /* Lighter slate for subtitles */
-    --primary: #0284C7;          /* Medical Blue */
-    --primary-hover: #0369A1;
+    --text-muted: #475569;       /* Accessible slate for subtitles (WCAG AA) */
+    --primary: #0369A1;          /* Accessible Medical Blue (WCAG AA) */
+    --primary-hover: #075985;
     --secondary: #10B981;        /* Healing Green */
     --border-color: #E2E8F0;     /* Light gray border */
     --navbar-bg: rgba(255, 255, 255, 0.9);
@@ -351,6 +351,7 @@ h1, h2, h3, h4, .logo span {
     color: var(--primary);
     margin-bottom: 15px;
 }
+.trust-item h3,
 .trust-item h4 {
     font-size: 1.1rem;
     color: var(--text-color);
@@ -729,13 +730,28 @@ footer {
 .chat-header-info i {
     font-size: 24px;
 }
-.chat-header-info h4 {
+.chat-header-info h4,
+.chat-header-info .chat-title {
     margin: 0;
     font-size: 14px;
+    font-weight: 700;
 }
 .chat-header-info span {
     font-size: 11px;
-    color: rgba(255,255,255,0.8);
+    color: #F8FAFC;
+}
+.arch-step h3 {
+    font-size: 1rem;
+    margin: 0 0 8px;
+}
+
+/* Reserve icon dimensions before deferred icons.css paints to prevent CLS */
+.ph, .ph-bold, .ph-fill {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.125em;
+    flex-shrink: 0;
 }
 #close-chat {
     background: none;
@@ -778,14 +794,17 @@ footer {
     justify-content: center;
 }
 
-/* Animations */
-.pulse {
-    animation: pulse 2s infinite;
+/* Offscreen sections skip initial layout/paint until scrolled into view */
+main > section:nth-of-type(n+2),
+body > section:nth-of-type(n+2),
+footer {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 500px;
 }
-@keyframes pulse {
-    0% { box-shadow: 0 0 0 0 rgba(2, 132, 199, 0.4); }
-    70% { box-shadow: 0 0 0 15px rgba(2, 132, 199, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(2, 132, 199, 0); }
+
+/* Subtle elevation without continuous non-composited box-shadow repaint */
+.pulse {
+    box-shadow: 0 10px 24px rgba(3, 105, 161, 0.35);
 }
 
 

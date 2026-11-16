@@ -1,17 +1,26 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vi" data-ssr="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="title">Hello Doctor AI - Hệ Sinh Thái Sức Khoẻ Tinh Thần</title>
     <meta name="description" content="Hello Doctor AI - Nền tảng Y tế Số phát triển bởi Công ty TNHH SKTT (MST: 0318378996) gắn kết Phòng khám cấp phép 10627/HCM-GPHD: Sàng lọc tâm lý (PHQ-9, GAD-7, ISI), chăm sóc sức khỏe tinh thần cộng đồng, học đường và nơi làm việc 24/7 trên Zalo OA.">
+    <link rel="canonical" href="https://chaobs.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Hello Doctor AI - Hệ Sinh Thái Sức Khoẻ Tinh Thần">
+    <meta property="og:description" content="Nền tảng AI Sàng lọc Tâm lý (PHQ-9, GAD-7, ISI) &amp; Chăm sóc Sức khỏe Tinh thần Cộng đồng, Học đường và Nơi làm việc 24/7 trên Zalo OA.">
+    <meta property="og:url" content="https://chaobs.com/">
+    <meta property="og:locale" content="vi_VN">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" href="favicon.ico">
+    <link rel="preload" as="font" href="icons.woff2" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts: Outfit for headings, Inter for body -->
+    <link rel="stylesheet" href="icons.css">
+    <!-- Google Fonts: Outfit for headings, Inter for body (non-blocking) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
-    <!-- Phosphor Icons -->
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@700;800&display=optional" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@700;800&display=optional" rel="stylesheet"></noscript>
     <meta name="google-site-verification" content="oFe73GjnvNT0SoEwdBMHk9RJ_Iky41XXUb16byKOrxc" />
 </head>
 <body>
@@ -42,7 +51,7 @@
             <div style="display: flex; gap: 15px; align-items: center;">
                 <button id="lang-toggle" class="btn-lang">VI | EN</button>
                 <a href="contact.html" class="btn btn-outline" data-i18n="nav_contact">Liên hệ</a>
-                <button class="mobile-menu-btn" id="mobile-menu-btn"><i class="ph ph-list"></i></button>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Mở menu điều hướng"><i class="ph ph-list" aria-hidden="true"></i></button>
             </div>
         </div>
     </nav>
@@ -92,7 +101,7 @@
         <section class="stats container">
             <div style="text-align: center; margin-bottom: 25px;">
                 <h2 style="font-size: 1.2rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 2px;" data-i18n="stat_title">Năng Lực Vận Hành Thực Tế (2024 – 2026)</h2>
-                <p style="color: #10B981; font-weight: bold; margin-top: 10px; font-size: 1.05rem;"><i class="ph-bold ph-check-circle"></i> <span data-i18n="stat_subtitle">Số liệu xác thực từ Hệ thống EMR Đa cơ sở & Nền tảng AI Production</span></p>
+                <p style="color: #047857; font-weight: bold; margin-top: 10px; font-size: 1.05rem;"><i class="ph-bold ph-check-circle"></i> <span data-i18n="stat_subtitle">Số liệu xác thực từ Hệ thống EMR Đa cơ sở & Nền tảng AI Production</span></p>
             </div>
             <div class="stats-grid" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px;">
                 <div class="stat-item">
@@ -126,17 +135,17 @@
             <div class="trust-grid">
                 <div class="trust-item">
                     <i class="ph-fill ph-certificate"></i>
-                    <h4 data-i18n="trust_2_h">GPHĐ 10627/HCM-GPHD & Nhà thuốc GPP</h4>
+                    <h3 data-i18n="trust_2_h">GPHĐ 10627/HCM-GPHD & Nhà thuốc GPP</h3>
                     <p data-i18n="trust_2_p">Phòng khám Nội tổng hợp thuộc Công ty TNHH SKTT (Sở Y tế TP.HCM cấp 03/12/2024), Nhà thuốc GPP 2417/GPP và mạng lưới Hà Nội (562/HNO-GPHD).</p>
                 </div>
                 <div class="trust-item">
                     <i class="ph-fill ph-shield-check" style="color: #10B981;"></i>
-                    <h4 data-i18n="trust_3_h">Bảo mật NĐ 13/2023 & Microsoft</h4>
+                    <h3 data-i18n="trust_3_h">Bảo mật NĐ 13/2023 & Microsoft</h3>
                     <p data-i18n="trust_3_p">Bảo vệ dữ liệu cá nhân ẩn danh theo Nghị định 13/2023/NĐ-CP; hạ tầng công nghệ được hỗ trợ tài nguyên từ Microsoft for Startups.</p>
                 </div>
                 <div class="trust-item">
                     <i class="ph-fill ph-stethoscope"></i>
-                    <h4 data-i18n="trust_4_h">Kiến trúc AI 5 Tầng An toàn Y khoa</h4>
+                    <h3 data-i18n="trust_4_h">Kiến trúc AI 5 Tầng An toàn Y khoa</h3>
                     <p data-i18n="trust_4_p">Kho RAG bám sát hướng dẫn Bộ Y tế, WHO, DSM-5-TR, ICD-10; phát hiện khẩn cấp nguy cơ tự hại và không thay thế bác sĩ.</p>
                 </div>
             </div>
@@ -195,28 +204,28 @@
             <div class="showcase-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
                 <div class="glass-card feature-card" style="padding: 15px; text-align: center;">
                     <div style="background: rgba(255,255,255,0.05); border: 1px dashed rgba(255,255,255,0.2); border-radius: 8px; height: 200px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; overflow: hidden;">
-                        <img src="emr.png" alt="EMR Hello Doctor" onerror="this.style.display='none'" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="emr.webp" alt="EMR Hello Doctor" width="600" height="317" loading="lazy" decoding="async" onerror="this.style.display='none'" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <h3 data-i18n="showcase_1_h3" style="font-size: 1.1rem; margin-bottom: 10px;">Bệnh án Điện tử (EMR)</h3>
                     <p data-i18n="showcase_1_p" style="font-size: 0.9rem; color: var(--text-muted);">52.832+ hồ sơ ngoại trú tích hợp đơn thuốc, xét nghiệm và lịch sử trị liệu tâm lý.</p>
                 </div>
                 <div class="glass-card feature-card" style="padding: 15px; text-align: center;">
                     <div style="background: rgba(255,255,255,0.05); border: 1px dashed rgba(255,255,255,0.2); border-radius: 8px; height: 200px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; overflow: hidden;">
-                        <img src="chat.png" alt="Trợ lý AI Zalo OA" onerror="this.style.display='none'" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="chat.webp" alt="Trợ lý AI Zalo OA" width="600" height="323" loading="lazy" decoding="async" onerror="this.style.display='none'" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <h3 data-i18n="showcase_2_h3" style="font-size: 1.1rem; margin-bottom: 10px;">Trợ lý AI Thật trên Zalo OA</h3>
                     <p data-i18n="showcase_2_p" style="font-size: 0.9rem; color: var(--text-muted);">Sơ vấn thấu cảm 24/7, mở WebForm PHQ-9/GAD-7 và nhắc tuân thủ điều trị.</p>
                 </div>
                 <div class="glass-card feature-card" style="padding: 15px; text-align: center;">
                     <div style="background: rgba(255,255,255,0.05); border: 1px dashed rgba(255,255,255,0.2); border-radius: 8px; height: 200px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; overflow: hidden;">
-                        <img src="graph.png" alt="Kiến trúc AI 5 tầng" onerror="this.style.display='none'" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="graph.webp" alt="Kiến trúc AI 5 tầng" width="600" height="327" loading="lazy" decoding="async" onerror="this.style.display='none'" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <h3 data-i18n="showcase_3_h3" style="font-size: 1.1rem; margin-bottom: 10px;">Kiến trúc AI Đa tầng 5 Lớp</h3>
                     <p data-i18n="showcase_3_p" style="font-size: 0.9rem; color: var(--text-muted);">Tách bạch rạch ròi giữa phân loại ý định, cảnh báo khẩn cấp và kho RAG chuẩn hóa.</p>
                 </div>
                 <div class="glass-card feature-card" style="padding: 15px; text-align: center;">
                     <div style="background: rgba(255,255,255,0.05); border: 1px dashed rgba(255,255,255,0.2); border-radius: 8px; height: 200px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; overflow: hidden;">
-                        <img src="wallet.png" alt="Quản trị Ví AI" onerror="this.style.display='none'" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="wallet.webp" alt="Quản trị Ví AI" width="600" height="204" loading="lazy" decoding="async" onerror="this.style.display='none'" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <h3 data-i18n="showcase_4_h3" style="font-size: 1.1rem; margin-bottom: 10px;">Quản trị Tài nguyên Ví AI</h3>
                     <p data-i18n="showcase_4_p" style="font-size: 0.9rem; color: var(--text-muted);">Theo dõi định mức và phân bổ tài nguyên minh bạch cho doanh nghiệp & chương trình cộng đồng.</p>
@@ -292,13 +301,13 @@
             <div class="arch-container glass-card">
                 <div class="arch-step">
                     <div class="arch-icon"><i class="ph-fill ph-user-circle"></i></div>
-                    <h4 data-i18n="arch1_h4">Đầu vào Người dân / Bệnh nhân</h4>
+                    <h3 data-i18n="arch1_h4">Đầu vào Người dân / Bệnh nhân</h3>
                     <p data-i18n="arch1_p">Zalo OA / WebForm / Tổng đài 1900 1246</p>
                 </div>
                 <div class="arch-arrow"><i class="ph ph-arrow-right"></i></div>
                 <div class="arch-step highlight">
                     <div class="arch-icon"><i class="ph-fill ph-cpu"></i></div>
-                    <h4 data-i18n="arch2_h4">Tầng 1 CUE & Tầng 2 State Matrix</h4>
+                    <h3 data-i18n="arch2_h4">Tầng 1 CUE & Tầng 2 State Matrix</h3>
                     <p data-i18n="arch2_p">Hiểu ý định, quét khẩn cấp & điều phối luồng</p>
                 </div>
                 <div class="arch-arrow"><i class="ph ph-arrow-right"></i></div>
@@ -403,7 +412,7 @@
             <div class="team-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 360px)); justify-content: center; gap: 30px;">
                 <div class="team-card glass-card">
                     <div class="team-avatar" style="padding: 0; overflow: hidden; border-radius: 50%;">
-                        <img src="hungnguyen.jpeg" alt="Nguyễn Minh Hùng" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="hungnguyen.webp" alt="Nguyễn Minh Hùng" width="300" height="300" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <h3>Nguyễn Minh Hùng</h3>
                     <p class="team-role" data-i18n="team1_role">Nhà Sáng lập & Giám đốc Công ty TNHH SKTT</p>
@@ -505,22 +514,22 @@
                 <div class="chat-header-info">
                     <i class="ph-fill ph-robot"></i>
                     <div>
-                        <h4 data-i18n="chat_h4">Trợ lý AI Y tế (Demo Minh họa)</h4>
+                        <p class="chat-title" data-i18n="chat_h4">Trợ lý AI Y tế (Demo Minh họa)</p>
                         <span data-i18n="chat_span">Trải nghiệm AI thật trên Zalo OA</span>
                     </div>
                 </div>
-                <button id="close-chat"><i class="ph ph-x"></i></button>
+                <button id="close-chat" aria-label="Đóng khung chat demo"><i class="ph ph-x" aria-hidden="true"></i></button>
             </div>
             <div id="chat-body" class="chat-body mockup-body" style="padding: 16px;">
                 <!-- Messages injected via JS -->
             </div>
             <div class="chat-footer">
-                <input type="text" id="chat-input" placeholder="Hỏi thử về mất ngủ, lo âu hoặc kiệt sức..." data-i18n-placeholder="chat_placeholder">
-                <button id="send-btn"><i class="ph-fill ph-paper-plane-right"></i></button>
+                <input type="text" id="chat-input" aria-label="Nhập câu hỏi demo" placeholder="Hỏi thử về mất ngủ, lo âu hoặc kiệt sức..." data-i18n-placeholder="chat_placeholder">
+                <button id="send-btn" aria-label="Gửi tin nhắn demo"><i class="ph-fill ph-paper-plane-right" aria-hidden="true"></i></button>
             </div>
         </div>
-        <button id="chat-btn" class="chat-btn pulse">
-            <i class="ph-fill ph-chat-teardrop-dots"></i>
+        <button id="chat-btn" class="chat-btn pulse" aria-label="Mở Trợ lý AI Demo">
+            <i class="ph-fill ph-chat-teardrop-dots" aria-hidden="true"></i>
         </button>
     </div>
 
@@ -535,7 +544,7 @@
             }
         });
     </script>
-    <script src="i18n.js"></script>
-    <script src="chat.js"></script>
+    <script src="i18n.js" defer></script>
+    <script src="chat.js" defer></script>
 </body>
 </html>

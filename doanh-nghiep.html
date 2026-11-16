@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="title">Hello Doctor AI - Hệ Sinh Thái Sức Khoẻ Tinh Thần</title>
     <meta name="description" content="Nền tảng Trợ lý Sức khỏe Tinh thần cho Doanh nghiệp từ Hello Doctor AI. Giảm burnout, nâng cao hiệu suất làm việc.">
+    <link rel="canonical" href="https://chaobs.com/doanh-nghiep.html">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" href="favicon.ico">
+    <link rel="preload" as="font" href="icons.woff2" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icons.css">
     <!-- Google Fonts: Outfit for headings, Inter for body -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
-    <!-- Phosphor Icons -->
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@700;800&display=optional" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@700;800&display=optional" rel="stylesheet"></noscript>
     <meta name="google-site-verification" content="oFe73GjnvNT0SoEwdBMHk9RJ_Iky41XXUb16byKOrxc" />
 </head>
 <body>
@@ -44,7 +48,7 @@
             <div style="display: flex; gap: 15px; align-items: center;">
                 <button id="lang-toggle" class="btn-lang">EN | VI</button>
                                 <a href="contact.html" class="btn btn-outline" data-i18n="nav_contact">Contact Us</a>
-                <button class="mobile-menu-btn" id="mobile-menu-btn"><i class="ph ph-list"></i></button>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Mở menu điều hướng"><i class="ph ph-list" aria-hidden="true"></i></button>
             </div>
         </div>
     </nav>
@@ -284,21 +288,21 @@
                 <div class="chat-header-info">
                     <i class="ph-fill ph-robot"></i>
                     <div>
-                        <h4 data-i18n="chat_h4">AI Clinical Assistant (Demo)</h4>
+                        <p class="chat-title" data-i18n="chat_h4">AI Clinical Assistant (Demo)</p>
                         <span data-i18n="chat_span">Online</span>
                     </div>
                 </div>
-                <button id="close-chat"><i class="ph ph-x"></i></button>
+                <button id="close-chat" aria-label="Đóng khung chat demo"><i class="ph ph-x" aria-hidden="true"></i></button>
             </div>
             <div id="chat-body" class="chat-body mockup-body" style="padding: 20px;">
                 <!-- Messages injected via JS -->
             </div>
             <div class="chat-footer">
-                <input type="text" id="chat-input" placeholder="Nhập vấn đề bạn đang gặp phải..." data-i18n-placeholder="chat_placeholder">
-                <button id="send-btn"><i class="ph-fill ph-paper-plane-right"></i></button>
+                <input type="text" id="chat-input" aria-label="Nhập câu hỏi demo" placeholder="Nhập vấn đề bạn đang gặp phải..." data-i18n-placeholder="chat_placeholder">
+                <button id="send-btn" aria-label="Gửi tin nhắn demo"><i class="ph-fill ph-paper-plane-right" aria-hidden="true"></i></button>
             </div>
         </div>
-        <button id="chat-btn" class="chat-btn pulse">
+        <button id="chat-btn" class="chat-btn pulse" aria-label="Mở Trợ lý AI Demo">
             <i class="ph-fill ph-chat-teardrop-dots"></i>
         </button>
     </div>
@@ -315,8 +319,8 @@
             }
         });
     </script>
-    <script src="i18n.js"></script>
+    <script src="i18n.js" defer></script>
 
-    <script src="chat.js"></script>
+    <script src="chat.js" defer></script>
 </body>
 </html>
